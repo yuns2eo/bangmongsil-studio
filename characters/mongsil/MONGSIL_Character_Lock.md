@@ -274,12 +274,14 @@ The two characters share a body and contradict each other on the face. Loading b
 |---|---|---|
 | Point colour | `#FFCDB4` | `#FFCBD1` |
 | Brown `#B79571` | head & ear wave, arm heart, tail | none |
-| Ears | shorter rounded triangles | tall pointed triangles |
+| Ears | low broad rounded triangles, free height 0.08 × head width | same shape, free height 0.11 × head width |
 | Muzzle | two raised white bumps | flat face |
 | Closed mouth | no mouth line at all | W-shaped mouth line |
 | Tail | brown | body colour |
 | Whiskers | 2 per side | 2 per side |
 | Belly patch | circle, point colour | circle, point colour |
+
+> **Ears are a weak separator.** Both characters have the same low broad round-tipped ear shape; BANGSIL's simply stand about 1.4 × higher. Do not rely on ear shape to tell a mixed render apart — use the muzzle, the mouth line, brown, and the point colour (실측 2026-11-09).
 
 ### Two-shot scenes
 

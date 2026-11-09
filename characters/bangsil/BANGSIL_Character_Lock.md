@@ -58,9 +58,44 @@ BANGSIL's arms are too short to reach many props. When a pose needs more reach, 
 
 ### Ears — an identity feature
 
-- Two **tall, pointed triangular ears** standing upright on top of the head. They are noticeably taller and sharper than MONGSIL's. Measured on `Front.png`: ear tip to chin is **595 px**, about **0.81 × the head width**.
+BANGSIL's ears are **low, broad, soft triangles with rounded tips**, sitting on the upper outer corners of the head dome and leaning slightly outward. They are not tall, not upright, and not pointed. Measured 2026-11-09 on `Front.png` and on the approved face reference:
+
+| | Measured |
+|---|---|
+| Free height standing clear of the head dome | **0.11 – 0.12 × the head's maximum width** |
+| Base width : free height | **2.7 – 2.9 : 1** — far wider than tall |
+| Width at 20 % down from the tip | **0.42 – 0.49 × the base width** |
+| Width at 50 % down from the tip | 0.72 – 0.76 × the base width |
+| Tip centre | about 0.65 × the head half-width out from the head centre, leaning outward |
+
+Read the first row again. The part of the ear standing clear of the dome is only about **one eighth of the head's width**. Everything above the eyes is mostly dome, not ear.
+
+- The tip is a **soft round curve, not a point.** One fifth of the way down from the tip the ear is already nearly half as wide as its base.
 - The outer surface of **both** ears is the body colour. The inner ear is the point colour (section 6).
-- Do not round the ear tips off, do not fold them, and do not make one ear a different colour from the other.
+- Both ears match each other. Do not fold them and do not colour one differently.
+
+**Failure measured 2026-11-09 — caused by this section's own earlier wording.** This section used to say "tall, pointed triangular ears standing upright… noticeably taller and sharper than MONGSIL's… do not round the ear tips off". Both validation renders came out as a fox, in two different ways:
+
+| | base : height | width at 20 % down |
+|---|---|---|
+| Reference | 2.7 – 2.9 : 1 | 0.42 – 0.49 |
+| `cut1` 방실 앉기 | 2.6 : 1 | **0.07** — a needle point |
+| `cut3` 투샷 | **1.3 : 1** — twice too narrow | 0.47 |
+
+**Reject** when base : height falls below **2.2 : 1**, or when the width at 20 % down from the tip is under **0.35** of the base width. Either one reads as a fox.
+
+### How BANGSIL's ears differ from MONGSIL's — smaller than previously written
+
+Measured on both characters' `Front.png` with the same method:
+
+| | Free height ÷ head width | Base : height | Width at 20 % down |
+|---|---|---|---|
+| BANGSIL | 0.112 | 2.92 : 1 | 0.49 |
+| MONGSIL | 0.082 | 2.97 : 1 | 0.45 |
+
+The **shape is the same** on both characters — equally broad, equally round-tipped. BANGSIL's ears simply stand about **1.4 × higher** off the dome. That is the whole difference, and it is a subtle one.
+
+Because of this, **ear shape is not a usable mixing check.** The reliable separators are the muzzle, the mouth line, brown, and the point colour (section 10).
 
 ### All views
 
@@ -110,20 +145,26 @@ The tail is the **same sculpt as MONGSIL's, in the body colour instead of brown.
 
 - **ONE continuous padded mass** in the body colour, growing from the hip on BANGSIL's anatomical left (screen right in the front view).
 - Standing, it rises and curls **outward and upward, away from the body**, and is **taller than it is wide — about 1.3–1.5 : 1.** Never squat, never as wide as tall.
-- Its **outer edge** (facing away from the body) carries exactly **THREE rounded forms stacked along it**: a large rounded dome at the top, then **TWO more rounded bumps** below it, separated by soft shallow notches.
+- The whole tail is **ONE padded crescent — a fat comma.** The silhouette is continuous from base to tip and never pinches in to less than about **85 % of the local width** anywhere along it.
+- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches**. Measured on `Front.png`: the notches dent the outline by **about 7 % of the tail's width** (10 px and 3 px against a 144 px tail). They are soft dimples in a continuous edge, not divisions.
+- The three swells that the notches separate are **not equal and not round.** The top dome is the largest and most rounded; the two below it are progressively **smaller and flatter**, settling back into the curve toward the base.
 - Its **inner edge** (facing the body) is **ONE long smooth unbroken curve** with no bumps and no notches. The asymmetry between the two edges is the signature of the shape.
 - The **base** is a thick stalk merging smoothly into the hip. The tail never tapers to a point, never narrows to a stem, never detaches.
-- The whole form reads like a **fat upright clover leaf**, or a mitten with two thumbs down one side.
+
+**Failure measured 2026-11-09.** This section used to say the outer edge "carries exactly THREE rounded forms stacked along it" and that the whole shape "reads like a fat upright clover leaf". Both phrases describe three separate objects, and that is exactly what came out: in `cut1` and `cut3` the tail rendered as **three near-equal spheres stacked like a snowman**, round on both edges, with deep pinches between them. The user's words were "무슨 3개 동그란 알갱이 같은게 붙어있는것처럼 오바스럽게 굴곡이 많아".
+
+**Reject** when the lobes read as separate balls, when any two swells are the same size, when the inner edge grows bumps, or when a notch cuts deeper than about **15 %** of the tail's width.
 - In `Back.png` and `Sit.png` the same form swings out sideways. Rotation is allowed; reshaping is not.
 
 ### Verifying a white tail
 
-Because the tail is the same colour as the body, it cannot be isolated against a pale background the way MONGSIL's brown tail can. **Check it against `Back.png` and `Sit.png`**, where the tail reads clearly away from the torso, and confirm all four:
+Because the tail is the same colour as the body, it cannot be isolated against a pale background the way MONGSIL's brown tail can. **Check it against `Back.png` and `Sit.png`**, where the tail reads clearly away from the torso, and confirm all five:
 
 1. Height is visibly greater than width (about 1.3–1.5 : 1 standing).
-2. The outer edge has a top dome plus exactly two more bumps — not one, not three, not a row of equal beads.
-3. The inner edge is a single smooth curve with no bumps.
-4. The mass is continuous and joins the hip with a thick base.
+2. The silhouette is **one continuous crescent**. Cover the notches with a thumb and it still reads as a single padded mass.
+3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the notches between them are shallow dimples — around 7 % of the tail's width, never more than 15 %.
+4. The inner edge is a single smooth curve with no bumps.
+5. The mass joins the hip with a thick base.
 
 On a pale background a white tail also tends to disappear into the body or the backdrop. If the tail silhouette is not legible, that is a failure, not a lighting preference.
 
@@ -133,6 +174,7 @@ On a pale background a white tail also tends to disappear into the body or the b
 - "a few lobes overlapping side by side" → beads in a row
 - "bumps along its free edge" without the height ratio → caterpillar
 - "cloud", "fluffy", "puffy" used alone → separated puffs or a smooth paddle
+- "three rounded forms stacked along it", "clover leaf" → three equal spheres like a snowman (실측 2026-11-09, `cut1` & `cut3`)
 
 ## 4. Body and belly patch
 
@@ -227,7 +269,7 @@ Before delivery, compare against the closest reference view and reject/regenerat
 1. **Any brown on the body** — head patch, ear, arm marking, or tail. BANGSIL has none.
 2. **Raised muzzle bumps** under the nose. BANGSIL's face is flat.
 3. **Missing mouth line** — the W smile under the nose is gone.
-4. **Rounded or short ears** instead of tall pointed triangles; mismatched ears.
+4. **Fox ears:** an ear whose base is under 2.2 × its free height, or whose width 20 % down from the tip is under 0.35 of its base — a tall, narrow, or pointed ear. Also mismatched ears. (Rounded tips and a low broad shape are correct — see section 2.)
 5. **Wrong point colour** — `#FFCDB4` (MONGSIL's) used on the ears, blush, belly, or pads instead of `#FFCBD1`.
 6. **Triangular profile:** lower face crushed, narrowed, or pointed when rotated.
 7. **Wrong head silhouette or size:** a sphere, a vertical oval, a narrow face, or a head that no longer fills the top half of the figure.
@@ -236,11 +278,12 @@ Before delivery, compare against the closest reference view and reject/regenerat
 10. **Teeth:** any tooth, fang, or tooth row, in a still or in any video frame.
 11. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed.
 11-1. **Not a failure:** brown whiskers or a brown nose matching the current renders. That is the known pending mismatch in section 6, not a generation error — note it and move on.
-12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; raised arms pressed against the face; an arm stretched to reach a prop.
+12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; an arm stretched to reach a prop.
+12-1. **Raised arm fused to the head:** a raised paw touching or overlapping the face so the silhouette reads as one shape there. There must be a visible gap of background between the paw and the cheek, at least as wide as the paw.
 13. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
 13-1. **Missing or miscounted pads:** a sole faces the viewer without its pads, or shows four toe pads instead of three.
 14. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
-15. **Deformed or invisible tail:** fails any of the four checks in section 3-1, or the white tail is not legible against the background.
+15. **Deformed or invisible tail:** fails any of the five checks in section 3-1, or the white tail is not legible against the background. The specific failure to watch for is the **snowman tail** — three near-equal spheres stacked with deep pinches, instead of one continuous crescent with shallow unequal scallops.
 16. **Unverified specificity:** a count, ratio, contour, or colour stated or generated as certain despite not being visible in the relevant reference.
 
 ## 10. BANGSIL and MONGSIL together
@@ -255,12 +298,14 @@ The two characters share a body and contradict each other on the face. Loading b
 |---|---|---|
 | Point colour | `#FFCBD1` | `#FFCDB4` |
 | Brown `#B79571` | none | head & ear wave, arm heart, tail |
-| Ears | tall pointed triangles | shorter rounded triangles |
+| Ears | low broad rounded triangles, free height 0.11 × head width | same shape, free height 0.08 × head width |
 | Muzzle | flat face | two raised white bumps |
 | Closed mouth | W-shaped mouth line | no mouth line at all |
 | Tail | body colour | brown |
 | Whiskers | 2 per side | 2 per side |
 | Belly patch | circle, point colour | circle, point colour |
+
+> **Ears are a weak separator.** Both characters have the same low broad round-tipped ear shape; BANGSIL's simply stand about 1.4 × higher. Do not rely on ear shape to tell a mixed render apart — use the muzzle, the mouth line, brown, and the point colour (실측 2026-11-09, 섹션 2).
 
 ### Two-shot scenes
 

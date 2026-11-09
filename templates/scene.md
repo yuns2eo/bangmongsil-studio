@@ -177,7 +177,17 @@ DEPTH: the {object} is IN FRONT of {CHARACTER}. {CHARACTER} stands BEHIND it; th
 
 ### 팔 자세
 
-- 짧은 팔로 머리 위까지 드는 자세(상자 번쩍 들기 등)는 팔이 길어지거나 얼굴에 붙기 쉽다 (실측 1회). 가능하면 가슴 앞에서 끌어안기 & 한 팔에 끼기처럼 짧은 팔에 맞는 자세로 바꾼다.
+- 짧은 팔로 머리 위까지 드는 자세(상자 번쩍 들기 등)는 팔이 길어지거나 얼굴에 붙기 쉽다. 가능하면 가슴 앞에서 끌어안기 & 한 팔에 끼기처럼 짧은 팔에 맞는 자세로 바꾼다.
+- **팔을 드는 자세는 "틈"으로 지시한다 (실측 2회).** "clearly out away from the head", "a visible gap between the paw and the face" 정도로는 안 막힌다. 2026-11-09 손 흔들기 컷은 이 문장을 넣고도 발과 얼굴이 **한 실루엣으로 붙어 나왔다** (그 높이의 가로 단면이 x166~734 한 덩어리, 간격 0px). 대신 배경이 보이게 지시한다.
+
+```
+There is a clear gap of background visible between the raised paw and the cheek,
+at least as wide as the paw itself. The raised arm and the head do not touch and do
+not overlap at any point; the silhouette shows two separate shapes there, not one.
+```
+
+- Negative 에도 함께 넣는다: `paw touching the face, paw overlapping the head, arm fused to the head, no gap between paw and cheek`
+- 근거: `prompts/2026-11-09-validation-run.md` (손 흔들기), `prompts/2026-10-22-staged-scenes.md` (만세 & 택배기사)
 
 ### 다른 AI(ChatGPT 등)용 프롬프트만 요청받을 때
 
