@@ -107,7 +107,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - 손바닥이 카메라를 향하는 자세(손 흔들기, 하이파이브, 만세)는 **사용자가 따로 말하지 않아도** 손바닥 패드 문장을 넣는다: `the palm facing the viewer has soft pink paw pads: one large central pad and exactly three small round toe pads above it`. 이 문장을 빼먹어 패드 없이 나온 사례가 있다 (`prompts/2026-10-22-staged-scenes.md`, 택배기사).
 - **발가락 패드는 3개다.** 이전 템플릿에 4개로 적혀 있었다 (2026-11-09 레퍼런스 실측으로 정정).
 - 몽실이는 손바닥 젤리가 보여야 하면 `mongsil_3d_paw_front_v1`을, 발바닥이면 `mongsil_3d_paw_hind_v1`을 소품 Element로 추가한다. 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
-- 방실이는 앞발 손바닥 레퍼런스도 Element도 없다. 손바닥이 보여야 하면 뒷발 패드 구성을 쓰고 미검증임을 알린다.
+- 방실이는 앞발 손바닥 Element는 없지만 **레퍼런스는 있다** — `characters/bangsil/references/3d/Wave.png`가 손바닥 정면이다. 손바닥이 보여야 하면 이 컷을 `medias`로 첨부한다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)이다.
 
 ## 5. 소품 형태 & 방향 유지
 
@@ -179,11 +179,12 @@ DEPTH: the {object} is IN FRONT of {CHARACTER}. {CHARACTER} stands BEHIND it; th
 
 - 짧은 팔로 머리 위까지 드는 자세(상자 번쩍 들기 등)는 팔이 길어지거나 얼굴에 붙기 쉽다. 가능하면 가슴 앞에서 끌어안기 & 한 팔에 끼기처럼 짧은 팔에 맞는 자세로 바꾼다.
 - **팔을 드는 자세는 "틈"으로 지시한다 (실측 2회).** "clearly out away from the head", "a visible gap between the paw and the face" 정도로는 안 막힌다. 2026-11-09 손 흔들기 컷은 이 문장을 넣고도 발과 얼굴이 **한 실루엣으로 붙어 나왔다** (그 높이의 가로 단면이 x166~734 한 덩어리, 간격 0px). 대신 배경이 보이게 지시한다.
+- **틈 폭은 요구하지 않는다.** 레퍼런스 `Wave.png`의 틈은 가장 좁은 곳이 10~14px으로 발 폭(≈145px)의 7%밖에 안 된다. "발 폭만큼"을 요구하면 승인된 레퍼런스가 탈락한다. 막아야 하는 건 **0px, 한 덩어리**다.
 
 ```
-There is a clear gap of background visible between the raised paw and the cheek,
-at least as wide as the paw itself. The raised arm and the head do not touch and do
-not overlap at any point; the silhouette shows two separate shapes there, not one.
+A continuous sliver of background stays visible between the raised paw and the cheek
+all the way down, even where it is narrow. The raised arm and the head never merge
+into one silhouette; the outline shows two separate shapes there, not one.
 ```
 
 - Negative 에도 함께 넣는다: `paw touching the face, paw overlapping the head, arm fused to the head, no gap between paw and cheek`

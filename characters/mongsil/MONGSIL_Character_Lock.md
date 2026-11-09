@@ -51,7 +51,7 @@ MONGSIL's arms are too short to reach many props. When a pose needs more reach, 
 
 - Rise onto tiptoe, lean the torso forward, bend at the hip, stretch upward through the shoulders, or move MONGSIL physically closer to the prop.
 - Or lower the prop so it falls inside the arm's real reach.
-- **Reject and regenerate** any result where a forearm or upper arm is visibly longer or thinner than the turnaround, even if the pose otherwise reads correctly. A stretched arm is an identity failure, not a pose choice.
+- **Reject** any result where a forearm or upper arm is visibly longer or thinner than the turnaround, even if the pose otherwise reads correctly. A stretched arm is an identity failure, not a pose choice. Report the failure to the user; regenerate only when they ask.
 
 ## 2. Head and face
 
@@ -94,7 +94,7 @@ MONGSIL's whiskers read as a **neutral dark gray**: red and blue are within abou
 ### Profile rotation
 
 Rotate the same broad head volume. Do not compress or carve away the lower face.
-**Reject and regenerate** if the jaw or chin tapers to a point, the lower face is crushed inward, or the profile reads triangular. The profile keeps rounded cheek and chin volume.
+**Reject** — and report it, regenerating only on the user's request — if the jaw or chin tapers to a point, the lower face is crushed inward, or the profile reads triangular. The profile keeps rounded cheek and chin volume.
 
 ### Eyes, nose, muzzle
 
@@ -126,7 +126,9 @@ All directions use MONGSIL's anatomical left/right. In the front view, MONGSIL's
 - One small brown **heart** sits on the **upper arm on the tail side** (screen right in the front view, the same side as the ear marking), high up near the shoulder, on the body-facing inner edge.
 - It is a real heart: two rounded lobes on top, tapering to a point at the bottom. On `Front.png` it is about **51 × 86 px — clearly taller than wide**. Its left side runs along the arm's inner contour, so part of the left lobe is cut off by the silhouette.
 - It is not a cloud, half-cloud, circle, dot, teardrop, stripe, or solid oval. *(Correction: earlier versions of this file described it as a half-cloud and explicitly banned a heart. The references have always shown a heart. The heart is correct.)*
-- Show it when that inner arm edge is visible and the arm hangs free. **Omit it entirely** when the arm is raised, crossed, holding a prop, or turned so the edge is hidden. Relocating it to keep it visible is a failure; leaving it out is correct.
+- Show it **whenever that inner arm edge faces the camera, in any pose.** Measured 2026-11-09 across the reference set: the heart is present in `Front.png`, `Left_3Q.png`, `Left_Profile.png`, `Run.png`, `Sit.png`, and `Tongue.png` — running and sitting included. It is absent only in `Back.png` and the two paw close-ups, where that edge is turned away. *(Correction: this line previously required the arm to hang free, which contradicts `Run.png` and `Sit.png`.)*
+- Foreshortening changes its proportions: it reads about 51 × 82 px in `Front.png`, but roughly square (62 × 67) in `Run.png` and small (44 × 45) in `Sit.png`. Keep it a heart; let the pose squash it.
+- **Omit it entirely** when the inner edge is hidden — a back view, a crossed arm, or a prop covering it. Relocating it to keep it visible is a failure; leaving it out is correct.
 - It stays on the upper arm near the shoulder. It never moves to the waist, torso, armpit, forearm, paw, or the other arm.
 - If the user drops it for a specific scene or costume, follow that for that scene and note it in the `prompts/` record. It does not change this lock.
 
@@ -145,7 +147,7 @@ Measured on `Front.png`, `Left_3Q.png`, `Left_Profile.png`, `Back.png`, `Sit.png
 - The tail is **ONE continuous padded mass** in brown, growing from the hip on MONGSIL's anatomical left (screen right in the front view), the same side as the ear marking.
 - Standing, it rises and curls **outward and upward, away from the body**, and is **taller than it is wide**. Measured bounding boxes: `Front.png` 253 × 364 (**1.44 : 1**), `Left_3Q.png` 256 × 353 (1.38 : 1), `Left_Profile.png` 272 × 353 (1.30 : 1). Sitting, `Sit.png` reads 199 × 325 (1.63 : 1). Treat **about 1.3–1.5 : 1 standing** as the target. Never squat, never as wide as tall, never wider than tall.
 - The whole tail is **ONE padded crescent — a fat comma.** The silhouette is continuous from base to tip and never pinches in to less than about **85 % of the local width** anywhere along it.
-- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches**. Measured 2026-11-09 on the brown tail, which isolates cleanly: the notches dent the outline by **5 – 8 % of the tail's width** (`Front.png` 12 px and 3 px against a 251 px tail; `Left_3Q.png` 5 %; `Left_Profile.png` 8 %; `Sit.png` 7 %). They are soft dimples in a continuous edge, not divisions.
+- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches of unequal depth**. Measured 2026-11-09 on the brown tail, which isolates cleanly: on `Front.png`, against a 251 px tail, the **upper notch is 12 px (≈ 5 %)** and the **lower notch 3 px (≈ 1 %)**. Across the other views the deeper notch runs 5 – 8 % (`Left_3Q.png` 5 %, `Left_Profile.png` 8 %, `Sit.png` 7 %) with the lower one always far shallower. Quote the two separately — a single 5–8 % figure makes the lower notch several times too deep. They are soft dimples in a continuous edge, not divisions.
 - The swells those notches separate are **not equal and not round.** The top dome is the largest and most rounded; the ones below it are progressively **smaller and flatter**, settling back into the curve toward the base. The two notches are themselves unequal — the upper one is about three to four times deeper than the lower.
 - Its **inner edge** (facing the body) is **ONE long smooth unbroken curve** with **no bumps and no notches at all**. The asymmetry between the two edges is the signature of the shape.
 - The **base** is a thick stalk merging smoothly into the hip. The tail never tapers to a point, never narrows to a stem, never detaches.
@@ -170,11 +172,11 @@ Crop the tail out of the result, enlarge it, and set it beside the same region o
 
 1. Height is visibly greater than width (about 1.3–1.5 : 1 standing).
 2. The silhouette is **one continuous crescent**. Cover the notches with a thumb and it still reads as a single padded mass.
-3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the notches between them are shallow dimples — 5–8 % of the tail's width, never more than 15 %.
+3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the two notches between them are shallow dimples of **unequal depth** — the upper 5–8 % of the tail's width, the lower about 1–2 %, neither more than 15 %.
 4. The inner edge is a single smooth curve with no bumps.
 5. The mass is continuous and joins the hip with a thick base.
 
-Any failure means regenerate. Do not deliver a tail that was not compared at magnification.
+Any failure means the result is rejected: say which item failed and regenerate only when the user asks. Do not deliver a tail that was not compared at magnification.
 
 ## 4. Body and belly patch
 
@@ -281,7 +283,7 @@ Pose, expression, action, costume, prop, background, crop, camera, lighting, and
 
 ## 9. Common generation failures — mandatory validation
 
-Before delivery, compare against the closest reference view and reject/regenerate a result with any of the following:
+Before delivery, compare against the closest reference view and reject a result with any of the following. **Report which item failed and what would fix it — do not regenerate on your own; the user asks for that** (CLAUDE.md 기본 이미지 생성 설정 4번):
 
 1. **Triangular profile:** lower face crushed, narrowed, or pointed when rotated.
 2. **Wrong head silhouette:** a sphere, a vertical oval, or a narrow face instead of a broad oval about 1.2 : 1 wide.
@@ -328,9 +330,9 @@ The two characters share a body and contradict each other on the face. Loading b
 
 When both appear in one image, load both locks and state the separation explicitly — which character is on which side, and that each keeps its own face and colours. Then add the size rule:
 
-> **MONGSIL's total height is 0.9 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
+> **MONGSIL's total height is 0.88 – 0.90 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
 
-Measured on the 2026-11-09 두 캐릭터 비교 render: BANGSIL 1166 px tall, MONGSIL 1021 px, head widths 724 px and 652 px — a consistent 10 % difference, with BANGSIL's taller ears adding the rest. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
+Measured on a 2026-11-09 두 캐릭터 비교 render **that is not stored in this repository** — the numbers stand, the image cannot be re-checked here: BANGSIL 1166 px tall, MONGSIL 1021 px (**0.876**); head widths 724 px and 652 px (**0.901**). The two ratios are not the same, so write **0.88 – 0.90**, not "a consistent 10 %". BANGSIL's taller ears account for most of the difference between them. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
 
 ## 11. Generation workflow
 
@@ -341,7 +343,7 @@ Measured on the 2026-11-09 두 캐릭터 비교 render: BANGSIL 1166 px tall, MO
 4. Generate without mirroring or redesigning locked features.
 5. Run the section 9 checklist, paying special attention to profile shape, the screen-right ear wave in front view, the belly circle, the whisker count, literal HEX preservation, and the section 3-1 tail comparison at magnification.
 6. If a required detail is unverified, defer to the reference or flag it; do not fill the gap with a guess.
-7. Build a scene in stages instead of one prompt: costume & prop first on a plain background, then scene & action, then cutout & layout. See `templates/mongsil-scene.md` section 7.
+7. Build a scene in stages instead of one prompt: costume & prop first on a plain background, then scene & action, then cutout & layout. See `templates/scene.md` section 7.
 8. Do not keep re-editing the same generated image. Each extra edit degrades quality and drifts the shape. Allow at most one edit of a result; after that, generate fresh from the references. Fix small edges and seams in the design tool instead of regenerating.
 9. A petf prop needs its Element **and** its reference sheet attached as a media input. The Element alone gets reinterpreted into a generic object.
 10. State plainly when a result could not be verified — in particular, video frames cannot be checked without `ffmpeg`, so the gait, pads, teeth, and tail in a clip stay unverified until the user looks at them.

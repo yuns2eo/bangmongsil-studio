@@ -46,7 +46,7 @@ Expression: {표정}.
 ```
 
 - 발이 보이면 위 `## Paws` 블록을 반드시 함께 넣는다. 발바닥 안쪽이 보이면 패드 문장까지 더한다.
-- 방실이는 앞발 손바닥 레퍼런스가 없다. 손바닥이 보여야 하는 장면이면 위 문장을 쓰되, 손바닥은 미검증이라고 사용자에게 알린다 (`BANGSIL_Character_Lock.md` 4-1번).
+- 방실이 앞발 손바닥 레퍼런스는 `references/3d/Wave.png`다. 손바닥이 보이는 장면이면 이 컷을 첨부하고, 중앙 큰 패드 1개 + 발가락 패드 3개 구성과 코랄 패드색(`#FCA39C`~`#FCADAC`)을 함께 쓴다 (`BANGSIL_Character_Lock.md` 4-1번).
 - 흰 꼬리는 배경에 묻히기 쉽다. 밝은 배경이면 `the tail silhouette stays clearly readable against the background`를 넣는다.
 
 

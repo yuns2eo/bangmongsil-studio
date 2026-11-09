@@ -14,13 +14,13 @@ The approved reference set is `characters/bangsil/references/3d/`:
 | File | View | Native | Use it for |
 |---|---|---|---|
 | `Front.png` | 정면 | 1254 px | default; the measurement baseline for this file |
-| `Left_3Q.png` | 45도 측면 | 1024 px | any three-quarter turn |
-| `Left_Profile.png` | 측면 | 1024 px | profile and near-profile |
-| `Back.png` | 후면 | 1024 px | back and rear three-quarter; the clean-back proof |
-| `Smile.png` | 정면 웃는얼굴 | 1024 px | open-mouth smile |
-| `Sit.png` | 앉은자세 | 1024 px | sitting; the hind-sole pad reference |
-| `Run.png` | 측면 뛰는자세 | 1024 px | walking, running, mid-stride |
-| `Wave.png` | 손 흔들기 | 1024 px | a raised arm — note the back of the paw, not the palm |
+| `Left_3Q.png` | 45도 측면 | 1254 px | any three-quarter turn |
+| `Left_Profile.png` | 측면 | 1254 px | profile and near-profile |
+| `Back.png` | 후면 | 1254 px | back and rear three-quarter; the clean-back proof |
+| `Smile.png` | 정면 웃는얼굴 | 1254 px | open-mouth smile |
+| `Sit.png` | 앉은자세 | 1254 px | sitting; the hind-sole pad reference |
+| `Run.png` | 측면 뛰는자세 | 1254 px | walking, running, mid-stride |
+| `Wave.png` | 손 흔들기 | 1254 px | a raised arm; **the front-paw palm reference** — the palm faces the camera. Also the reference for how far a raised paw clears the head |
 
 Rotate one coherent character between views; never redesign per view.
 
@@ -35,7 +35,7 @@ When sources disagree, apply this order:
 
 **이 순서의 예외 — 섹션 6이 "미반영"이라고 적어 둔 항목.** 레퍼런스 렌더가 아직 최신 규칙을 따라가지 못한 항목은 섹션 6의 locked value가 레퍼런스를 이긴다. 현재 해당하는 것은 **수염 & 코 & 입선 색상**뿐이며, `#000000`이 기준이다. 그 외 모든 항목은 위 순서 그대로 레퍼런스가 우선이다.
 
-Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the eight images show, keep the visible structure intact and say the detail is unverified rather than inventing it. **There is no front-palm reference for BANGSIL** — `Wave.png` shows the back of the raised paw. See section 4-1.
+Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the eight images show, keep the visible structure intact and say the detail is unverified rather than inventing it. **`Wave.png` is the front-palm reference** — the raised paw shows its palm with pads. See section 4-1.
 
 ## 1. Non-negotiable identity and proportion
 
@@ -52,7 +52,7 @@ BANGSIL's arms are too short to reach many props. When a pose needs more reach, 
 
 - Rise onto tiptoe, lean the torso forward, bend at the hip, stretch upward through the shoulders, or move BANGSIL physically closer to the prop.
 - Or lower the prop so it falls inside the arm's real reach.
-- **Reject and regenerate** any result where a forearm or upper arm is visibly longer or thinner than the references.
+- **Reject** any result where a forearm or upper arm is visibly longer or thinner than the references. Report the failure to the user; regenerate only when they ask.
 
 ## 2. Head and face
 
@@ -137,7 +137,7 @@ The warm brown is the known mismatch recorded in section 6, not a generation err
 ### Profile rotation
 
 Rotate the same broad head volume. Do not compress or carve away the lower face.
-**Reject and regenerate** if the jaw or chin tapers to a point or the profile reads triangular.
+**Reject** — and report it, regenerating only on the user's request — if the jaw or chin tapers to a point or the profile reads triangular.
 
 ### Eyes, nose, mouth — the flat face
 
@@ -158,7 +158,7 @@ All directions use BANGSIL's anatomical left/right. In the front view, BANGSIL's
 - There is **no brown head patch, no brown ear, no brown arm marking, and no brown tail.** A brown-channel scan of all eight references returns **zero** brown regions, `Back.png` included.
 - BANGSIL is one solid body colour from head to feet, broken only by the point-colour elements in section 6.
 - `Back.png` is the proof image: a completely clean white back, clean arms, clean legs, clean tail.
-- **Any brown on BANGSIL means MONGSIL's lock leaked into the prompt.** Reject and regenerate; do not retouch.
+- **Any brown on BANGSIL means MONGSIL's lock leaked into the prompt.** Reject it and never retouch it — a mixed result is fixed by generating again from a clean prompt, which the user asks for.
 
 ### The only non-body colours on BANGSIL
 
@@ -177,7 +177,7 @@ The tail is the **same sculpt as MONGSIL's, in the body colour instead of brown.
 - **ONE continuous padded mass** in the body colour, growing from the hip on BANGSIL's anatomical left (screen right in the front view).
 - Standing, it rises and curls **outward and upward, away from the body**, and is **taller than it is wide — about 1.3–1.5 : 1.** Never squat, never as wide as tall.
 - The whole tail is **ONE padded crescent — a fat comma.** The silhouette is continuous from base to tip and never pinches in to less than about **85 % of the local width** anywhere along it.
-- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches**. Measured on `Front.png`: the notches dent the outline by **about 7 % of the tail's width** (10 px and 3 px against a 144 px tail). They are soft dimples in a continuous edge, not divisions.
+- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches of unequal depth**. Measured on `Front.png` against a 144 px tail: the **upper notch 10 px (≈ 7 %)**, the **lower notch 3 px (≈ 2 %)**. Quote them separately — one blanket figure makes the lower notch three times too deep. They are soft dimples in a continuous edge, not divisions.
 - The three swells that the notches separate are **not equal and not round.** The top dome is the largest and most rounded; the two below it are progressively **smaller and flatter**, settling back into the curve toward the base.
 - Its **inner edge** (facing the body) is **ONE long smooth unbroken curve** with no bumps and no notches. The asymmetry between the two edges is the signature of the shape.
 - The **base** is a thick stalk merging smoothly into the hip. The tail never tapers to a point, never narrows to a stem, never detaches.
@@ -193,7 +193,7 @@ Because the tail is the same colour as the body, it cannot be isolated against a
 
 1. Height is visibly greater than width (about 1.3–1.5 : 1 standing).
 2. The silhouette is **one continuous crescent**. Cover the notches with a thumb and it still reads as a single padded mass.
-3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the notches between them are shallow dimples — around 7 % of the tail's width, never more than 15 %.
+3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the two notches between them are shallow dimples of **unequal depth** — upper about 7 % of the tail's width, lower about 2 %, neither more than 15 %.
 4. The inner edge is a single smooth curve with no bumps.
 5. The mass joins the hip with a thick base.
 
@@ -231,9 +231,10 @@ This is the single most reliably broken detail. The failure is always the same: 
 - A **hind paw sole facing the viewer** carries one large central pad and **three** round toe pads in an arc above it — `Sit.png`, `Run.png`.
 - **Three, not four.**
 - Even with the inner face toward the camera, the outer edge of the paw still reads as the three lobes above. Pads and lobes are two separate facts; state both.
-- The back of a paw is plain body colour with no pads. `Wave.png` shows exactly this: the raised waving paw shows its **back**.
-- **There is no BANGSIL front-palm reference.** If a scene needs a palm facing the camera, use the hind-sole layout (one large pad plus three toe pads) and tell the user the front palm is unverified for BANGSIL. Do not borrow MONGSIL's `Paw_Front.png` — the pad colour differs.
-- Pad pink follows the reference. See the open item in section 6 before writing an exact pad HEX into a prompt.
+- A **front paw palm facing the viewer** carries the same layout — one large central pad with **three** round toe pads in an arc above it. `Wave.png` is the reference for it. *(Correction 2026-11-09: this file previously said `Wave.png` showed the back of the paw and that BANGSIL had no front-palm reference. Both were wrong. The palm faces the camera and the pads are plainly visible.)*
+- Measured on `Wave.png`: the central pad is a wide oval about **70 × 38 px** on the 1254 px canvas; the three toe pads sit above it, the middle one largest (about 35 × 30) and the outer two a little smaller (about 34 × 30 and 27 × 23).
+- The back of a paw is plain body colour with no pads.
+- Pad pink is **the same point colour as the inner ears, blush, and belly patch** — not a separate colour. Sampled on `Wave.png`, every pink area lands in the same coral range under 3D shading (pads `#FCA29B`, inner ears `#ED8A8A` – `#EF9393`, blush `#E18B87` – `#E69D9C`, belly `#F3A5A8`), all more saturated than the flat `#FFCBD1` spec. That gap is the render, not a different swatch. See the open item in section 6 before writing an exact pad HEX into a prompt.
 
 ### How to word it so the lobes survive
 
@@ -295,7 +296,7 @@ Pose, expression, action, costume, prop, background, crop, camera, lighting, and
 
 ## 9. Common generation failures — mandatory validation
 
-Before delivery, compare against the closest reference view and reject/regenerate a result with any of the following:
+Before delivery, compare against the closest reference view and reject a result with any of the following. **Report which item failed and what would fix it — do not regenerate on your own; the user asks for that** (CLAUDE.md 기본 이미지 생성 설정 4번):
 
 1. **Any brown on the body** — head patch, ear, arm marking, or tail. BANGSIL has none.
 2. **Raised muzzle bumps** under the nose. BANGSIL's face is flat.
@@ -310,9 +311,9 @@ Before delivery, compare against the closest reference view and reject/regenerat
 11. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed.
 11-1. **Not a failure:** brown whiskers or a brown nose matching the current renders. That is the known pending mismatch in section 6, not a generation error — note it and move on.
 12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; an arm stretched to reach a prop.
-12-1. **Raised arm fused to the head:** a raised paw touching or overlapping the face so the silhouette reads as one shape there. There must be a visible gap of background between the paw and the cheek, at least as wide as the paw.
+12-1. **Raised arm fused to the head:** a raised paw touching or overlapping the face so the silhouette reads as one shape there. Background must stay visible between the paw and the cheek at every height — but it can be a **thin sliver**. Measured on `Wave.png`: the gap narrows to about **10–14 px against a 145 px paw (≈ 7 % of the paw's width)** and never closes. The failure is 0 px — one fused shape. *(Correction 2026-11-09: this line previously demanded a gap as wide as the paw, which rejects `Wave.png` itself.)*
 13. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
-13-1. **Missing or miscounted pads:** a sole faces the viewer without its pads, or shows four toe pads instead of three.
+13-1. **Missing or miscounted pads:** a sole **or a palm** faces the viewer without its pads, or shows four toe pads instead of three.
 14. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
 15. **Deformed or invisible tail:** fails any of the five checks in section 3-1, or the white tail is not legible against the background. The specific failure to watch for is the **snowman tail** — three near-equal spheres stacked with deep pinches, instead of one continuous crescent with shallow unequal scallops.
 16. **Unverified specificity:** a count, ratio, contour, or colour stated or generated as certain despite not being visible in the relevant reference.
@@ -346,6 +347,6 @@ The two characters share a body and contradict each other on the face. Loading b
 
 When both appear in one image, load both locks and state the separation explicitly — which character is on which side, and that each keeps its own face and colours. Then add the size rule:
 
-> **MONGSIL's total height is 0.9 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
+> **MONGSIL's total height is 0.88 – 0.90 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
 
-Measured on the 2026-11-09 두 캐릭터 비교 render: BANGSIL 1166 px tall, MONGSIL 1021 px, head widths 724 px and 652 px — a consistent 10 % difference, with BANGSIL's taller ears adding the rest. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
+Measured on a 2026-11-09 두 캐릭터 비교 render **that is not stored in this repository** — the numbers stand, the image cannot be re-checked here: BANGSIL 1166 px tall, MONGSIL 1021 px (**0.876**); head widths 724 px and 652 px (**0.901**). The two ratios are not the same, so write **0.88 – 0.90**, not "a consistent 10 %". BANGSIL's taller ears account for most of the difference between them. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
