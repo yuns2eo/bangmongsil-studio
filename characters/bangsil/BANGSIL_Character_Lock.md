@@ -24,7 +24,7 @@ The approved reference set is `characters/bangsil/references/3d/`:
 
 Rotate one coherent character between views; never redesign per view.
 
-Higgsfield Element: `방실3D_통합` (`6c2c2903-0780-4412-929e-32f5eb4a7acc`), registered 2026-11-09 from the first four views. Only the front image is injected, so attach the matching angle as a media input for anything else.
+Higgsfield Element: `방실_3D` (`1173218c-f55e-4561-92eb-04fda591b0e4`), registered 2026-11-09 from the four turnaround views of the current references. How many of the four are actually injected has not been measured, so attach the matching angle as a media input for anything that is not the front view. The older `방실3D_통합` holds the superseded render and the superseded ear and tail wording — do not use it.
 
 When sources disagree, apply this order:
 
