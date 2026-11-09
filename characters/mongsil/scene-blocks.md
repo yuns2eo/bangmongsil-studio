@@ -18,7 +18,7 @@ Exactly two whiskers per side, four in total: thin softly curved raised 3D rods 
 Rounded triangular ears. The whole outer surface of MONGSIL's own left ear (screen right in front view) is brown #B79571, and that brown continues into a wave-shaped marking across the right half of the upper head. The other ear is white outside. Inner ears #FFCDB4.
 Soft blush #FFCDB4 on both cheeks. A centred circular belly patch #FFCDB4 on the lower torso, about a third of the head's width.
 A small brown #B79571 heart on the inner edge of the upper arm on the tail side, high near the shoulder, shown only when that inner edge is visible and the arm hangs free.
-A brown #B79571 tail growing from the hip on the same side: one continuous padded upright mass, taller than wide, with a large dome plus exactly two more rounded bumps along its outer edge and one smooth unbroken curve along its inner edge.
+A brown #B79571 tail growing from the hip on the same side: ONE continuous padded upright crescent like a fat comma, taller than wide. Its outer edge is a single curve gently scalloped by two SHALLOW dimples, and the swells they separate are unequal — a large rounded dome at the top, then progressively smaller and flatter swells settling back into the curve. Its inner edge is one smooth unbroken curve. The tail is one mass, never a stack of separate balls.
 Black features and whiskers #000000. No other brown anywhere on the body.
 Expression: {표정}.
 ```
@@ -41,6 +41,7 @@ Expression: {표정}.
 7. Colours stay literal: brown #B79571, inner ears, blush and belly patch #FFCDB4, features #000000. #FFCBD1 never appears.
 8. The body stays chubby and round; arms and legs stay as short as the reference in every pose, and raised arms never press against the face.
 9. Brown appears only on the ear and head wave marking, the heart on the inner tail-side upper arm (only when that inner edge is visible), and the tail. No other spots anywhere on the body.
+9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 {10~. 이번 장면 고유 조건}
 ```
 
@@ -81,6 +82,7 @@ elongated oval belly patch, off-centre belly patch, raised button belly, missing
 #FFCBD1, pink inner ears,
 whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
 white tail, squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
+snowman tail, tail as stacked spheres, three separate balls, deep notches in the tail, equal tail lobes,
 long fur, individual hairs, fabric seams, stitching, glossy plastic, vinyl shine, clay render,
 text, watermark, logo, cropped character, floating object, slim body, long arms, arms touching the face
 ```

@@ -114,10 +114,15 @@ Measured on `Front.png`, `Left_3Q.png`, `Left_Profile.png`, `Back.png`, `Sit.png
 
 - The tail is **ONE continuous padded mass** in brown, growing from the hip on MONGSIL's anatomical left (screen right in the front view), the same side as the ear marking.
 - Standing, it rises and curls **outward and upward, away from the body**, and is **taller than it is wide**. Measured bounding boxes: `Front.png` 253 × 364 (**1.44 : 1**), `Left_3Q.png` 256 × 353 (1.38 : 1), `Left_Profile.png` 272 × 353 (1.30 : 1). Sitting, `Sit.png` reads 199 × 325 (1.63 : 1). Treat **about 1.3–1.5 : 1 standing** as the target. Never squat, never as wide as tall, never wider than tall.
-- Its **outer edge** (facing away from the body) carries exactly **THREE rounded forms stacked along it**: a large rounded dome at the top, then **TWO more rounded bumps** below it, each separated by a soft shallow notch.
+- The whole tail is **ONE padded crescent — a fat comma.** The silhouette is continuous from base to tip and never pinches in to less than about **85 % of the local width** anywhere along it.
+- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches**. Measured 2026-11-09 on the brown tail, which isolates cleanly: the notches dent the outline by **5 – 8 % of the tail's width** (`Front.png` 12 px and 3 px against a 251 px tail; `Left_3Q.png` 5 %; `Left_Profile.png` 8 %; `Sit.png` 7 %). They are soft dimples in a continuous edge, not divisions.
+- The swells those notches separate are **not equal and not round.** The top dome is the largest and most rounded; the ones below it are progressively **smaller and flatter**, settling back into the curve toward the base. The two notches are themselves unequal — the upper one is about three to four times deeper than the lower.
 - Its **inner edge** (facing the body) is **ONE long smooth unbroken curve** with **no bumps and no notches at all**. The asymmetry between the two edges is the signature of the shape.
 - The **base** is a thick stalk merging smoothly into the hip. The tail never tapers to a point, never narrows to a stem, never detaches.
-- The whole form reads like a **fat upright clover leaf**, or a mitten with two thumbs down one side.
+
+**Pre-emptive fix, 2026-11-09.** This section used to say the outer edge "carries exactly THREE rounded forms stacked along it" and that the whole shape "reads like a fat upright clover leaf". BANGSIL's lock carried the identical wording on the identical sculpt, and under it BANGSIL's tail rendered as **three near-equal spheres stacked like a snowman** in both validation cuts (`prompts/2026-11-09-validation-run.md`). MONGSIL's tail has not failed this way yet; the wording was corrected here before it could.
+
+**Reject** when the lobes read as separate balls, when any two swells are the same size, when the inner edge grows bumps, or when a notch cuts deeper than about **15 %** of the tail's width.
 - In `Back.png` the same form simply swings out sideways — 326 × 364, nearly as wide as tall — with the three rounded forms along its upper-outer edge and the smooth edge sweeping down to the hip. When MONGSIL sits, it rotates the same way. **Rotation is allowed; reshaping is not.**
 
 ### Wordings that have caused failures — do not use
@@ -126,16 +131,18 @@ Measured on `Front.png`, `Left_3Q.png`, `Left_Profile.png`, `Back.png`, `Sit.png
 - "a few lobes overlapping side by side" → beads in a row
 - "bumps along its free edge" without the height ratio → caterpillar
 - "cloud", "fluffy", "puffy" used alone → separated puffs or a smooth paddle
-- any wording that does not state **upright, taller than wide, three forms on the outer edge only, smooth inner edge**
+- "three rounded forms stacked along it", "clover leaf" → three equal spheres like a snowman (실측 2026-11-09, 방실 `cut1` & `cut3`)
+- any wording that does not state **upright, taller than wide, one continuous mass, shallow unequal scallops on the outer edge only, smooth inner edge**
 
 ### Mandatory verification before delivery
 
-Crop the tail out of the result, enlarge it, and set it beside the same region of the nearest approved view. Confirm all four:
+Crop the tail out of the result, enlarge it, and set it beside the same region of the nearest approved view. Confirm all five:
 
 1. Height is visibly greater than width (about 1.3–1.5 : 1 standing).
-2. The outer edge has a top dome plus exactly two more bumps — not one, not three, not a row of equal beads.
-3. The inner edge is a single smooth curve with no bumps.
-4. The mass is continuous and joins the hip with a thick base.
+2. The silhouette is **one continuous crescent**. Cover the notches with a thumb and it still reads as a single padded mass.
+3. The outer edge swells are **unequal and progressively smaller** going down from the top dome, and the notches between them are shallow dimples — 5–8 % of the tail's width, never more than 15 %.
+4. The inner edge is a single smooth curve with no bumps.
+5. The mass is continuous and joins the hip with a thick base.
 
 Any failure means regenerate. Do not deliver a tail that was not compared at magnification.
 
@@ -260,7 +267,7 @@ Before delivery, compare against the closest reference view and reject/regenerat
 12. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
 12-1. **Missing or miscounted pads:** a palm or sole faces the viewer without its pink pads, or shows four toe pads instead of three.
 13. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
-14. **Deformed tail:** fails any of the four checks in section 3-1 — squat instead of upright, bumps on the inner edge, a row of equal beads, a smooth paddle, a tapered or detached tail. Verify at magnification; this one is not reliably caught at full-frame size.
+14. **Deformed tail:** fails any of the five checks in section 3-1 — squat instead of upright, bumps on the inner edge, a row of equal beads, a smooth paddle, a tapered or detached tail, or the **snowman tail** (three near-equal spheres stacked with deep pinches instead of one continuous crescent with shallow unequal scallops). Verify at magnification; this one is not reliably caught at full-frame size.
 
 ## 10. MONGSIL and BANGSIL together
 
