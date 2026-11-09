@@ -70,7 +70,7 @@ The {palm / sole} facing the viewer shows one large central pad and exactly THRE
 ```
 smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
 fused toes, two toe lobes, four toe lobes, four toe pads,
-extra characters, two cats, duplicated MONGSIL, BANGSIL, white cat with pointed ears, realistic cat,
+extra characters, two cats, duplicated MONGSIL, BANGSIL, all-white cat with no brown, realistic cat,
 human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
 triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
 small head, tall pointed ears, flat face without muzzle bumps, drawn mouth line, W-shaped mouth,

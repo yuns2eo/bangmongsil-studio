@@ -123,7 +123,7 @@ Measured on `Front.png`, `Left_3Q.png`, `Left_Profile.png`, `Back.png`, `Sit.png
 **Pre-emptive fix, 2026-11-09.** This section used to say the outer edge "carries exactly THREE rounded forms stacked along it" and that the whole shape "reads like a fat upright clover leaf". BANGSIL's lock carried the identical wording on the identical sculpt, and under it BANGSIL's tail rendered as **three near-equal spheres stacked like a snowman** in both validation cuts (`prompts/2026-11-09-validation-run.md`). MONGSIL's tail has not failed this way yet; the wording was corrected here before it could.
 
 **Reject** when the lobes read as separate balls, when any two swells are the same size, when the inner edge grows bumps, or when a notch cuts deeper than about **15 %** of the tail's width.
-- In `Back.png` the same form simply swings out sideways — 326 × 364, nearly as wide as tall — with the three rounded forms along its upper-outer edge and the smooth edge sweeping down to the hip. When MONGSIL sits, it rotates the same way. **Rotation is allowed; reshaping is not.**
+- In `Back.png` the same form simply swings out sideways — 326 × 364, nearly as wide as tall — with the shallow scallops along its upper-outer edge and the smooth edge sweeping down to the hip. Measured there, the outer edge barely dents at all (about 1 % of the tail width), so from behind it reads as one clean curved mass. When MONGSIL sits, it rotates the same way. **Rotation is allowed; reshaping is not.**
 
 ### Wordings that have caused failures — do not use
 
@@ -243,7 +243,7 @@ Lighting may create material shading, but it must not redefine the base palette.
 - This document defines identity, not rendering technique.
 - Read `styles/3D_Felt.md` for 3D material, lighting, and rendering constraints.
 - 2D and 3D may differ in rendering treatment, but may not alter the locked silhouette, marking anatomy, orientation, palette data, belly-patch shape, or whisker count and attachment.
-- BANGSIL's lock never applies here. A sentence about a flat face, a W mouth line, pointed ears, or `#FFCBD1` does not belong in a MONGSIL prompt.
+- BANGSIL's lock never applies here. A sentence about a flat face, a W mouth line, a body with no brown, or `#FFCBD1` does not belong in a MONGSIL prompt. (Ear shape is not on that list — both characters share it.)
 
 ## 8. Allowed scene changes
 
