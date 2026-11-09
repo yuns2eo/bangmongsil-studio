@@ -3,11 +3,13 @@
 Rewritten 2026-11-09 against the re-rendered 9-view 3D reference sheet (Figma `기타 인쇄물` → `몽실_3D`).
 Every proportion stated below was measured on those images, not recalled. Where a number appears, the view it was measured on is named.
 
+**This file covers MONGSIL only.** BANGSIL has its own lock at `characters/bangsil/BANGSIL_Character_Lock.md`. The two characters share a body but contradict each other on face, markings, and point colour. Load **one** lock per prompt. For a two-shot, see section 10.
+
 ## 0. Purpose, reference set, and priority
 
 This is the identity lock for every MONGSIL image. It fixes anatomy, markings, and palette. Pose, expression, props, costume, camera, and environment may change only when they do not alter that identity.
 
-The approved reference set is `references/3d/`, all 1254 × 1254:
+The approved reference set is `characters/mongsil/references/3d/`, all 1254 × 1254:
 
 | File | View | Use it for |
 |---|---|---|
@@ -151,7 +153,7 @@ Any failure means regenerate. Do not deliver a tail that was not compared at mag
 - The back of a paw is plain white with no pads.
 - Paws stay short rounded nubs with **no separated fingers**, but a closed paw is **not a smooth blank mitten**: its free edge carries **three soft rounded toe lobes** divided by shallow grooves. The standing feet in `Front.png` show this clearly. Keep those lobes visible.
 - Because of that, never put the bare word `fingers` in a negative prompt — it erases the toe lobes. Narrow it to `separated fingers, knuckles, claws, nails`.
-- Pad pink follows the reference; do not assume it equals the inner-ear value.
+- Pad pink follows the reference. See the open item in section 6 before writing an exact pad HEX into a prompt.
 - The pad count has not held reliably in generation even with the Element, an explicit number, and a negative (measured failing three times). Verify at magnification in every result where a palm or sole shows, and tell the user when a video cannot be frame-checked.
 
 ## 5. Whiskers
@@ -168,11 +170,16 @@ Keep approved HEX values as literal data. Do not replace codes with colour names
 
 ### Locked base values
 
-| Element | Locked value |
-|---|---|
-| Brown head marking, arm heart, tail | `#B79571` |
-| Inner ear | `#FFCDB4` |
-| Black facial elements and whiskers | `#000000` |
+| Element | Locked value | Source |
+|---|---|---|
+| Brown — head & ear wave, arm heart, tail | `#B79571` | Figma variable `몽_pattern_brown` (그래픽소스) |
+| Inner ear | `#FFCDB4` | Figma variable `몽_ear_inner` (그래픽소스) |
+| Blush | `#FFCDB4` | same point colour |
+| Belly patch | `#FFCDB4` | same point colour |
+| Eyes, whiskers, nose | `#000000` | black family |
+| Body | white / warm cream, as in the references | |
+
+**`#FFCDB4` is MONGSIL's point colour and nothing else carries it.** BANGSIL's point colour is `#FFCBD1` and must never appear on MONGSIL. The two differ by only a few digits and look similar in a swatch — copy them, never retype from memory.
 
 ### Measured from the 2026-11-09 renders — reference only, not base values
 
@@ -190,15 +197,16 @@ These are **lit pixel samples**, useful for matching a render or picking a colou
 | Eye | `#282726` | `Front.png` |
 | Tongue | `#D56E7D` | `Tongue.png` |
 
-The belly patch, blush, and paw pads are three **different** pinks and none of them is the inner-ear value. Never assign `#FFCDB4` to a pink element just because it is pink.
+One open item, carried honestly rather than guessed: **paw pads.** The references render them in the point-colour family but no variable has been confirmed, and the lit sample sits further from the inner-ear value than the belly patch does. Follow the reference colour and flag it as unverified if a scene depends on an exact pad value.
 
 Lighting may create material shading, but it must not redefine the base palette.
 
 ## 7. Style separation
 
 - This document defines identity, not rendering technique.
-- Read `styles/MONGSIL_3D_Felt.md` for 3D material, lighting, and rendering constraints.
+- Read `styles/3D_Felt.md` for 3D material, lighting, and rendering constraints.
 - 2D and 3D may differ in rendering treatment, but may not alter the locked silhouette, marking anatomy, orientation, palette data, belly-patch shape, or whisker count and attachment.
+- BANGSIL's lock never applies here. A sentence about a flat face, a W mouth line, pointed ears, or `#FFCBD1` does not belong in a MONGSIL prompt.
 
 ## 8. Allowed scene changes
 
@@ -215,7 +223,7 @@ Before delivery, compare against the closest reference view and reject/regenerat
 5. **Wrong belly patch:** an elongated oval in either direction, an off-centre patch, a button, or a patch that does not follow the body surface, instead of a centred circle.
 6. **Embedded whiskers, or the wrong count:** whiskers painted flat into the face, or any number other than two per side.
 7. **Wrong mouth:** a drawn mouth line, smile curve, or W-mouth added to the default closed mouth; or any tooth or fang, in a still or in any video frame.
-8. **Palette drift / data loss:** a locked HEX removed, renamed without the code, changed, or applied to an unverified pink element.
+8. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed. In particular, BANGSIL's `#FFCBD1` used on the ears, blush, or belly instead of `#FFCDB4`.
 9. **Unverified specificity:** a count, ratio, contour, colour, or anatomical detail stated or generated as certain despite not being visible in the relevant reference.
 10. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the turnaround; raised arms pressed against the face; an arm stretched to reach a prop instead of the body leaning or rising on tiptoe.
 11. **Wrong markings:** the arm mark rendered as a cloud, dot, or solid oval instead of a heart; placed on the outer arm, forearm, armpit, or wrong arm; relocated to keep it visible; or any extra brown spot on the body.
@@ -223,7 +231,34 @@ Before delivery, compare against the closest reference view and reject/regenerat
 13. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
 14. **Deformed tail:** fails any of the four checks in section 3-1 — squat instead of upright, bumps on the inner edge, a row of equal beads, a smooth paddle, a tapered or detached tail. Verify at magnification; this one is not reliably caught at full-frame size.
 
-## 10. Generation workflow
+## 10. MONGSIL and BANGSIL together
+
+The two characters share a body and contradict each other on the face. Loading both locks into one prompt is how they get mixed.
+
+**One lock per prompt.** For a solo MONGSIL scene, this file is the only character lock in the prompt. Never carry a sentence from BANGSIL's lock into a MONGSIL prompt, and never use a BANGSIL reference as a MONGSIL attachment.
+
+### Where they differ
+
+| | MONGSIL | BANGSIL |
+|---|---|---|
+| Point colour | `#FFCDB4` | `#FFCBD1` |
+| Brown `#B79571` | head & ear wave, arm heart, tail | none |
+| Ears | shorter rounded triangles | tall pointed triangles |
+| Muzzle | two raised white bumps | flat face |
+| Closed mouth | no mouth line at all | W-shaped mouth line |
+| Tail | brown | body colour |
+| Whiskers | 2 per side | 2 per side |
+| Belly patch | circle, point colour | circle, point colour |
+
+### Two-shot scenes
+
+When both appear in one image, load both locks and state the separation explicitly — which character is on which side, and that each keeps its own face and colours. Then add the size rule:
+
+> **MONGSIL's total height is 0.9 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
+
+Measured on the 2026-11-09 두 캐릭터 비교 render: BANGSIL 1166 px tall, MONGSIL 1021 px, head widths 724 px and 652 px — a consistent 10 % difference, with BANGSIL's taller ears adding the rest. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
+
+## 11. Generation workflow
 
 0. Read `prompts/` first. The approved compact prompt format and the record of what has already failed live there, not in this file.
 1. Identify the requested style and camera angle.
