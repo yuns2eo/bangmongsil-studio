@@ -35,6 +35,7 @@ Expression: {표정}.
 2. The head stays a broad oval clearly wider than tall, fills the top half of the figure, and stays wider than the torso.
 3. The brown wave marking stays on MONGSIL's own left ear and upper head (screen right in front view), with the whole outer ear brown and the wave contour intact and not mirrored.
 4. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
+4-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
 5. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
 6. The closed mouth has no drawn mouth line: only the nose and the vertical groove between the two raised muzzle bumps. No tooth or fang appears anywhere.
 7. Colours stay literal: brown #B79571, inner ears, blush and belly patch #FFCDB4, features #000000. #FFCBD1 never appears.
@@ -43,11 +44,31 @@ Expression: {표정}.
 {10~. 이번 장면 고유 조건}
 ```
 
-- 손바닥이나 발바닥이 카메라를 향하면 여기에 추가한다: `Any palm or sole facing the viewer shows its pink pads: one large central pad and exactly three small round toe pads above it.`
+- 발이 보이면 위 `## Paws` 블록을 반드시 함께 넣는다. 손바닥이나 발바닥 안쪽이 보이면 패드 문장까지 더한다.
+
+
+## `## Paws` — 발이 하나라도 보이면 항상 넣는다
+
+캐릭터가 서 있든 앉아 있든 발끝은 거의 항상 보인다. 이 블록을 빼면 발끝이 매끈한 방망이로 나온다.
+
+```
+Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft visible grooves, like a small clover leaf; the middle lobe is the largest and sits slightly forward. The grooves stay clearly visible as shallow creases. The paw tip is never a smooth undivided club.
+```
+
+손바닥이나 발바닥 안쪽이 카메라를 향하면 **한 문장 더** 넣는다. 패드와 마디는 별개 사실이라 둘 다 써야 한다.
+
+```
+The {palm / sole} facing the viewer shows one large central pad and exactly THREE small round toe pads in an arc above it, and the outer edge of that paw still reads as three rounded lobes.
+```
+
+- `## Subject`와 `## Pose & Paws`에 `no fingers`, `fingerless`, `rounded nub`, `mitten` 같은 말을 절대 쓰지 않는다. 발 설명 옆에 붙은 부정어가 마디를 없애는 가장 흔한 원인이다.
+- 손가락을 막아야 하면 `separated fingers, knuckles, claws, nails, human hand`를 **Negative 블록에만** 넣는다.
 
 ## `## Negative`
 
 ```
+smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
+fused toes, two toe lobes, four toe lobes, four toe pads,
 extra characters, two cats, duplicated MONGSIL, BANGSIL, white cat with pointed ears, realistic cat,
 human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
 triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
@@ -60,7 +81,6 @@ elongated oval belly patch, off-centre belly patch, raised button belly, missing
 #FFCBD1, pink inner ears,
 whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
 white tail, squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
-four toe pads, palm without paw pads,
 long fur, individual hairs, fabric seams, stitching, glossy plastic, vinyl shine, clay render,
 text, watermark, logo, cropped character, floating object, slim body, long arms, arms touching the face
 ```

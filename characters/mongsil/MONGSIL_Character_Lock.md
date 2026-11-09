@@ -145,16 +145,44 @@ Any failure means regenerate. Do not deliver a tail that was not compared at mag
 - It is centred on the belly and sits in the lower half of the torso. Its diameter is roughly **38 % of the torso width**. Do not move it off-centre to compensate for a turned body.
 - When clothing or a prop would cover the belly, keep at least part of the patch visible (an open vest, a short top, a prop held low) unless the user accepts it being hidden. A result where the belly patch silently disappears is a failure.
 
-## 4-1. Paws: palm and sole pads
+## 4-1. Paws — the three-lobed tip and the pads
 
-- Whenever a **front paw palm faces the viewer** (waving, high-five, hands-up, showing something), it carries pink pads: one large **bean-shaped** central pad and **three** round toe pads in an arc above it — see `Paw_Front.png`.
-- Whenever a **hind paw sole is visible** (sitting, jumping, walking back foot), it carries one large **oval** central pad and **three** toe pads — see `Paw_Hind.png`, `Sit.png`, `Run.png`.
-- **Three, not four.** All four of those references show three. A fourth toe pad is a failure.
+This is the single most reliably broken detail. The failure is always the same: the three lobes dissolve and the paw comes out as one smooth club. Treat the lobes as a locked silhouette feature, not a surface detail.
+
+### The three-lobed tip — every paw, every view
+
+- **Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft grooves**, like a small clover leaf. The middle lobe is the largest and sits slightly forward.
+- This is true of the front paws and the hind feet, and it is visible from **outside** even when the palm is not facing the camera. `Front.png` (standing feet), `Sit.png` (front paws resting on the belly) and `Left_Profile.png` all show it.
+- The grooves read as shallow creases running a short way back from the free edge. They are never smoothed away.
+- **A smooth, undivided, club- or mitten-shaped paw tip is a failure.** Not a stylistic simplification — a failure.
+
+### The pads — only when the inner face shows
+
+- A **front paw palm facing the viewer** carries one large **bean-shaped** central pad and **three** round toe pads in an arc above it — `Paw_Front.png`.
+- A **hind paw sole facing the viewer** carries one large **oval** central pad and **three** toe pads — `Paw_Hind.png`, `Sit.png`, `Run.png`.
+- **Three, not four.** All of those references show three.
+- Even with the inner face toward the camera, the outer edge of the paw still reads as the three lobes above. Pads and lobes are two separate facts; state both.
 - The back of a paw is plain white with no pads.
-- Paws stay short rounded nubs with **no separated fingers**, but a closed paw is **not a smooth blank mitten**: its free edge carries **three soft rounded toe lobes** divided by shallow grooves. The standing feet in `Front.png` show this clearly. Keep those lobes visible.
-- Because of that, never put the bare word `fingers` in a negative prompt — it erases the toe lobes. Narrow it to `separated fingers, knuckles, claws, nails`.
 - Pad pink follows the reference. See the open item in section 6 before writing an exact pad HEX into a prompt.
-- The pad count has not held reliably in generation even with the Element, an explicit number, and a negative (measured failing three times). Verify at magnification in every result where a palm or sole shows, and tell the user when a video cannot be frame-checked.
+
+### How to word it so the lobes survive
+
+The lobes are usually destroyed by the prompt, not by the model's inability to draw them. Three rules, in order of importance:
+
+1. **Describe the shape positively, never by negation.** Write `a three-lobed clover-shaped paw tip with two soft grooves`. Do **not** write `rounded nub`, `mitten`, `paddle`, or `simple rounded paw` — each of those is a club in the model's vocabulary.
+2. **Keep every digit word out of the Subject and Pose sentences.** `no fingers`, `fingerless`, `without fingers` sitting next to the paw description is the most common cause of the club. If digits must be excluded at all, put `separated fingers, knuckles, claws, nails, human hand` in the **Negative block only**, far from the paw sentence.
+3. **Name the grooves, not just the lobes.** The grooves are what the model drops first. `divided by two visible grooves` does more work than `three toe lobes`.
+
+Add these to the Negative whenever a paw is visible:
+
+```
+smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
+fused toes, two toe lobes, four toe lobes, four toe pads
+```
+
+### Verification
+
+Crop each visible paw, enlarge it, and confirm two things separately: the outer edge shows three lobes with two grooves, and — if the inner face shows — one large pad plus exactly three toe pads. The pad count has failed in generation even with the Element, an explicit number and a negative (measured three times), and the lobes fail more often still. Check at magnification every time, and tell the user when a video cannot be frame-checked.
 
 ## 5. Whiskers
 
@@ -227,7 +255,8 @@ Before delivery, compare against the closest reference view and reject/regenerat
 9. **Unverified specificity:** a count, ratio, contour, colour, or anatomical detail stated or generated as certain despite not being visible in the relevant reference.
 10. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the turnaround; raised arms pressed against the face; an arm stretched to reach a prop instead of the body leaning or rising on tiptoe.
 11. **Wrong markings:** the arm mark rendered as a cloud, dot, or solid oval instead of a heart; placed on the outer arm, forearm, armpit, or wrong arm; relocated to keep it visible; or any extra brown spot on the body.
-12. **Missing or miscounted pads:** a palm or sole faces the viewer without its pink pads, shows four toe pads instead of three, or has lost its three toe lobes.
+12. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
+12-1. **Missing or miscounted pads:** a palm or sole faces the viewer without its pink pads, or shows four toe pads instead of three.
 13. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
 14. **Deformed tail:** fails any of the four checks in section 3-1 — squat instead of upright, bumps on the inner edge, a row of equal beads, a smooth paddle, a tapered or detached tail. Verify at magnification; this one is not reliably caught at full-frame size.
 

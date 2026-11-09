@@ -54,7 +54,8 @@ The head turns on the body naturally with no visible neck. The face, ears, and a
 ## Pose & Paws
 {자세 1~2문장. 팔 방향은 신체 기준과 화면 기준을 둘 다 쓴다.
 예: its left arm (screen right) reaches forward; its right arm (screen left) rests at its side.}
-Paws are short rounded nubs with no fingers. {앞발과 소품의 접촉 방식 — 아래 4번 참고}
+{앞발과 소품의 접촉 방식 — 아래 4번 참고}
+{발이 보이면 해당 캐릭터 scene-blocks.md의 `## Paws` 블록을 여기에 그대로 붙인다. 이 문장 근처에 `no fingers` 같은 부정어를 쓰지 않는다.}
 
 ## Prop
 {소품 이름}: {형태, 색, 재질}. {소품 방향, 예: long side horizontal, the notch facing screen right}.
@@ -96,7 +97,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 | 상호작용 | 문장 예시 |
 |---|---|
 | 두 손으로 들기 | holds the {prop} in front of its chest with both rounded paws pressed against the left and right sides of the {prop} |
-| 한 손으로 들기 | holds the {prop} with its {left/right} paw (screen {right/left}); the paw wraps around the edge, no fingers |
+| 한 손으로 들기 | holds the {prop} with its {left/right} paw (screen {right/left}); the paw wraps around the edge |
 | 끌어안기 | hugs the {prop} against its belly with both short arms; the paws rest on the front of the {prop} |
 | 내밀기 | holds the {prop} out toward the camera at chest height with both paws underneath it |
 | 누르기 & 터치 | touches the {prop} with the round tip of its {left/right} paw |

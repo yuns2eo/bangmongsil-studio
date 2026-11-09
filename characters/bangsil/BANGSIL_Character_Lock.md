@@ -140,15 +140,44 @@ On a pale background a white tail also tends to disappear into the body or the b
 - It is centred on the belly, sits in the lower half of the torso, and its diameter is about **32 % of the head width**.
 - When clothing or a prop would cover the belly, keep at least part of the patch visible unless the user accepts it being hidden.
 
-## 4-1. Paws: palm and sole pads
+## 4-1. Paws — the three-lobed tip and the pads
 
-- Whenever a **hind paw sole is visible** (sitting, jumping, walking back foot), it carries pads in the point colour: one large central pad and **three** round toe pads in an arc above it — see `Sit.png` and `Run.png`.
+This is the single most reliably broken detail. The failure is always the same: the three lobes dissolve and the paw comes out as one smooth club. Treat the lobes as a locked silhouette feature, not a surface detail.
+
+### The three-lobed tip — every paw, every view
+
+- **Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft grooves**, like a small clover leaf. The middle lobe is the largest and sits slightly forward.
+- This is true of the front paws and the hind feet, and it is visible from **outside** even when the palm is not facing the camera. `Front.png` and `Wave.png` (standing feet) and `Sit.png` (front paws resting on the belly) all show it.
+- The grooves read as shallow creases running a short way back from the free edge. They are never smoothed away.
+- **A smooth, undivided, club- or mitten-shaped paw tip is a failure.** Not a stylistic simplification — a failure.
+
+### The pads — only when the inner face shows
+
+- A **hind paw sole facing the viewer** carries one large central pad and **three** round toe pads in an arc above it — `Sit.png`, `Run.png`.
 - **Three, not four.**
-- The back of a paw is plain body colour with no pads. `Wave.png` shows exactly this: the raised waving paw shows its **back**, with no pads.
-- **There is no BANGSIL front-palm reference.** If a scene needs a palm facing the camera, use the hind-sole layout (one large pad plus three toe pads) and tell the user that the front palm is unverified for BANGSIL. Do not borrow MONGSIL's `Paw_Front.png` — the pad colour differs.
-- Paws stay short rounded nubs with **no separated fingers**, but a closed paw is **not a smooth blank mitten**: its free edge carries **three soft rounded toe lobes** divided by shallow grooves. The standing feet in `Front.png` and `Wave.png` show this.
-- Because of that, never put the bare word `fingers` in a negative prompt — it erases the toe lobes. Narrow it to `separated fingers, knuckles, claws, nails`.
-- Pad counts have historically not held in generation even with an explicit number and a negative. Verify at magnification in every result where a sole shows, and tell the user when a video cannot be frame-checked.
+- Even with the inner face toward the camera, the outer edge of the paw still reads as the three lobes above. Pads and lobes are two separate facts; state both.
+- The back of a paw is plain body colour with no pads. `Wave.png` shows exactly this: the raised waving paw shows its **back**.
+- **There is no BANGSIL front-palm reference.** If a scene needs a palm facing the camera, use the hind-sole layout (one large pad plus three toe pads) and tell the user the front palm is unverified for BANGSIL. Do not borrow MONGSIL's `Paw_Front.png` — the pad colour differs.
+- Pad pink follows the reference. See the open item in section 6 before writing an exact pad HEX into a prompt.
+
+### How to word it so the lobes survive
+
+The lobes are usually destroyed by the prompt, not by the model's inability to draw them. Three rules, in order of importance:
+
+1. **Describe the shape positively, never by negation.** Write `a three-lobed clover-shaped paw tip with two soft grooves`. Do **not** write `rounded nub`, `mitten`, `paddle`, or `simple rounded paw` — each of those is a club in the model's vocabulary.
+2. **Keep every digit word out of the Subject and Pose sentences.** `no fingers`, `fingerless`, `without fingers` sitting next to the paw description is the most common cause of the club. If digits must be excluded at all, put `separated fingers, knuckles, claws, nails, human hand` in the **Negative block only**, far from the paw sentence.
+3. **Name the grooves, not just the lobes.** The grooves are what the model drops first. `divided by two visible grooves` does more work than `three toe lobes`.
+
+Add these to the Negative whenever a paw is visible:
+
+```
+smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
+fused toes, two toe lobes, four toe lobes, four toe pads
+```
+
+### Verification
+
+Crop each visible paw, enlarge it, and confirm two things separately: the outer edge shows three lobes with two grooves, and — if the sole shows — one large pad plus exactly three toe pads. Check at magnification every time, and tell the user when a video cannot be frame-checked.
 
 ## 5. Whiskers
 
@@ -205,7 +234,8 @@ Before delivery, compare against the closest reference view and reject/regenerat
 10. **Teeth:** any tooth, fang, or tooth row, in a still or in any video frame.
 11. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed.
 12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; raised arms pressed against the face; an arm stretched to reach a prop.
-13. **Missing or miscounted pads:** a sole faces the viewer without its pads, shows four toe pads instead of three, or has lost its three toe lobes.
+13. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
+13-1. **Missing or miscounted pads:** a sole faces the viewer without its pads, or shows four toe pads instead of three.
 14. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
 15. **Deformed or invisible tail:** fails any of the four checks in section 3-1, or the white tail is not legible against the background.
 16. **Unverified specificity:** a count, ratio, contour, or colour stated or generated as certain despite not being visible in the relevant reference.
