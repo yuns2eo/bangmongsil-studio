@@ -1,40 +1,45 @@
 # MONGSIL — 3D FELT STYLE
 
-Read `character/MONGSIL_Character_Lock.md` first. The lock file and approved 3D turnaround images override this guide whenever there is a conflict.
+Read `character/MONGSIL_Character_Lock.md` first. The lock file and the approved 3D reference images override this guide whenever there is a conflict.
 
-This file controls only 3D rendering. It must not redefine MONGSIL’s anatomy, markings, left/right orientation, or palette.
+This file controls only 3D rendering. It must not redefine MONGSIL's anatomy, markings, left/right orientation, or palette.
 
 ## 1. Reference use
 
-Use the nearest official 3D view (front, 45°, profile, back, or an approved detail) for the requested angle. Rotate one coherent 3D character between views; do not use the text below to override a visible contour, colour, or detail in a reference.
+Use the nearest reference view for the requested angle — the table in section 0 of the lock file lists all nine. Rotate one coherent 3D character between views; do not use the text below to override a visible contour, colour, or detail in a reference.
 
 ## 2. Material
 
 - Soft flocked felt / velvety plush surface.
-- Very short, dense, even matte pile; soft padded forms with clean, controlled marking boundaries.
+- Very short, dense, even matte pile. A fine embossed squiggle-and-loop grain is visible across the whole surface at close range, strongest on the brown areas; it is a texture in the material, never a printed pattern.
+- Soft padded forms with clean, controlled marking boundaries.
 - No long fur, individual hairs, yarn, fabric seams, stitching, hard plastic, glossy vinyl, clay sheen, glass, or metal surface.
-- Brown and pink markings are integrated surface colour/material treatments, not stickers, pockets, or raised buttons.
+- Brown and pink markings are integrated surface colour, not stickers, pockets, or raised buttons.
+- The muzzle bumps, paw pads, and nose are the only parts that read as raised relief. Everything else is flush.
 
 ## 3. Form and facial construction
 
-- Preserve the almost-round, slightly horizontally wide head and its full cheeks/lower-face volume in every view.
-- In profile, the head remains rounded and substantial. Never pinch, flatten, or taper the lower face into a triangle.
-- Facial features remain small and reference-consistent. Do not substitute anime eyes, eyelashes, eyebrows, teeth, or a human-like face.
-- Whiskers are thin, subtly raised/free-standing 3D elements that begin at the cheeks and extend beyond the facial contour. They must not be engraved, printed flush onto, or visibly embedded in the felt face.
-- The exact whisker count and the exact head/body ratio must come from the approved reference; this guide does not impose numbers.
+- Preserve the broad, slightly horizontally wide head (about 1.2 : 1) and its full cheek and lower-face volume in every view.
+- Keep the head at roughly half the total figure height and wider than the torso.
+- In profile, the head stays rounded and substantial. Never pinch, flatten, or taper the lower face into a triangle.
+- Facial features stay small and reference-consistent. No anime eyes, eyelashes, eyebrows, teeth, or human-like face.
+- Eyes are glossy black vertical ovals with no highlight dot.
+- The closed mouth is the nose plus the short vertical groove between the two muzzle bumps. Do not add a mouth line.
+- Whiskers are thin raised 3D rods with a soft shadow under them, two per side. They lie across the cheek in the straight front view and read free-standing where the head is turned. They are never engraved, printed flush, or embedded in the felt.
 
 ## 4. Marking fidelity
 
-- Keep the brown wave marking connected to MONGSIL’s anatomical left ear/head region (screen right in front view). Its curve and continuity are reference-defined and must not be simplified or mirrored.
-- Preserve the centred belly patch as a slight vertical oval on the torso surface; never render it as a circle or raised button.
-- Keep all brown markings, tail silhouette, and ear interiors in their reference-defined anatomical positions through camera rotation.
+- Keep the brown wave marking on MONGSIL's anatomical left ear and head (screen right in front view), with the whole outer ear surface brown. Its curve and continuity are reference-defined and must not be simplified or mirrored.
+- Render the belly patch as a centred salmon-pink **circle** on the torso surface — never an elongated oval, never a raised button.
+- Render the arm marking as a small brown **heart** on the inner edge of the upper arm, tail side, near the shoulder.
+- Keep all brown markings, the tail silhouette, and the ear interiors in their reference-defined anatomical positions through camera rotation.
 
 ## 5. Colour and lighting
 
-- Preserve literal locked colour data from the Character Lock: brown `#B79571`, inner ear `#FFCDB4`, black features/whiskers `#000000`.
-- Do not apply the inner-ear HEX to the belly patch, blush, paw pads, or toe beans unless an approved palette explicitly confirms that shared value.
-- Use soft, even studio-style lighting, gentle contact shadow, and restrained depth of field when appropriate.
-- Scene lighting may create mild natural shading, but the body must still read as its approved base colour and the brown marking as `#B79571`; do not recolour the character for atmosphere.
+- Preserve the literal locked colour data from the Character Lock: brown `#B79571`, inner ear `#FFCDB4`, black features and whiskers `#000000`.
+- The belly patch, blush, and paw pads are three different pinks and none of them is the inner-ear value. Do not assign `#FFCDB4` to a pink element by assumption. Section 6 of the lock file lists measured render samples for matching.
+- Use soft, even studio lighting, a gentle contact shadow on a pale warm floor, and restrained depth of field when appropriate.
+- Scene lighting may create mild natural shading, but the body must still read as its approved base colour and the brown marking as `#B79571`. Do not recolour the character for atmosphere.
 
 ## 6. Rendering exclusions
 
@@ -44,9 +49,12 @@ Do not use this style for a flat 2D illustration, sticker, line drawing, colouri
 
 Confirm before delivery:
 
-1. The profile has a broad, rounded lower face—not a triangle.
-2. The slightly horizontally wide head silhouette is retained.
-3. The front-view screen-right ear/head wave marking is intact and correctly oriented.
-4. The belly patch is a centred, slight vertical oval.
-5. Whiskers project naturally from cheeks in space.
-6. Known HEX codes remain literal and no unverified pink element was assigned `#FFCDB4` by assumption.
+1. The profile has a broad, rounded lower face — not a triangle.
+2. The head is a broad oval about 1.2 : 1, roughly half the figure height, and wider than the torso.
+3. The front-view screen-right ear and head wave marking is intact, correctly oriented, and the brown ear is fully brown outside.
+4. The belly patch is a centred circle.
+5. Exactly two raised whisker rods per side, attached at the cheek.
+6. The closed mouth has no drawn mouth line, and no tooth appears anywhere.
+7. The arm marking is a heart on the inner upper arm, or correctly omitted because that edge is hidden.
+8. The tail passes the four checks in lock section 3-1, compared at magnification.
+9. Known HEX codes remain literal and no unverified pink element was assigned `#FFCDB4` by assumption.
