@@ -24,6 +24,8 @@ The approved reference set is `characters/bangsil/references/3d/`:
 
 Rotate one coherent character between views; never redesign per view.
 
+Higgsfield Element: `방실3D_통합` (`6c2c2903-0780-4412-929e-32f5eb4a7acc`), registered 2026-11-09 from the first four views. Only the front image is injected, so attach the matching angle as a media input for anything else.
+
 When sources disagree, apply this order:
 
 1. The approved reference image closest to the requested view
