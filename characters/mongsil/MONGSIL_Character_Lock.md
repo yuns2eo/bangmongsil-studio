@@ -58,8 +58,38 @@ MONGSIL's arms are too short to reach many props. When a pose needs more reach, 
 ### All views
 
 - Broad forehead, full cheeks, substantial lower face. The jaw is a wide soft curve.
-- Features sit small and low-centred inside that broad head. On `Front.png` the two eyes are about 115 px apart centre to centre inside a 692 px head — that is how small they read.
-- Expression may change; head volume, feature scale, and feature spacing may not.
+- **Expression may change; feature scale, feature spacing and feature colour may not.** The numbers below are the face. Change them and it stops being MONGSIL even if every marking is right.
+
+### Face measurements — the numbers that stop the face deforming
+
+Everything is expressed against **HW = the head's maximum width in that frame**, so it holds at any crop or canvas size. Measured 2026-11-09 across `Front.png`, `Left_3Q.png`, `Tongue.png`, `Sit.png`, `Run.png`.
+
+| | Measured | Accept |
+|---|---|---|
+| Eye width ÷ HW | **0.036 – 0.039** | 0.032 – 0.045 |
+| Eye height ÷ width | 1.55 – 1.69 | taller than wide, 1.4 – 1.9 |
+| Gap between eye centres ÷ HW (front view) | **0.156 – 0.159** | 0.14 – 0.18 |
+| Nose centre, below the eye line | +0.090 HW | +0.07 – +0.11 HW |
+| Nose + groove block, width ÷ HW | 0.070 | under 0.10 — it is a nose, not a mouth |
+| Whisker length ÷ HW | 0.205 – 0.239 | 0.18 – 0.27 |
+| Whisker thickness ÷ HW | 0.0087 – 0.0106 | 0.007 – 0.013 |
+| Whisker roots, from face centre | ±0.29 – 0.30 HW | ±0.26 – 0.34 HW |
+| Whisker rows, below the eye line | +0.044 and +0.114 HW | two rows, the lower about 0.07 HW under the upper |
+| Blush width ÷ HW | 0.165 – 0.188 | 0.14 – 0.21 |
+| Blush centre, from face centre | ±0.19 – 0.20 HW | ±0.17 – 0.23 HW |
+| Blush centre, below the eye line | +0.095 – 0.106 HW | +0.07 – +0.13 HW |
+
+**MONGSIL's eyes are small.** At 0.037 HW they are a little over a third the width of the blush beside them. BANGSIL's are about **1.5 × larger** (0.051 – 0.057 HW) and sit **wider apart** (0.18 – 0.21 HW). That difference held in all five views of each character and is the most reliable face separator there is — more reliable than the ears, which the two characters share (section 10).
+
+### Measured feature colours — renders, not spec
+
+| | Sampled | Spec |
+|---|---|---|
+| Eyes | `#0C0908` – `#0F0C0A` | `#000000` ✓ matches |
+| Whiskers | `#443D3C` – `#534642`, R−B **+8 to +19** | `#000000` — render is a neutral dark gray, not pure black |
+| Nose | `#151110` | `#000000` ✓ close |
+
+MONGSIL's whiskers read as a **neutral dark gray**: red and blue are within about 20 of each other. BANGSIL's sampled at R−B **+48 to +54** — a warm brown. If MONGSIL's whiskers come out warm brown, that is BANGSIL's value leaking in. Keep the spec `#000000`; the render's gray is the known small mismatch, the brown is not.
 
 ### Profile rotation
 
@@ -68,8 +98,8 @@ Rotate the same broad head volume. Do not compress or carve away the lower face.
 
 ### Eyes, nose, muzzle
 
-- Two small glossy black eyes, each a **vertical oval** (taller than wide), set wide apart. No highlight dot, no eyelashes, no eyebrows, no pupils.
-- The nose is a small **rounded dark triangle**, point down, sitting at the top of the muzzle.
+- Two small glossy black eyes, each a **vertical oval** (taller than wide), set wide apart. No highlight dot, no eyelashes, no eyebrows, no pupils. Size and spacing are fixed by the table above — **0.037 HW wide, 0.157 HW apart.** They are small.
+- The nose is a small **rounded dark triangle**, point down, sitting at the top of the muzzle, centred and about 0.09 HW below the eye line.
 - The muzzle is **two round white puffy bumps side by side** below the nose, raised off the face.
 - A short **vertical line runs from the nose down into the groove between the two bumps**. That line is the whole closed mouth.
 
@@ -281,6 +311,8 @@ The two characters share a body and contradict each other on the face. Loading b
 |---|---|---|
 | Point colour | `#FFCDB4` | `#FFCBD1` |
 | Brown `#B79571` | head & ear wave, arm heart, tail | none |
+| Eyes | **0.037 HW wide, 0.157 HW apart** | **0.054 HW wide, 0.206 HW apart** — about 1.5 × larger |
+| Whiskers in the renders | neutral dark gray, R−B +8 to +19 | warm brown, R−B +48 to +54 |
 | Ears | low broad rounded triangles, free height 0.08 × head width | same shape, free height 0.11 × head width |
 | Muzzle | two raised white bumps | flat face |
 | Closed mouth | no mouth line at all | W-shaped mouth line |
@@ -288,6 +320,8 @@ The two characters share a body and contradict each other on the face. Loading b
 | Whiskers | 2 per side | 2 per side |
 | Belly patch | circle, point colour | circle, point colour |
 
+> **Eyes are the strongest separator.** Eye width and spacing differ by about 1.5 × and held across all five views of each character (section 2). Check the eyes first.
+>
 > **Ears are a weak separator.** Both characters have the same low broad round-tipped ear shape; BANGSIL's simply stand about 1.4 × higher. Do not rely on ear shape to tell a mixed render apart — use the muzzle, the mouth line, brown, and the point colour (실측 2026-11-09).
 
 ### Two-shot scenes

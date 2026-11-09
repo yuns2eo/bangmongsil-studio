@@ -12,7 +12,7 @@
 
 ```
 MONGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that is clearly wider than it is tall and fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
-Two small glossy black vertical-oval eyes set wide apart, no highlight dot, no eyelashes, no eyebrows.
+Two SMALL glossy black vertical-oval eyes, taller than wide, set wide apart but not far apart: each eye is about 0.037 of the head's maximum width, and the gap between their centres is about 0.157 of that width. They are noticeably smaller and closer together than BANGSIL's. No highlight dot, no eyelashes, no eyebrows.
 Two raised round white muzzle bumps side by side below the nose, and a small rounded dark triangle nose sitting on top of them with a short vertical groove running down between the bumps. No drawn mouth line of any kind.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Rounded triangular ears. The whole outer surface of MONGSIL's own left ear (screen right in front view) is brown #B79571, and that brown continues into a wave-shaped marking across the right half of the upper head. The other ear is white outside. Inner ears #FFCDB4.
@@ -36,7 +36,8 @@ Expression: {표정}.
 3. The brown wave marking stays on MONGSIL's own left ear and upper head (screen right in front view), with the whole outer ear brown and the wave contour intact and not mirrored.
 4. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 4-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-5. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+5. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.22 of the head's maximum width long.
+5-1. The eyes stay SMALL and close-set: each about 0.037 of the head's maximum width, centres about 0.157 of that width apart. Large or wide-set eyes are BANGSIL's face.
 6. The closed mouth has no drawn mouth line: only the nose and the vertical groove between the two raised muzzle bumps. No tooth or fang appears anywhere.
 7. Colours stay literal: brown #B79571, inner ears, blush and belly patch #FFCDB4, features #000000. #FFCBD1 never appears.
 8. The body stays chubby and round; arms and legs stay as short as the reference in every pose, and raised arms never press against the face.
@@ -73,7 +74,9 @@ fused toes, two toe lobes, four toe lobes, four toe pads,
 extra characters, two cats, duplicated MONGSIL, BANGSIL, all-white cat with no brown, realistic cat,
 human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
 triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
-small head, tall pointed ears, flat face without muzzle bumps, drawn mouth line, W-shaped mouth,
+small head, flat face without muzzle bumps, drawn mouth line, W-shaped mouth,
+large eyes, wide-set eyes, oversized eyes,
+brown whiskers, warm brown nose, reddish whiskers,
 smile curve under the muzzle, teeth, fangs,
 mirrored markings, brown marking on the wrong ear, missing ear wave marking, simplified round brown patch,
 cloud-shaped arm marking, dot arm marking, arm marking on the outer arm or forearm,

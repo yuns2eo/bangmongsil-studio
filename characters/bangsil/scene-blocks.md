@@ -13,7 +13,7 @@
 ```
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two small glossy black vertical-oval eyes set wide apart, no highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -38,7 +38,8 @@ Expression: {표정}.
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
+8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 {10~. 이번 장면 고유 조건}
@@ -80,6 +81,8 @@ triangular face, pointed chin, narrow lower face, perfectly spherical head, vert
 small head, folded ears, mismatched ears, teeth, fangs,
 elongated oval belly patch, off-centre belly patch, raised button belly, missing belly patch,
 whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
+small eyes, close-set eyes, tiny eyes,
+neutral gray whiskers, gray nose,
 squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
 snowman tail, tail as stacked spheres, three separate balls, deep notches in the tail, equal tail lobes,
 fox ears, tall upright ears, pointed ear tips, sharp ear tips, narrow ears, ears taller than their base width,
