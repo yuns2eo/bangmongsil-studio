@@ -32,6 +32,8 @@ When sources disagree, apply this order:
 3. The applicable style guide
 4. The scene prompt
 
+**이 순서의 예외 — 섹션 6이 "미반영"이라고 적어 둔 항목.** 레퍼런스 렌더가 아직 최신 규칙을 따라가지 못한 항목은 섹션 6의 locked value가 레퍼런스를 이긴다. 몽실이는 현재 해당 항목이 없다. 섹션 6에 그런 항목이 생기면 여기에 적는다.
+
 Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the nine images show, keep the visible structure intact and say the detail is unverified rather than inventing it.
 
 ## 1. Non-negotiable identity and proportion

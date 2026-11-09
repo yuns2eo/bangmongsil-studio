@@ -33,6 +33,8 @@ When sources disagree, apply this order:
 3. `styles/3D_Felt.md`
 4. The scene prompt
 
+**이 순서의 예외 — 섹션 6이 "미반영"이라고 적어 둔 항목.** 레퍼런스 렌더가 아직 최신 규칙을 따라가지 못한 항목은 섹션 6의 locked value가 레퍼런스를 이긴다. 현재 해당하는 것은 **수염 & 코 & 입선 색상**뿐이며, `#000000`이 기준이다. 그 외 모든 항목은 위 순서 그대로 레퍼런스가 우선이다.
+
 Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the eight images show, keep the visible structure intact and say the detail is unverified rather than inventing it. **There is no front-palm reference for BANGSIL** — `Wave.png` shows the back of the raised paw. See section 4-1.
 
 ## 1. Non-negotiable identity and proportion
@@ -233,6 +235,7 @@ Before delivery, compare against the closest reference view and reject/regenerat
 9. **Embedded whiskers, or the wrong count:** whiskers painted flat into the face, or any number other than two per side.
 10. **Teeth:** any tooth, fang, or tooth row, in a still or in any video frame.
 11. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed.
+11-1. **Not a failure:** brown whiskers or a brown nose matching the current renders. That is the known pending mismatch in section 6, not a generation error — note it and move on.
 12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; raised arms pressed against the face; an arm stretched to reach a prop.
 13. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
 13-1. **Missing or miscounted pads:** a sole faces the viewer without its pads, or shows four toe pads instead of three.

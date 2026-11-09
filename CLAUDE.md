@@ -208,7 +208,7 @@
 - 바뀌는 것(의상, 소품, 포즈, 배경)만 장면으로 쓰고, 캐릭터는 리디자인하지 않는다
 - 장면은 한 번에 만들지 않고 **단계별로** 만든다: STEP 1 의상 & 소품(단색 배경) → STEP 2 장면 & 행동 → STEP 3 누끼 & Figma 합성 → (선택) 모션. 각 단계 결과를 보여주고 넘어간다 (`templates/scene.md` 7번)
 - **발이 하나라도 보이면** 사용자가 말하지 않아도 해당 캐릭터 `scene-blocks.md`의 `## Paws` 블록을 넣는다. 손바닥 & 발바닥 안쪽이 보이면 패드 문장까지 더한다 (락 파일 4-1번)
-- 프롬프트 어디에도 `no fingers`, `rounded nub`, `mitten`을 쓰지 않는다. 발끝이 방망이로 나오는 주원인이다
+- `## Subject`와 `## Pose`에는 `no fingers`, `fingerless`, `rounded nub`, `mitten`을 쓰지 않는다. 발 설명 옆에 붙은 부정어가 발끝을 방망이로 만든다. 같은 단어라도 `## Negative` 블록(`blank mitten paw` 등)에는 써도 된다
 - 앞에 책상 & 바구니 & 상자가 있으면 깊이 문장을 넣는다 (`templates/scene.md` 7번)
 - 배너 문구와 로고는 생성하지 않고 Figma에서 얹는다
 
