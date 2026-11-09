@@ -39,6 +39,9 @@ characters/
     scene-blocks.md              방실이 Subject & Critical conditions & Negative
     references/3d/               Front / Left_3Q / Left_Profile / Back
                                  Smile / Sit / Run / Wave                    (8장)
+assets/
+  props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
+                                 studio / detail / petf-{common,cat,dog}
 styles/
   3D_Felt.md                     3D 펠트 렌더 스타일 (두 캐릭터 공통)
 templates/
@@ -104,6 +107,7 @@ Claude Code에서는 `CLAUDE.md`가 Element 선택, 생성 설정, 기록 방법
   - 정면이 아닌 구도는 해당 캐릭터 폴더의 레퍼런스를 참조 이미지로 함께 첨부합니다.
   - 캐릭터 Element는 한 번에 1개만 씁니다.
 - 기본 생성은 비용 최소화 설정(low & 1K & 1장)입니다. 고화질은 사용자가 명시적으로 요청할 때만 씁니다. 자세한 규칙은 `CLAUDE.md` 기본 이미지 생성 설정을 따릅니다.
+- 생성 경로는 두 개입니다. **경로 A 힉스필드**가 기본이고, 크레딧이 없거나 MCP가 안 붙으면 **경로 B ChatGPT 크롬**으로 넘어갑니다. 경로 B는 `<<<ID>>>` 대신 `assets/props/`와 `references/3d/`의 파일을 첨부합니다. 변환 규칙은 `templates/scene.md` 6번, 실행 규칙은 `CLAUDE.md` 작업 순서 6번입니다.
 
 ---
 

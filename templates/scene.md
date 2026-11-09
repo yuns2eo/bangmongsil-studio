@@ -125,6 +125,23 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - 기존 결과를 고칠 때 그 결과를 편집 기준 이미지로 넣는 건 **1회까지만** 한다. 1회 편집은 정체성 & 배경 & 질감이 잘 유지됐다 (실측 4회).
 - 같은 결과를 2회 이상 이어서 편집하면 화질이 깨지고 형태가 틀어진다. 두 번째 수정부터는 원본 레퍼런스로 **새로 생성**하고, 작은 경계 & 이음새 정리는 생성하지 말고 Figma에서 처리한다 (`prompts/2026-10-22-staged-scenes.md`, 만세 & 수의사 장면 2건).
 
+### 경로 B 변환 (ChatGPT로 돌릴 때)
+
+`<<<ID>>>`는 힉스필드 전용 문법이라 ChatGPT에서는 아무 의미가 없다. 그 자리를 **실제 첨부 + 문장**으로 바꾼다.
+
+| 힉스필드 | ChatGPT |
+|---|---|
+| 캐릭터 `<<<ID>>>` | `references/3d/Front.png` 첨부 + `The character is exactly the attached reference: same face, markings, proportions, and colors.` |
+| 정면이 아닌 구도 | 그 각도 파일(`Left_3Q.png` 등)을 **추가로** 첨부 |
+| 소품 `<<<ID>>>` | `assets/props/`의 같은 이름 PNG 첨부 + `The prop is exactly the attached reference: same shape, silhouette, proportions, parts, and every engraved mark.` |
+| 패드 Element | `assets/props/detail/` 해당 PNG 첨부 |
+
+- 첨부 순서는 **캐릭터 먼저, 소품 나중**. 섞이면 소품 색이 캐릭터로 넘어온다
+- 첨부가 5장을 넘으면 캐릭터가 흐려진다. 장면을 쪼개서 STEP을 하나 더 만든다
+- `## Subject` & `## Critical conditions` & `## Negative`는 그대로 쓴다. 캐릭터 정의는 경로가 달라져도 바뀌지 않는다
+- 기존 이미지를 고치는 프롬프트면 바꿀 것만 번호로 나열하고 나머지는 `Keep EVERYTHING identical`로 고정한다
+- 소품 PNG 배경이 검정인 것들이 있다. 결과에 검정 테두리나 어두운 반사가 묻어나는지 확인한다 (`assets/props/README.md`)
+
 ---
 
 ## 7. 단계별 생성 (기본 순서)
@@ -163,6 +180,8 @@ DEPTH: the {object} is IN FRONT of {CHARACTER}. {CHARACTER} stands BEHIND it; th
 - 짧은 팔로 머리 위까지 드는 자세(상자 번쩍 들기 등)는 팔이 길어지거나 얼굴에 붙기 쉽다 (실측 1회). 가능하면 가슴 앞에서 끌어안기 & 한 팔에 끼기처럼 짧은 팔에 맞는 자세로 바꾼다.
 
 ### 다른 AI(ChatGPT 등)용 프롬프트만 요청받을 때
+
+생성까지 해 달라는 게 아니라 **프롬프트만** 달라고 했을 때다. 생성까지 맡은 경우는 위 6번 "경로 B 변환"을 따른다.
 
 생성하지 않고 프롬프트만 준다. 이때도 해당 캐릭터 `scene-blocks.md`의 Subject & Critical conditions & Negative를 빠짐없이 넣는다. 기존 이미지를 고치는 프롬프트면 바꿀 것만 번호로 나열하고 나머지는 "Keep EVERYTHING identical"로 고정한다.
 
