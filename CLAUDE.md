@@ -89,13 +89,9 @@
 - 다른 캐릭터의 Element나 레퍼런스를 섞어 넣지 않는다. 투샷이라도 캐릭터 Element는 1개만 쓰고 나머지 한 마리는 레퍼런스 첨부로 처리한다.
 - `몽실이` & `방실이` Element(`8259ebf1-…`, `f5e7a49b-…`)는 젤리 아이콘용 캐릭터라 이 스튜디오 장면에 쓰지 않는다.
 
-### 쓰지 말 것 — 옛 캐릭터 Element
+옛 캐릭터 Element(`몽실3D_통합` & `몽실3D` & `몽실2D_통합` & `방실3D_통합`)는 2026-11-09 사용자가 힉스필드 웹에서 모두 삭제했다. 지워진 이유는 옛 레퍼런스로 등록된 데다 설명에 "Tall pointed triangular ears"와 "three rounded forms along its outer edge"가 남아 있어서다 — 둘 다 그날 실측으로 폐기된 표현이고, 여우 귀와 눈사람 꼬리를 만든 원인이다.
 
-| 이름 | ID | 상태 |
-|---|---|---|
-| 방실3D_통합 | `6c2c2903-0780-4412-929e-32f5eb4a7acc` | **쓰지 않는다.** 교체 전 옛 정면컷 1장만 등록돼 있고(분홍 캐스트), 설명에 틀린 문장이 그대로 있다 — "Tall pointed triangular ears", "three rounded forms along its outer edge". 둘 다 2026-11-09 실측으로 폐기된 표현이다 |
-
-`몽실3D_통합` & `몽실3D` & `몽실2D_통합`은 2026-11-09 사용자가 힉스필드 웹에서 삭제했다. MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원하고 **이름 변경과 삭제가 없다.** 옛 Element 정리는 웹에서 직접 한다.
+MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원하고 **이름 변경과 삭제가 없다.** 앞으로도 Element 정리는 웹에서 직접 해야 한다.
 
 ### 디테일 (소품 Element로 추가)
 
