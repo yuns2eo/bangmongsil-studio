@@ -40,16 +40,21 @@ characters/
     scene-blocks.md              몽실이 Subject & Critical conditions & Negative
     references/3d/               Front / Left_3Q / Left_Profile / Back
                                  Paw_Front / Paw_Hind / Tongue / Sit / Run   (9장)
+    references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
+                                 Run / Sit / Tongue                          (7장)
   bangsil/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
     scene-blocks.md              방실이 Subject & Critical conditions & Negative
     references/3d/               Front / Left_3Q / Left_Profile / Back
                                  Smile / Sit / Run / Wave                    (8장)
+    references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
+                                 Run / Sit / Smile / Wave                    (8장)
 assets/
   props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
                                  studio / detail / petf-{common,cat,dog}
 styles/
-  3D_Felt.md                     3D 펠트 렌더 스타일 (두 캐릭터 공통)
+  3D_Felt.md                     3D 펠트 렌더 스타일 (두 캐릭터 공통, 기본)
+  3D_Smooth.md                   3D 매끈 재질 스타일 (요청 시에만)
 templates/
   scene.md                       장면 프롬프트 골격 & 워크플로 (두 캐릭터 공통)
 prompts/
