@@ -132,7 +132,7 @@ MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원�
 
 ### 펫프 아이콘 에셋 (petf-icon-studio)
 
-펫프 관련 아이콘이나 펫용품 소품은 새로 묘사하지 않고 [`yuns2eo/petf-icon-studio`](https://github.com/yuns2eo/petf-icon-studio)에 등록된 에셋을 쓴다. 아래 Element는 그 저장소 `references/{common|cat|dog}/{파일}_Front.png`와 같은 이미지다.
+**사용자가 펫프 아이콘(에셋 이름이나 "펫프 아이콘")을 직접 부를 때만 쓴다.** 부르지 않으면 이 표를 쓰지 않고 위 소품 표나 `## Prop` 문장으로 처리한다 (2026-11-19 사용자 지시). 부르면 새로 묘사하지 않고 [`yuns2eo/petf-icon-studio`](https://github.com/yuns2eo/petf-icon-studio)에 등록된 에셋을 쓴다. 아래 Element는 그 저장소 `references/{common|cat|dog}/{파일}_Front.png`와 같은 이미지다.
 
 - STEP 1(의상 & 소품)에서 소품이 아래 표에 있으면 그 Element를 넣는다. 프롬프트에는 "the prop is exactly <<<ID>>>: same shape, silhouette, proportions, parts, and every engraved / embossed mark, motif, and symbol" 문장을 넣는다.
 - **모양 & 형태 & 각인(음각 & 양각 로고, 발바닥 & 뼈다귀 무늬, 기호)은 에셋과 똑같아야 한다.** 재질(젤리 & 광택 & 펠트)은 장면에 맞게 달라져도 된다.
