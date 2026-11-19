@@ -619,7 +619,7 @@ Avoid: open mouth, teeth, fangs, talking, eyes growing larger, character redesig
 
 - 요청(한국어): 소리는 꺼줘, 프롬프트는 사용자가 준 "MONGSIL — Curious Water Fountain Inspection" 문서로
 - 2차 상태: 실패 (입 열림 — 사용자가 새 프롬프트로 재생성 요청)
-- 3차 상태: 미확인
+- 3차 상태: 실패 (눈썹 + 입 — 사용자가 모델 교체)
 - 모델: Kling 3.0 Turbo & 720p & 5초 & 16:9, 시작 프레임 동일
 - job: f0d54775-0482-4152-8e2b-3358b3be2c40
 - 크레딧: 사용 7.5 / 남은 965.5
@@ -660,3 +660,42 @@ AVOID: repetitive blinking, mechanical scanning, robotic timing, exaggerated rea
 ## 학습 메모 (3회 누적)
 
 - Kling 3.0 Turbo에서 표정 연기("concentration", "puzzled Huh?")를 요구하면 눈썹 & 벌린 입으로 표현한다. 3회 연속 확인 (1차 눈썹, 2차 입, 3차 눈썹+입). 표정 단어를 빼고 고개·시선·돋보기 동작만 지시하는 쪽으로 규칙화 후보 → templates/scene.md 모션 항목 반영 제안 대상.
+
+## 모션 4차 — Seedance 2.0 Mini + 사용자 기존 성공 프롬프트
+
+- 요청(한국어): 씨댄스 2.0 미니로, 예전에 잘 나왔던 프롬프트("The still image comes to life ... over four seconds") 사용, 소리 끄기
+- 3차 상태: 실패 (눈썹 + 입 — 사용자가 모델 교체)
+- 4차 상태: 미확인
+- 모델: Seedance 2.0 Mini (`seedance_2_0_mini`) & 720p & 4초 & 16:9 & `generate_audio: false`
+- 시작 프레임: STEP 2 16:9 확장본 media 1d2e9cdf-e291-41ba-b161-84e73b64bbf9
+- job: 80af03df-bccc-4212-93aa-47252fa18585
+- 크레딧: 견적 4 / 남은 965.5 → 961.5
+- 결과: 1280×720, 24fps, 4.04초, 오디오 스트림 없음
+
+## 4차 프롬프트 조정 (원문은 다른 장면 기준이라 지금 이미지와 다른 곳만 바꿈)
+
+| 원문 | 바꾼 것 | 이유 |
+|---|---|---|
+| white flocked-felt cat mascot in round glasses | white smooth matte vinyl cat mascot in a detective outfit (cap & shirt & tie & trench) | 지금 이미지는 매끈 재질 & 안경 없음 |
+| 안경을 앞발로 올리는 동작 & glasses stay clear | 자유로운 앞발로 가슴을 한 번 토닥 | 안경이 없음. 짧은 팔로 모자까지 닿게 하면 팔이 늘어날 위험 (락 1번) |
+| its eyes opening wider | 삭제 (impressed, delighted look만 유지) | 눈 크기 고정 (락 2번 얼굴 실측) |
+| small satisfied smile | small satisfied look, mouth staying closed | 기본 입은 닫힘 (락 2번 Mouth) |
+| soft matte felt texture | smooth soft matte vinyl surface | 매끈 재질 |
+| almost-round head slightly wider than tall | broad round head clearly wider than tall | 락 1번 1.2 : 1 |
+| peach belly patch | 삭제 | 셔츠에 가려 아래 끝만 보임 |
+| small brown half-cloud marking on the outer edge of the upper arm | arm markings hidden under the sleeves, no brown on the paws | 옛 규칙(2026-11-09 폐기). 지금은 위팔 안쪽 하트이고 소매에 가려짐 |
+| cloud-shaped brown tail | one continuous brown crescent tail | 락 3-1번 |
+| pale warm-white background | pale light grey | 지금 배경색 |
+| (없음) | no eyebrows, mouth closed, no teeth, four coat buttons | 1~3차 실패 항목 |
+
+## 4차 검증 (0.25초 간격 16프레임 + 입 확대)
+
+| 항목 | 결과 |
+|---|---|
+| 소리 | 통과. 오디오 스트림 없음 |
+| 동작 | 통과. 몸을 숙여 돋보기를 정수기 쪽으로 대고 살핌 → 바로 서서 끄덕 → 눈웃음. 지금까지 중 "살펴보는" 연출이 가장 좋음 |
+| 눈썹 | 통과. 눈썹 선 없음 |
+| 입 | 주의. 약 3.4초 눈웃음 순간 몇 프레임 입이 벌어지고 분홍 혀가 보임. 이빨 없음. 나머지는 닫힘 |
+| 눈 | 통과. 돋보기를 눈앞에 대는 구간은 렌즈 너머로 보임 |
+| 프레이밍 | 주의. 좌 378~382px로 고정, 우 345~389px. 끝부분 몸을 세우며 오른쪽 여백이 약 27px 좁아짐 |
+| 의상 & 정수기 & 갈색 웨이브 & 꼬리 | 통과 |
