@@ -551,7 +551,7 @@ brown patch on the paw, brown mark below the sleeve cuff, MONGSIL standing on th
 # 모션 — 정수기 살펴보기 영상
 
 - 요청(한국어): STEP 2 16:9 이미지로 영상 생성. 720p, 클링, 표정 변화 자연스럽게, 정수기를 살펴보는 영상 (배경색은 그대로 — 사용자 선택)
-- 상태: 미확인
+- 상태: 실패 (눈썹 — 사용자 재생성 요청)
 - 모델: Kling 3.0 Turbo (`kling3_0_turbo`) & 720p & 5초 & 16:9 — 클링 중 720p 지원 모델 견적(3.0 Turbo 7.5 / 4.0 11.25 / 4.0 Flash 15) 중 최저가
 - 시작 프레임: STEP 2 16:9 확장본 media 1d2e9cdf-e291-41ba-b161-84e73b64bbf9
 - job: 05b3a30d-6b85-45af-abfc-e48c86b3a86f
@@ -589,3 +589,28 @@ Avoid: open mouth, teeth, fangs, talking, eyes growing larger, character redesig
 ## 학습 메모 (1회차)
 
 - 영상에서 "eyes narrowing in concentration"을 지시하면 눈썹 선이 생긴다. 다음엔 표정을 눈 깜빡임 & 고개 기울기 & 눈웃음으로만 지시하고 Avoid에 `eyebrows, brow lines, frowning` 추가.
+
+## 모션 2차 — 눈썹 막고 재생성
+
+- 요청(한국어): 눈썹 막고 재생성
+- 1차 상태: 실패 (눈썹, 사용자 재생성 요청)
+- 2차 상태: 미확인
+- 모델: Kling 3.0 Turbo & 720p & 5초 & 16:9, 시작 프레임 동일
+- job: 5f8a7a12-48f7-4e4d-95df-be79cefa0b92
+- 크레딧: 사용 7.5 / 남은 973
+- 프롬프트 변경: 표정을 "깜빡임 & 고개 기울기 & 마지막 눈웃음"으로만 지시, "NO eyebrows ... area above the eyes stays smooth plain white" 문단 추가, 시선을 정수기에 고정, Avoid에 `eyebrows, brow lines, lines above the eyes, frowning, furrowed brow, angry face, squinting, looking at the camera, cap changing shape` 추가
+
+## 모션 2차 검증 (24fps 전 프레임 중 0.25초 간격 20장 + 입 확대 6장)
+
+| 항목 | 결과 |
+|---|---|
+| 눈썹 | 통과. 찡그린 눈썹 선 사라짐. 눈 감는 프레임의 곡선은 눈 자체 |
+| 프레이밍 | 통과. 좌 382~384px, 우 369~395px (꼬리 흔들림만큼) |
+| **입** | **주의.** 약 0.6~3.8초 구간에 머즐 아래로 입이 살짝 열리고 분홍 혀가 보임. 이빨 & 송곳니는 없음. 프롬프트의 "mouth CLOSED"를 어김 |
+| 표정 | 깜빡임 → 마지막 눈웃음(^^) |
+| 시선 | 주의. 여전히 카메라 쪽을 보는 프레임이 많음 |
+| 의상 & 정수기 & 갈색 웨이브 | 통과 |
+
+## 학습 메모
+
+- 1차: "eyes narrowing in concentration" → 눈썹 생성. 2차: 눈썹 막자 입이 열림. Kling 3.0 Turbo는 표정 변화를 요청하면 눈썹 또는 입으로 표현하려는 경향. 같은 현상이 다시 나오면 영상 프롬프트 규칙으로 정리 제안.
