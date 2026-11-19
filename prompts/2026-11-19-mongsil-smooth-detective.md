@@ -404,3 +404,136 @@ lens covering the eye, magnifying glass floating, brown wooden magnifying glass,
 - 손목 갈색 조각을 재생성 없이 픽셀 리터치로 지웠다 (Figma 대신 로컬 PIL). 조각 양옆 깨끗한 앞발 열(x 637 & 669)의 소매 그림자 → 흰 앞발 그라데이션을 보간해 덮고 가장자리만 살짝 블러.
 - 결과: 소매 아래 앞발 전부 흰색, 앞발 세 마디 그대로. 팔 하트는 소매 속에 가려진 상태로 처리 → 9-11 해소.
 - 파일: 로컬 `step1_rev3_fix.png` (스크래치패드, 저장소에는 넣지 않음).
+
+---
+
+# STEP 2 — 고양이 정수기 탐색
+
+- 요청(한국어): 펫프 아이콘 중 고양이 정수기를 불러와서, 탐정 몽실이가 정수기를 훑어보고 탐색하는 모습 (사용자가 펫프 아이콘을 직접 호출)
+- 상태: 미확인
+- 모델 & 품질 & 해상도 & 비율: GPT Image 2 & low & 1K & 3:4
+- Element: 몽실_3D_매끈 (d76af9ed-b1e7-4ba9-be0e-262a70fbde19), 급수기_고양이 (507822ce-bf38-418a-a87d-ed2b2174035f, petf `Water_Fountain`)
+- medias: STEP 1 승인본(손목 리터치) media 23ec1735-4d38-4612-bbae-aae305b28033, `characters/mongsil/references/3d_smooth/Left_3Q.png` media a9baf7ca-820f-4718-bfed-fce5cff4bfb2
+- 배경: 누끼용 단색 #E4DFE3 (STEP 3에서 배경 합성 예정)
+- job: 306cc784-1f83-4c21-a367-c0f5923963f5
+- 크레딧: 사용 0.5 / 남은 988
+
+## 결정 메모
+
+- 45도 레퍼런스(Left_3Q)는 몸이 화면 왼쪽을 향하고 갈색 귀 쪽이 카메라에 가까운 면이다. 그래서 정수기를 화면 왼쪽에 두고, 돋보기 든 오른팔이 정수기 쪽을 향하게 했다.
+- 정수기 Element는 정면 1장만 주입되지만 정면에 가까운 각도라 4View는 첨부하지 않았다.
+- 소매 아래 하트 이동(STEP 1 3차)을 막으려고 "the arm heart is hidden under the coat sleeve; the paws below the sleeve cuffs are plain white" 문장과 Negative를 넣었다 → 이번엔 재발 없음.
+
+## 최종 프롬프트
+
+```
+<<<d76af9ed-b1e7-4ba9-be0e-262a70fbde19>>> <<<507822ce-bf38-418a-a87d-ed2b2174035f>>> # MONGSIL detective inspects the cat water fountain — STEP 2
+
+Attachments, in order: (1) the approved STEP 1 image of this exact MONGSIL in the detective outfit — the costume, magnifying glass, face and body must match it; (2) MONGSIL's three-quarter reference, for how the head, face, markings and body look when turned.
+The water fountain is exactly <<<507822ce-bf38-418a-a87d-ed2b2174035f>>>.
+
+## Subject
+MONGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that is clearly wider than it is tall and fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
+Two SMALL glossy black vertical-oval eyes, taller than wide, set wide apart but not far apart: each eye is about 0.037 of the head's maximum width, and the gap between their centres is about 0.157 of that width. They are noticeably smaller and closer together than BANGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two raised round white muzzle bumps side by side below the nose, and a small rounded dark triangle nose sitting on top of them with a short vertical groove running down between the bumps. No drawn mouth line of any kind.
+Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
+Rounded triangular ears. The whole outer surface of MONGSIL's own left ear (screen right in front view) is brown #B79571, and that brown continues into a wave-shaped marking across the right half of the upper head. The other ear is white outside. Inner ears #FFCDB4.
+Soft blush #FFCDB4 on both cheeks. A centred circular belly patch #FFCDB4 on the lower torso, about a third of the head's width.
+A small brown #B79571 heart on the inner edge of the upper arm on the tail side, high near the shoulder, shown whenever that inner edge faces the camera in any pose including walking, running, and sitting; omitted only when the edge is turned away or covered.
+A brown #B79571 tail growing from the hip on the same side: ONE continuous padded upright crescent like a fat comma, taller than wide. Its outer edge is a single curve gently scalloped by two SHALLOW dimples, and the swells they separate are unequal — a large rounded dome at the top, then progressively smaller and flatter swells settling back into the curve. Its inner edge is one smooth unbroken curve. The tail is one mass, never a stack of separate balls.
+Black features and whiskers #000000. No other brown anywhere on the body.
+Expression: focused, curious investigating look, closed mouth.
+
+## Orientation
+- Body faces: three-quarter toward screen left, toward the water fountain
+- Head faces: the same direction as the body, tilted slightly down toward the fountain
+- Eyes look at: the top of the water fountain
+The head turns on the body naturally with no visible neck. The face, ears, and all markings rotate with the head exactly as in the three-quarter reference; the brown ear and brown head wave stay on MONGSIL's own left side (the side nearer the camera, toward screen right), exactly as in the three-quarter reference and never mirror.
+
+## Pose & Paws
+MONGSIL stands on the floor next to the fountain and leans its whole torso forward from the hip toward the fountain, closely investigating it like a detective. Its right paw (screen left, the arm on the fountain side) holds the magnifying glass by its black handle and points the lens toward the fountain's clear dome, held out in front of the body at the height of the fountain top, a little ahead of the face — the lens is between MONGSIL and the fountain and does NOT cover either eye. The arm stays as short as the reference; the reach comes from leaning the body forward and standing close, not from a longer arm. Its left paw (screen right, nearer the camera) is lifted slightly and rests against its own chest/belly, curious. Both feet stay on the floor. The brown tail stays visible at screen right behind the hip.
+A continuous sliver of background stays visible between the raised paw and the cheek all the way down, even where it is narrow. The raised arm and the head never merge into one silhouette.
+Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft visible grooves, like a small clover leaf; the middle lobe is the largest and sits slightly forward. The grooves stay clearly visible as shallow creases. The paw tip is never a smooth undivided club.
+
+## Prop
+Water fountain: the prop is exactly <<<507822ce-bf38-418a-a87d-ed2b2174035f>>>: same shape, silhouette, proportions, parts, and every engraved / embossed mark, motif, and symbol — a round two-tier pet water fountain with a hot-pink lower base, a translucent pale-pink upper ring holding clear blue water, a pink centre column under a clear transparent dome spout with thin streams of water falling into the bowl, and one embossed paw-print emblem on the front of the pink base. Keep its colours and glossy plastic / clear acrylic material as in the reference.
+It stands on the floor at screen left, its paw emblem facing the camera. Size: the fountain is about as tall as MONGSIL's torso and about as wide as MONGSIL's head.
+Magnifying glass: the same one as in the STEP 1 image — polished silver chrome round rim, clear glass lens, silver collar, glossy black handle.
+
+## Wardrobe
+Exactly the outfit in the STEP 1 image: houndstooth deerstalker cap with a brown ribbon bow sitting between the ears (both ears and the brown head wave visible), white shirt with pointed collar covering most of the torso, navy necktie, camel trench coat worn open with notched lapels, epaulettes, pocket flaps, cuff straps and exactly four dark buttons (two per side). Only the bottom edge of the round belly patch peeks out below the shirt hem.
+The arm heart is hidden under the coat sleeve; the paws below the sleeve cuffs are plain white with no brown on them.
+
+## Environment
+Plain solid flat background colour #E4DFE3, seamless, with soft contact shadows under MONGSIL's feet and under the fountain on the same floor. Nothing else in the scene.
+
+## Camera
+Slightly elevated eye-level three-quarter view, full body of MONGSIL and the whole fountain in frame, MONGSIL at screen right and the fountain at screen left, nothing cropped.
+
+## Style
+Smooth, clean, soft matte vinyl / soft-touch clay 3D mascot figure. No felt pile, no embossed grain, no fur, no fuzz, no fibres. Very soft satin response to light with broad gentle highlights only; no mirror gloss, no wet look on the character. Soft even studio lighting, gentle contact shadow. Coloured markings are integrated surface colour with clean edges. Paw pads, nose, the two muzzle bumps, and whisker rods are raised relief. Only the fountain and the magnifying glass are glossy.
+
+## Critical conditions (must all hold)
+1. In any turned or side view, the lower face stays broad and rounded — never a triangle or a pointed chin.
+2. The head stays a broad oval clearly wider than tall, fills the top half of the figure, and stays wider than the torso.
+3. The brown wave marking stays on MONGSIL's own left ear and upper head (screen right in front view), with the whole outer ear brown and the wave contour intact and not mirrored.
+4. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
+4-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
+5. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.22 of the head's maximum width long.
+5-1. The eyes stay SMALL and close-set: each about 0.037 of the head's maximum width, centres about 0.157 of that width apart. Large or wide-set eyes are BANGSIL's face.
+6. The closed mouth has no drawn mouth line: only the nose and the vertical groove between the two raised muzzle bumps. No tooth or fang appears anywhere.
+7. Colours stay literal: brown #B79571, inner ears, blush and belly patch #FFCDB4, features #000000. #FFCBD1 never appears.
+8. The body stays chubby and round; arms and legs stay as short as the reference in every pose, and raised arms never press against the face.
+9. Brown appears only on the ear and head wave marking, the heart on the inner tail-side upper arm (only when that inner edge is visible), and the tail. No other spots anywhere on the body.
+9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
+10. The outfit matches the STEP 1 image exactly: four coat buttons, long white shirt, navy tie, deerstalker between the ears; only the bottom edge of the belly patch shows.
+11. The arm heart is hidden under the sleeve; no brown appears on any paw.
+12. The magnifying glass is held by the black handle and points at the fountain; the lens does not cover either eye.
+13. DEPTH: the fountain stands on the floor beside MONGSIL at screen left, slightly in front of it; MONGSIL does not stand on, sit on, or touch the water. Both share one floor and one light.
+14. The fountain keeps exactly the reference's shape, colours, parts and embossed paw emblem.
+15. Smooth matte vinyl surface on the character and clothes — no felt texture.
+
+## Negative
+smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
+fused toes, two toe lobes, four toe lobes, four toe pads,
+extra characters, two cats, duplicated MONGSIL, BANGSIL, all-white cat with no brown, realistic cat,
+human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
+triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
+small head, flat face without muzzle bumps, drawn mouth line, W-shaped mouth,
+large eyes, wide-set eyes, oversized eyes,
+brown whiskers, warm brown nose, reddish whiskers,
+smile curve under the muzzle, teeth, fangs,
+mirrored markings, brown marking on the wrong ear, missing ear wave marking, simplified round brown patch,
+cloud-shaped arm marking, dot arm marking, arm marking on the outer arm or forearm,
+extra brown spots on the body, calico patches,
+elongated oval belly patch, off-centre belly patch, raised button belly, missing belly patch,
+#FFCBD1, pink inner ears,
+whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
+white tail, squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
+snowman tail, tail as stacked spheres, three separate balls, deep notches in the tail, equal tail lobes,
+long fur, individual hairs, fabric seams, stitching, felt texture, flocked pile, fuzz, embossed grain, mirror gloss, wet look,
+text, watermark, logo, cropped character, floating object, slim body, long arms, arms touching the face,
+paw touching the face, paw overlapping the head, arm fused to the head, no gap between paw and cheek,
+hat covering the ears, hat covering the ear marking, closed coat covering the belly patch, short cropped shirt, belly patch fully hidden, six buttons, three buttons per side, long coat, trousers, shoes, waistcoat, vest,
+lens covering the eye, magnifying glass floating, brown wooden magnifying glass, gold rim, human child, human face,
+brown patch on the paw, brown mark below the sleeve cuff, MONGSIL standing on the fountain, MONGSIL inside the fountain, paw dipped in the water, fountain recoloured, fountain shape changed, missing paw emboss on the fountain, extra fountains, text on the fountain, black background
+```
+
+## 검증 (락 9번)
+
+| 항목 | 결과 |
+|---|---|
+| 세모 옆얼굴 | 통과. 3/4에서 아래 얼굴 넓고 둥글다 |
+| 머리 형태 & 크기 | 통과 |
+| 귀 & 갈색 웨이브 | 통과. 화면 오른쪽 귀 갈색, 웨이브가 모자 아래로 이어짐, 미러 없음 |
+| 배 패치 | 통과 (STEP 1에서 사용자 승인한 범위). 셔츠 아래로 아래 끝만 보임 |
+| 수염 & 입 & 이빨 | 통과 |
+| 눈 | 통과. 작고 가까움 (3/4라 수치 실측은 생략) |
+| HEX & 섞임 | 통과 |
+| 팔 하트 | 통과. 소매 속에 가려짐, 앞발에 갈색 없음 |
+| 팔 길이 & 얼굴 틈 | 통과. 돋보기 든 팔과 얼굴 사이 배경 보임 |
+| 발끝 세 마디 | 통과. 두 뒷발 3마디 & 홈 2개, 가슴 앞 앞발도 마디 보임 |
+| 꼬리 | 주의. 하나의 초승달 & 위 덩이 최대 & 덩이 크기 다름. 홈 깊이 대략 위 13% & 아래 9%로 기준보다 깊지만 15% 미만 |
+| 정수기 | 통과. 핫핑크 하단 & 반투명 상단 링 & 물 & 투명 돔 & 핑크 기둥 & 앞면 발바닥 엠보 모두 에셋과 일치 |
+| 의상 | 통과. 단추 4개, 긴 셔츠, 넥타이, 사냥모자 귀 사이 |
+| 연출 | 주의. 상체 기울기가 약하고 시선이 정수기보다 카메라 쪽에 가깝게 읽힘 |
