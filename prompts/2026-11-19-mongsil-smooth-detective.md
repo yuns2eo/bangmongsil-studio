@@ -410,7 +410,7 @@ lens covering the eye, magnifying glass floating, brown wooden magnifying glass,
 # STEP 2 — 고양이 정수기 탐색
 
 - 요청(한국어): 펫프 아이콘 중 고양이 정수기를 불러와서, 탐정 몽실이가 정수기를 훑어보고 탐색하는 모습 (사용자가 펫프 아이콘을 직접 호출)
-- 상태: 미확인
+- 상태: 승인 (2026-11-19 사용자 "승인, 다음 단계로" — 16:9 확장본 기준)
 - 모델 & 품질 & 해상도 & 비율: GPT Image 2 & low & 1K & 3:4
 - Element: 몽실_3D_매끈 (d76af9ed-b1e7-4ba9-be0e-262a70fbde19), 급수기_고양이 (507822ce-bf38-418a-a87d-ed2b2174035f, petf `Water_Fountain`)
 - medias: STEP 1 승인본(손목 리터치) media 23ec1735-4d38-4612-bbae-aae305b28033, `characters/mongsil/references/3d_smooth/Left_3Q.png` media a9baf7ca-820f-4718-bfed-fce5cff4bfb2
