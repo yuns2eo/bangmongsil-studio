@@ -545,3 +545,47 @@ brown patch on the paw, brown mark below the sleeve cuff, MONGSIL standing on th
 - 결과: 1920×1080, 묶음 좌우 여백 각 572px (2076 단계 618px & 618px). 위 여백 약 197px, 아래 약 128px
 - 몽실이 단독 중심은 화면 중앙보다 오른쪽 (사용자 확인 후 진행)
 - 파일: 로컬 `step2_16x9.png` (스크래치패드, 저장소에는 넣지 않음)
+
+---
+
+# 모션 — 정수기 살펴보기 영상
+
+- 요청(한국어): STEP 2 16:9 이미지로 영상 생성. 720p, 클링, 표정 변화 자연스럽게, 정수기를 살펴보는 영상 (배경색은 그대로 — 사용자 선택)
+- 상태: 미확인
+- 모델: Kling 3.0 Turbo (`kling3_0_turbo`) & 720p & 5초 & 16:9 — 클링 중 720p 지원 모델 견적(3.0 Turbo 7.5 / 4.0 11.25 / 4.0 Flash 15) 중 최저가
+- 시작 프레임: STEP 2 16:9 확장본 media 1d2e9cdf-e291-41ba-b161-84e73b64bbf9
+- job: 05b3a30d-6b85-45af-abfc-e48c86b3a86f
+- 크레딧: 사용 7.5 / 남은 980.5
+- 결과: 1280×720, 24fps, 5.04초
+
+## 프롬프트
+
+```
+Animate this exact image. A soft smooth matte vinyl 3D cat mascot (MONGSIL) in a detective outfit curiously inspects the pink pet water fountain beside it.
+
+Action (5 seconds, gentle and cute): MONGSIL leans a little closer to the fountain and slowly moves the silver magnifying glass across the clear dome, as if scanning for clues. It tilts its big head slightly from side to side while looking through the lens at the fountain, then gives a small satisfied nod. Its natural facial expression changes softly: a focused look, a slow blink, the eyes narrowing a little in concentration, then brightening with a pleased, curious look. The ears twitch once. The brown tail sways gently. The free paw stays near its chest. Thin streams of water keep flowing from the clear dome into the bowl and the water surface ripples softly.
+
+Keep identical for the whole clip: the character design, the broad round head, small black oval eyes, raised muzzle bumps, two whiskers per side, brown ear and brown head wave on the same side, houndstooth deerstalker cap between the ears, white shirt, navy tie, camel trench coat with four buttons, the silver black-handled magnifying glass, the fountain's shape, colours and paw emblem, and the plain light grey background. The mouth stays CLOSED the entire clip: no open mouth, no talking, no teeth. Paws keep their three rounded toe lobes. Smooth matte material, no fur.
+
+Camera: completely static locked-off camera, no zoom, no pan; the framing stays exactly as in the image.
+
+Avoid: open mouth, teeth, fangs, talking, eyes growing larger, character redesign, extra characters, extra objects, text, background change, camera movement, flicker, morphing, long arms, fur.
+```
+
+## 검증 (ffmpeg로 0.25초 간격 20프레임 확인)
+
+| 항목 | 결과 |
+|---|---|
+| 프레이밍 | 통과. 카메라 고정, 묶음 좌우 여백 382~384px & 379~391px (꼬리 흔들림만큼 변동) |
+| 입 & 이빨 | 통과. 전 프레임 입 닫힘, 이빨 없음 |
+| 머리 & 갈색 웨이브 | 통과. 화면 오른쪽 유지, 미러 없음 |
+| 표정 | 집중 → 찡그림 → 깜빡임 → 마지막 눈웃음(^^)으로 변화 |
+| **눈썹** | **실패 (스타일 3번 "no eyebrows").** 찡그리는 구간(약 0.5초, 3.0초, 4.0~4.5초)에 눈 위 짧은 눈썹 선이 생김 |
+| 수염 & 눈 크기 | 통과 |
+| 의상 & 돋보기 & 정수기 | 통과. 일부 프레임에서 사냥모자 챙 모양이 살짝 변함 |
+| 시선 | 주의. 정수기보다 카메라 쪽을 보는 프레임이 많음 |
+| 발 & 꼬리 | 통과 수준. 꼬리 하나의 덩어리 유지 |
+
+## 학습 메모 (1회차)
+
+- 영상에서 "eyes narrowing in concentration"을 지시하면 눈썹 선이 생긴다. 다음엔 표정을 눈 깜빡임 & 고개 기울기 & 눈웃음으로만 지시하고 Avoid에 `eyebrows, brow lines, frowning` 추가.
