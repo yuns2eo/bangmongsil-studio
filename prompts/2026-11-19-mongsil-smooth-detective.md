@@ -398,3 +398,9 @@ lens covering the eye, magnifying glass floating, brown wooden magnifying glass,
 ## 학습 메모 (1회차, 반영 전)
 
 - 소매가 꼬리쪽 위팔을 덮으면 하트가 노출 부위(손목 & 앞발)로 밀려 내려오는 경향. Subject의 "shown whenever that inner edge faces the camera ... omitted only when the edge is turned away or covered" 문장만으로는 못 막음. 같은 실패가 한 번 더 확인되면 scene-blocks Wardrobe 쪽에 소매 문장을 넣는 걸 제안.
+
+## 3차 후처리 (사용자 선택: 지우기)
+
+- 손목 갈색 조각을 재생성 없이 픽셀 리터치로 지웠다 (Figma 대신 로컬 PIL). 조각 양옆 깨끗한 앞발 열(x 637 & 669)의 소매 그림자 → 흰 앞발 그라데이션을 보간해 덮고 가장자리만 살짝 블러.
+- 결과: 소매 아래 앞발 전부 흰색, 앞발 세 마디 그대로. 팔 하트는 소매 속에 가려진 상태로 처리 → 9-11 해소.
+- 파일: 로컬 `step1_rev3_fix.png` (스크래치패드, 저장소에는 넣지 않음).
