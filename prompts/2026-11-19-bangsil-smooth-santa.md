@@ -266,7 +266,7 @@ gift box, petf gift box, sack covering the face, sack covering the tail, floatin
 
 - 요청(한국어): 트리를 가슴 안에 안고 있는 자세로 (산타 일러스트 첨부 — 참고용, 생성에는 첨부 안 함), 수염은 실제 수염 같아야 함. 지금은 너무 딱딱한 재질
 - 2차 상태: 실패 (사용자 수정 요청)
-- 3차 상태: 미확인
+- 3차 상태: 실패 (사용자 수정 요청 — 4차로 대체)
 - 모델 & 품질 & 해상도 & 비율: GPT Image 2 & low & 1K & 1:1
 - Element: 방실_3D_매끈 (cdfcf687-3667-4ee4-b795-33b41009c558), medias 없음 (2차에서 편집 1회 사용 → 새로 생성)
 - job: 5190069c-4cc7-40a3-898a-98c75d314024
@@ -379,3 +379,136 @@ gift sack, gift box, petf gift box, tree covering the face, tree covering the be
 | 배 패치 | 통과. 재킷 아래 반원 |
 | 매끈 재질 | 주의. 몸은 매끈 유지, 모자 & 재킷 테두리는 털 질감으로 바뀜 (수염 털 지시가 의상 테두리로 번짐) |
 | 꼬리 & 발끝 | 통과 |
+
+---
+
+# 4차 — 콧수염이 입을 가림 & 큰 실제 트리 & 실제 재질 의상 (3차 결과 1회 편집)
+
+- 요청(한국어): 수염이 있으면 입매 ㅅ 라인이 안 보여야 함, 세모 코 밑에 바로 콧수염 (산타 얼굴 3D 이미지 첨부 — 참고용, 생성에는 첨부 안 함). 트리 훨씬 크게 & 실제 트리 느낌. 소품 + 의상은 모두 실제 느낌, 방몽실이 재질과 달라야 함
+- **사용자 승인 (락 예외)**: 산타 콧수염이 W 입선을 가리는 것 — 사용자 말로 확인 ("수염이 있으면 입매 ㅅ 라인이 안보여야"). 락 8번 "옷이 락 항목을 가리는 건 허용, 위치는 옮기지 않음"에 해당
+- 3차 상태: 실패 (사용자 수정 요청)
+- 4차 상태: 미확인
+- 모델 & 품질 & 해상도 & 비율: GPT Image 2 & low & 1K & 1:1
+- Element: 방실_3D_매끈 (cdfcf687-3667-4ee4-b795-33b41009c558)
+- medias: 3차 job 5190069c-4cc7-40a3-898a-98c75d314024 (편집 기준, **1회 편집 사용함**)
+- job: 4d99473d-5674-4d86-bb84-69840c826c3d
+- 크레딧: 사용 0.5 / 남은 959.5
+
+## 최종 프롬프트
+
+```
+<<<cdfcf687-3667-4ee4-b795-33b41009c558>>> # BANGSIL Santa hugging a big real Christmas tree — STEP 1 rev 4 (edit of the attached image), square 1:1
+
+The attached image is the previous result of this exact BANGSIL. Keep the character itself identical — head shape, ears, eyes, nose, whiskers, blush, belly patch, tail, paws, body proportions, its smooth soft matte vinyl skin, the background colour and lighting — except these changes:
+1. Mustache: the big fluffy white mustache now sits DIRECTLY under the small triangle nose, touching it, like a real Santa mustache, and it hides the mouth completely — no W smile line, no mouth line and no open mouth are visible anywhere. Below the mustache only the full beard continues.
+2. Tree: replace the small toy tree with a MUCH BIGGER, REAL-LOOKING Christmas tree in a pot.
+3. Materials: every prop and costume piece looks like a real-world material, clearly different from BANGSIL's smooth vinyl skin (see Wardrobe and Prop).
+
+## Subject
+BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
+Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface. BANGSIL's W-shaped smile line would sit below it, but in this costume it is completely hidden under the Santa mustache.
+Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
+Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
+A tail in the body colour growing from the hip on BANGSIL's own left (screen right in front view): ONE continuous padded upright crescent like a fat comma, taller than wide. Its outer edge is a single curve gently scalloped by two SHALLOW dimples, and the swells they separate are unequal — a large rounded dome at the top, then progressively smaller and flatter swells settling back into the curve. Its inner edge is one smooth unbroken curve. The tail is one mass, never a stack of separate balls.
+Eyes, whiskers, nose and mouth line #000000. The body is one solid white cream colour from head to feet — absolutely no brown anywhere, no head patch, no ear patch, no arm marking, no brown tail.
+Expression: cheerful, warm happy eyes; the mouth is hidden under the mustache.
+
+## Orientation
+- Body faces: the camera, front view
+- Head faces: the camera, the same direction as the body
+- Eyes look at: the camera
+The head turns on the body naturally with no visible neck. The face, ears, and all features rotate with the head and never mirror.
+
+## Pose & Paws
+BANGSIL stands upright and hugs a big potted Christmas tree against its chest with both short arms: both paws wrap around the pot from the left and right, held at chest height, close to the body. The arms stay as short as the reference; the elbows stay at the sides of the body. Both paws stay well below the face, never touching the head or the beard.
+Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft visible grooves, like a small clover leaf; the middle lobe is the largest and sits slightly forward. The grooves stay clearly visible as shallow creases. The paw tip is never a smooth undivided club.
+
+## Prop
+Christmas tree: a REAL-LOOKING fir tree — real dense green fir needles and natural branch tips, with real glass bauble ornaments (red, gold and white, glossy reflective glass), a few warm tiny fairy lights, and a metallic gold star on top — in a real terracotta / burlap-wrapped pot. Size: MUCH bigger than before — the tree with its pot is about as tall as the whole character from feet to the hat brim. It is hugged slightly toward screen left: the pot sits at chest height in the paws, and the tree rises up beside the screen-left side of the head, so the tree top reaches about the height of the hat. The branches never cover the eyes, nose or mustache; the whole face stays visible. The pot sits above the jacket hem so the bottom of the belly patch below the jacket stays visible. Nothing is printed on it.
+
+## Wardrobe
+A Santa outfit made of REAL materials, clearly different from BANGSIL's smooth vinyl skin, sized to the chubby mascot body, no trousers:
+- Santa hat: real deep-red crushed velvet fabric with soft natural folds, a thick real white faux-fur trim band and a real fluffy faux-fur pom-pom on its drooping tip, sitting on top of the head BETWEEN the two ears; both ears stay fully visible.
+- Santa jacket: a short jacket of real deep-red velvet fabric with natural folds and creases, thick real white faux-fur trim along the collar, front opening, cuffs and hem, and a real black leather belt with a polished metal gold buckle. It ends ABOVE the belly patch so the bottom of the round belly patch stays visible below the hem. No trousers, no boots — the short white legs and paws are bare.
+- Santa beard and mustache: real-looking soft white hair — fine wavy strands in airy curly locks with natural soft grey shadows and a wispy outline. The mustache sits directly under the triangle nose and covers the mouth; the full rounded beard frames the lower face from cheek to cheek and falls over the upper chest. The two whiskers per side stay visible on the cheeks above the beard.
+These sit on top of the character without changing the head shape, ears, or body volume. The legs stay short and stubby. The tail stays visible.
+
+## Environment
+Plain solid flat background colour #E4DFE3, seamless, with a soft contact shadow under the feet. The tail silhouette stays clearly readable against the background.
+
+## Camera
+Front view, eye level, square 1:1 frame, full body from hat tip to feet with the whole tree and the tail, centred, nothing cropped.
+
+## Style
+BANGSIL itself is a smooth, clean, soft matte vinyl / soft-touch clay 3D mascot: no felt pile, no fur, no fibres on its body. The costume, beard and tree are real-world materials (velvet, faux fur, leather, metal, real hair, real fir needles, glass) and look clearly different from the character's smooth skin, like a real outfit and real props on a vinyl figure. Soft even studio lighting, gentle contact shadow. Paw pads, nose, and whisker rods are raised relief.
+
+## Critical conditions (must all hold)
+1. BANGSIL has NO brown anywhere: no head patch, no brown ear, no arm marking, no brown tail. The body is one solid colour broken only by the inner ears, blush, belly patch and paw pads.
+2. The face is flat. There are no raised white muzzle bumps under the nose.
+3. The mustache sits directly under the nose and hides the mouth: no mouth line, no open mouth, no teeth are visible (accepted by the user for this costume).
+4. Both ears are low broad triangles with rounded tips, each clearly wider at the base than tall, matching each other, body-coloured outside with #FFCBD1 inside. Neither ear is a tall upright spike and neither tip comes to a point.
+5. In any turned or side view, the lower face stays broad and rounded — never a triangle or a pointed chin.
+6. The head stays a broad oval and fills the top half of the figure.
+7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
+7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
+8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
+9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
+10. The Santa hat sits between the ears; both ears stay fully visible.
+11. The jacket ends above the belly patch; the round #FFCBD1 belly patch stays clearly visible. No trousers.
+12. The big white Santa beard and mustache look like real soft hair, clearly visible against the face; two whiskers per side stay visible; the eyes, nose and ears are not covered.
+13. Both paws hug the pot at chest height, well below the face and beard; the arms stay short.
+14. The character body stays smooth matte vinyl; the costume, beard and tree are real materials, visibly different from the body.
+15. The big tree reaches about hat height beside the head and never covers the eyes, nose or mustache; the bottom of the belly patch stays visible.
+
+## Negative
+smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
+fused toes, two toe lobes, four toe lobes, four toe pads,
+extra characters, two cats, duplicated BANGSIL, MONGSIL, calico cat, brown patched cat, realistic cat,
+brown marking, brown ear, brown head patch, brown tail, heart on the arm, any brown on the body,
+#FFCDB4, #B79571, peach inner ears,
+raised muzzle bumps, puffy white muzzle,
+human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
+triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
+small head, folded ears, mismatched ears, teeth, fangs,
+elongated oval belly patch, off-centre belly patch, raised button belly, missing belly patch,
+whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
+small eyes, close-set eyes, tiny eyes,
+neutral gray whiskers, gray nose,
+squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
+snowman tail, tail as stacked spheres, three separate balls, deep notches in the tail, equal tail lobes,
+fox ears, tall upright ears, pointed ear tips, sharp ear tips, narrow ears, ears taller than their base width,
+tail invisible against the background,
+long fur on the body, hair on the body, seams or stitching on the cat body, felt texture, flocked pile, embossed grain, mirror gloss, wet look,
+text, watermark, logo, cropped character, floating object, slim body, long arms, arms touching the face,
+paw touching the face, paw overlapping the head, arm fused to the head, no gap between paw and cheek,
+hat covering the ears, tiny mustache, hard plastic beard, sculpted rigid beard, clay beard, smooth vinyl beard, beard blending into the face, beard covering the eyes, visible mouth, W smile line, open mouth, pink tongue, gap between nose and mustache, beard hiding the whiskers, grey beard,
+plastic costume, vinyl costume, clay costume, toy tree, plastic tree, cartoon tree, small tree, plastic ornaments, fur on the cat body,
+jacket covering the belly patch, trousers, pants, boots, gloves, human hands,
+gift sack, gift box, petf gift box, tree covering the face, branches over the eyes, floating tree, text, human face, human body
+```
+
+## 검증 (락 9번)
+
+| 항목 | 결과 |
+|---|---|
+| 콧수염 & 입 | 통과 (사용자 승인 범위). 콧수염이 코 바로 아래, 입선 & 입 안 보임, 이빨 없음 |
+| 수염 질감 | 통과. 실제 털 같은 부드러운 턱수염 |
+| 트리 | 통과. 진짜 전나무 잎, 유리 오너먼트, 작은 전구, 금속 별, 마대 화분. 모자 높이 이상으로 큼 |
+| 의상 재질 | 통과. 벨벳 모자 & 재킷, 퍼 트림, 가죽 벨트, 금속 버클 — 몸(매끈 비닐)과 확실히 다름 |
+| 몸 재질 | 통과. 매끈 비닐 유지 |
+| 갈색 & 섞임 | 통과 |
+| 얼굴 실측 | 주의. 눈폭 약 0.059 HW, 간격 약 0.217 HW (3차와 비슷, 방실 방향) |
+| 수염(whisker) | 주의. 화면 왼쪽 2가닥은 트리 가지에 일부 가려짐, 오른쪽 2가닥 온전 |
+| 귀 & 모자 | 통과 |
+| 앞발 | 통과. 두 앞발이 화분을 양옆에서 감쌈, 세 마디, 얼굴과 떨어짐 |
+| 팔 길이 | 주의. 화면 왼쪽 팔이 화분 쪽으로 옆으로 뻗어 레퍼런스보다 조금 길어 보임 (실패선은 아님으로 판단) |
+| 배 패치 | 통과. 재킷 아래 반원 |
+| 꼬리 & 발끝 | 통과 |
+
+## 다음 수정 시 주의
+
+- 3차를 편집 기준으로 1회 썼음. 4차를 다시 고치려면 원본 Element로 새로 생성
