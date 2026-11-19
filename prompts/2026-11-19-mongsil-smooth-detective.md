@@ -594,7 +594,7 @@ Avoid: open mouth, teeth, fangs, talking, eyes growing larger, character redesig
 
 - 요청(한국어): 눈썹 막고 재생성
 - 1차 상태: 실패 (눈썹, 사용자 재생성 요청)
-- 2차 상태: 미확인
+- 2차 상태: 실패 (입 열림 — 사용자가 새 프롬프트로 재생성 요청)
 - 모델: Kling 3.0 Turbo & 720p & 5초 & 16:9, 시작 프레임 동일
 - job: 5f8a7a12-48f7-4e4d-95df-be79cefa0b92
 - 크레딧: 사용 7.5 / 남은 973
@@ -614,3 +614,49 @@ Avoid: open mouth, teeth, fangs, talking, eyes growing larger, character redesig
 ## 학습 메모
 
 - 1차: "eyes narrowing in concentration" → 눈썹 생성. 2차: 눈썹 막자 입이 열림. Kling 3.0 Turbo는 표정 변화를 요청하면 눈썹 또는 입으로 표현하려는 경향. 같은 현상이 다시 나오면 영상 프롬프트 규칙으로 정리 제안.
+
+## 모션 3차 — 사용자 프롬프트 + 소리 끄기
+
+- 요청(한국어): 소리는 꺼줘, 프롬프트는 사용자가 준 "MONGSIL — Curious Water Fountain Inspection" 문서로
+- 2차 상태: 실패 (입 열림 — 사용자가 새 프롬프트로 재생성 요청)
+- 3차 상태: 미확인
+- 모델: Kling 3.0 Turbo & 720p & 5초 & 16:9, 시작 프레임 동일
+- job: f0d54775-0482-4152-8e2b-3358b3be2c40
+- 크레딧: 사용 7.5 / 남은 965.5
+- 소리: Kling 3.0 Turbo에는 소리 끄기 옵션이 없음. 결과에 aac 오디오 트랙이 있어 ffmpeg로 오디오만 제거(`-c:v copy -an`, 영상 재인코딩 없음) → `motion3_mute.mp4`
+- 프롬프트 변경: 사용자 원문이 이미지→영상 제한 2500자를 넘어 422 거절됨. 내용은 그대로 두고 제목·줄바꿈만 압축(2356자). Avoid에 락 규칙인 `eyebrows, brow lines`만 추가
+
+## 3차 프롬프트 (전송본)
+
+```
+MONGSIL — Curious Water Fountain Inspection. Animate this exact image for 5 seconds.
+A soft smooth matte vinyl 3D cat mascot (MONGSIL) in a detective outfit curiously explores the pink pet water fountain.
+
+ACTION: MONGSIL behaves like a genuinely curious little detective discovering an unfamiliar object. It leans slightly closer and carefully examines the fountain through its silver magnifying glass; its gaze naturally follows the water flowing inside the clear dome. Suddenly something catches its attention: it pauses briefly, tilts its big head with a cute, puzzled "Huh? What's this?" expression, and looks more closely through the magnifying glass. It gently shifts the magnifying glass to inspect another part of the fountain, showing renewed curiosity. Movements are spontaneous and slightly irregular, with natural pauses between observations — curious and thoughtful, not a rehearsed animation.
+
+EYES & EXPRESSION (very important): keep the original small black oval eyes. Express curiosity mainly through gaze direction, head tilts and brief pauses. Eyes stay naturally open most of the clip; at most ONE subtle spontaneous blink in 5 seconds; no rhythmic or repeated blinking; no exaggerated eye narrowing or enlargement. The mouth stays CLOSED throughout; no talking, teeth or exaggerated expressions.
+
+SECONDARY MOTION: one subtle ear twitch; brown tail sways gently; free paw stays near the chest; small natural body adjustments; thin streams of water flow continuously into the bowl with soft natural ripples.
+
+CHARACTER LOCK — preserve exactly: broad round head and body proportions; small black oval eyes; raised muzzle bumps; two whiskers per side; brown ear and brown head wave on the original side; houndstooth deerstalker cap between the ears; white shirt and navy tie; camel trench coat with four buttons; silver magnifying glass with black handle; original pink fountain shape, colours and paw emblem; three rounded toe lobes on each paw; smooth matte vinyl, no fur; plain light grey background.
+
+CAMERA: completely static locked-off camera; no zoom, pan, tilt or framing change.
+
+AVOID: repetitive blinking, mechanical scanning, robotic timing, exaggerated reactions, open mouth, talking, teeth, eye enlargement, eyebrows, brow lines, character redesign, extra objects, long arms, fur, flicker, morphing, camera movement.
+```
+
+## 3차 검증 (0.25초 간격 20프레임)
+
+| 항목 | 결과 |
+|---|---|
+| 소리 | 통과. 오디오 트랙 제거 확인 (video 스트림만 남음) |
+| 프레이밍 | 통과. 좌 382~384px, 우 365~393px (꼬리 흔들림) |
+| 시선 | 개선. 후반에 고개를 정수기 쪽으로 숙이고 돋보기를 따라봄 |
+| **눈썹** | **실패.** 약 2.0초부터 끝까지 "Huh?" 갸웃 표정에서 눈썹 선이 뚜렷하게 생김 |
+| **입** | **실패(지시 위반).** 약 0.5초부터 입이 벌어져 혀가 보임. 이빨은 없음 |
+| 눈 | 한쪽 눈 찡그림(윙크) 프레임 있음 |
+| 의상 & 정수기 & 갈색 웨이브 | 통과 |
+
+## 학습 메모 (3회 누적)
+
+- Kling 3.0 Turbo에서 표정 연기("concentration", "puzzled Huh?")를 요구하면 눈썹 & 벌린 입으로 표현한다. 3회 연속 확인 (1차 눈썹, 2차 입, 3차 눈썹+입). 표정 단어를 빼고 고개·시선·돋보기 동작만 지시하는 쪽으로 규칙화 후보 → templates/scene.md 모션 항목 반영 제안 대상.
