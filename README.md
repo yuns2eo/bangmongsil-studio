@@ -46,9 +46,9 @@ characters/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
     scene-blocks.md              방실이 Subject & Critical conditions & Negative
     references/3d/               Front / Left_3Q / Left_Profile / Back
-                                 Smile / Sit / Run / Wave                    (8장)
+                                 Smile / Sit / Run                           (7장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
-                                 Run / Sit / Smile / Wave                    (8장)
+                                 Run / Sit / Smile                           (7장)
 assets/
   props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
                                  studio / detail / petf-{common,cat,dog}
@@ -95,8 +95,7 @@ Claude Code에서는 `CLAUDE.md`가 Element 선택, 생성 설정, 기록 방법
 | 앉기 | `Sit.png` | `Sit.png` |
 | 입 벌린 표정 | `Tongue.png` | `Smile.png` |
 | 발바닥이 보이는 장면 | `Paw_Hind.png` 추가 | `Sit.png` 참고 |
-| 손바닥이 보이는 장면 | `Paw_Front.png` 추가 | `Wave.png` (손바닥이 카메라를 향한 컷) |
-| 손 흔들기 | — | `Wave.png` |
+| 손바닥이 보이는 장면 | `Paw_Front.png` 추가 | 없음 — `Sit.png` 발바닥 패드 구성 참고 |
 
 - 앵글이 명시되지 않았으면 `Front.png` + `Left_3Q.png` 두 장을 첨부합니다.
 - 표정 & 포즈 레퍼런스는 비슷한 것을 요청할 때만 추가합니다.

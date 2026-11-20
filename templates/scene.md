@@ -107,7 +107,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - 손바닥이 카메라를 향하는 자세(손 흔들기, 하이파이브, 만세)는 **사용자가 따로 말하지 않아도** 손바닥 패드 문장을 넣는다: `the palm facing the viewer has soft pink paw pads: one large central pad and exactly three small round toe pads above it`. 이 문장을 빼먹어 패드 없이 나온 사례가 있다 (`prompts/2026-10-22-staged-scenes.md`, 택배기사).
 - **발가락 패드는 3개다.** 이전 템플릿에 4개로 적혀 있었다 (2026-11-09 레퍼런스 실측으로 정정).
 - 몽실이는 손바닥 젤리가 보여야 하면 `mongsil_3d_paw_front_v1`을, 발바닥이면 `mongsil_3d_paw_hind_v1`을 소품 Element로 추가한다. 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
-- 방실이는 앞발 손바닥 Element는 없지만 **레퍼런스는 있다** — `characters/bangsil/references/3d/Wave.png`가 손바닥 정면이다. 손바닥이 보여야 하면 이 컷을 `medias`로 첨부한다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)이다.
+- 방실이는 앞발 손바닥 Element도 레퍼런스도 없다(2026-11-20 `Wave.png` 삭제). 손바닥이 보여야 하면 `Sit.png`를 `medias`로 첨부해 발바닥 패드 구성을 따르게 하고 미검증이라고 알린다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)이다.
 
 ## 5. 소품 형태 & 방향 유지
 

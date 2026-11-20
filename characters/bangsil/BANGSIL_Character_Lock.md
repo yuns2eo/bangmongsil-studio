@@ -20,7 +20,6 @@ The approved reference set is `characters/bangsil/references/3d/`:
 | `Smile.png` | 정면 웃는얼굴 | 1254 px | open-mouth smile |
 | `Sit.png` | 앉은자세 | 1254 px | sitting; the hind-sole pad reference |
 | `Run.png` | 측면 뛰는자세 | 1254 px | walking, running, mid-stride |
-| `Wave.png` | 손 흔들기 | 1254 px | a raised arm; **the front-paw palm reference** — the palm faces the camera. Also the reference for how far a raised paw clears the head |
 
 Rotate one coherent character between views; never redesign per view.
 
@@ -35,7 +34,7 @@ When sources disagree, apply this order:
 
 **이 순서의 예외 — 섹션 6이 "미반영"이라고 적어 둔 항목.** 레퍼런스 렌더가 아직 최신 규칙을 따라가지 못한 항목은 섹션 6의 locked value가 레퍼런스를 이긴다. 현재 해당하는 것은 **수염 & 코 & 입선 색상**뿐이며, `#000000`이 기준이다. 그 외 모든 항목은 위 순서 그대로 레퍼런스가 우선이다.
 
-Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the eight images show, keep the visible structure intact and say the detail is unverified rather than inventing it. **`Wave.png` is the front-palm reference** — the raised paw shows its palm with pads. See section 4-1.
+Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the seven images show, keep the visible structure intact and say the detail is unverified rather than inventing it. There is **no front-palm reference** (`Wave.png` was removed 2026-11-20); a visible palm is unverified — follow the hind-sole layout in `Sit.png`. See section 4-1.
 
 ## 1. Non-negotiable identity and proportion
 
@@ -231,8 +230,8 @@ This is the single most reliably broken detail. The failure is always the same: 
 - A **hind paw sole facing the viewer** carries one large central pad and **three** round toe pads in an arc above it — `Sit.png`, `Run.png`.
 - **Three, not four.**
 - Even with the inner face toward the camera, the outer edge of the paw still reads as the three lobes above. Pads and lobes are two separate facts; state both.
-- A **front paw palm facing the viewer** carries the same layout — one large central pad with **three** round toe pads in an arc above it. `Wave.png` is the reference for it. *(Correction 2026-11-09: this file previously said `Wave.png` showed the back of the paw and that BANGSIL had no front-palm reference. Both were wrong. The palm faces the camera and the pads are plainly visible.)*
-- Measured on `Wave.png`: the central pad is a wide oval about **70 × 38 px** on the 1254 px canvas; the three toe pads sit above it, the middle one largest (about 35 × 30) and the outer two a little smaller (about 34 × 30 and 27 × 23).
+- A **front paw palm facing the viewer** carries the same layout — one large central pad with **three** round toe pads in an arc above it. No reference image shows it since `Wave.png` was removed on 2026-11-20 — follow the hind-sole layout in `Sit.png` and call it unverified. *(Earlier correction 2026-11-09: this file previously said `Wave.png` showed the back of the paw and that BANGSIL had no front-palm reference. Both were wrong. The palm faces the camera and the pads are plainly visible.)*
+- Measured on the removed `Wave.png`: the central pad is a wide oval about **70 × 38 px** on the 1254 px canvas; the three toe pads sit above it, the middle one largest (about 35 × 30) and the outer two a little smaller (about 34 × 30 and 27 × 23).
 - The back of a paw is plain body colour with no pads.
 - Pad pink is **the same point colour as the inner ears, blush, and belly patch** — not a separate colour. Sampled on `Wave.png`, every pink area lands in the same coral range under 3D shading (pads `#FCA29B`, inner ears `#ED8A8A` – `#EF9393`, blush `#E18B87` – `#E69D9C`, belly `#F3A5A8`), all more saturated than the flat `#FFCBD1` spec. That gap is the render, not a different swatch. See the open item in section 6 before writing an exact pad HEX into a prompt.
 

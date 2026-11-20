@@ -10,7 +10,7 @@ Use that character's own `references/3d_smooth/` folder, not `references/3d/`.
 
 | 폴더 | 몽실 | 방실 |
 |---|---|---|
-| `references/3d_smooth/` | Front / Left_3Q / Left_Profile / Back / Run / Sit / Tongue | Front / Left_3Q / Left_Profile / Back / Run / Sit / Smile / Wave |
+| `references/3d_smooth/` | Front / Left_3Q / Left_Profile / Back / Run / Sit / Tongue | Front / Left_3Q / Left_Profile / Back / Run / Sit / Smile |
 
 Felt and smooth references must not be mixed in one prompt. If a pose exists only in felt (for example MONGSIL `Paw_Front` & `Paw_Hind`), attach the felt image only as a shape reference and state that the material must stay smooth.
 
