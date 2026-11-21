@@ -55,3 +55,52 @@
 - 크레딧: 7.5 사용
 - 검수: 자세 변화(팔 벌림 & 한 발 깡충 & 박수) 나옴. 수염 없음
 - 남은 문제: 약 2.2~4.2초 오른발을 접어 올릴 때 발바닥 패드가 카메라를 향함(요청 위반). 0.6초 & 4.4초쯤 눈웃음(일자 눈) 다시 나옴
+
+## 5차 (2026-11-21) — 씨댄스로 전환
+
+- 요청: 박수 칠 때 발을 들지 않게. 씨댄스로, 사용자가 몽실 자명종 모션에서 가장 잘 나왔다고 한 프롬프트 구조(#Scene & #EyeLock & #Expression & #NoEffects & #FramingLock & #Motion beats & #Identity & 객체별 잠금 & #Negative)를 그대로 따름
+- 모델 & 모드 & 해상도 & 길이 & 비율: Seedance 2.0 & fast & 480p & 5초 & 16:9 (오디오 off). Seedance 2.5와 2.0 std는 Plus 플랜 이상이라 starter에서 막힘(2.5는 생성 시 "Requires plus plan or higher")
+- 미디어: 시작 & 끝 프레임 = 3차의 두 눈 뜬 16:9 이미지(69ae2c05-…), image_references = 방실 매끈 시트(7e5ff077-…)
+- 상태: 미확인
+- job: 719bf061-aa83-4866-89cd-065322c87c93
+- 결과: https://d8j0ntlcm91z4.cloudfront.net/user_3EWRwwFkTW4zqBlyAMkG4zr0B0i/hf_20261121_141154_719bf061-aa83-4866-89cd-065322c87c93.mp4 (864×496)
+- 크레딧: 5 사용
+- 검수: 5초 내내 두 눈이 동그란 타원 유지(눈 감김 0). 박수 구간 두 발 바닥에 붙어 있음. 수염 없음 & 갈색 없음 & 볼 털 유지
+- 남은 문제: (1) 입이 열린 미소에서 닫힌 작은 W 입으로 바뀌어 0.4~4.4초 동안 유지, 끝에서 다시 열림 (2) 박수 사이 손을 벌릴 때 손바닥 패드가 보임 (3) 3.6~4.2초 꼬리가 옆으로 길게 뻗으며 마디가 생김 (4) 박수 동작이 작아 잘 안 읽힘
+- 확인된 사실: EyeLock 구조가 씨댄스에서 눈 감김을 막음. 같은 내용을 클링에 넣었을 때(1 & 3 & 4차)는 못 막았음
+
+### 프롬프트 전문
+
+```
+#Scene: The 3D kitten mascot BANGSIL stands on a flat clean pale cream background with its front paws pressed together under its chin. It does a cute little happy clap dance in place. Flat clean pale cream background, completely plain. The attached character sheet is an identity reference only: match the character's shape, proportions, face, markings and colours exactly, but do not reproduce the sheet layout, grid background, labels, text, leader lines or multiple views.
+
+#EyeLock: ABSOLUTE RULE. BANGSIL's eyes are TWO SOLID BLACK OVAL BEADS set into its face. They are the SAME TWO BLACK OVALS, the same size and the same shape, in EVERY SINGLE FRAME from the first to the last. They have NO EYELIDS and they CANNOT close, cannot narrow, cannot curve, cannot bend into arcs or crescents, cannot turn into upward ^ ^ lines, cannot squint and cannot blink. The eyes only move by sliding to look in a direction - their SHAPE never changes. If an eye becomes a curved line at any frame, the whole shot is wrong.
+
+#Expression: BANGSIL keeps the SAME happy open-mouth smile as in the first frame for the whole video - the black W-shaped mouth line with the small pink tongue showing. The mouth shape stays the same; it does not laugh wider, does not show teeth and does not close into a grin with squinting eyes. The joy is carried by the body movement, the ears and the tail, not by the eyes.
+
+#NoEffects: There are NO cartoon effect marks anywhere in this video. NO motion lines, NO speed lines, NO sparkles, NO stars, NO hearts, NO impact bursts, NO radiating marks, NO symbols, NO text. Movement is shown ONLY by the real motion of the 3D character.
+
+#FramingLock: THE CAMERA IS COMPLETELY LOCKED. The framing is identical to the first frame for all 5 seconds - no zoom, no push-in, no dolly, no pan, no tilt, no orbit, no crop, no reframing. BANGSIL keeps the same size and stays centred. The wide empty cream margins on the left and the right stay exactly as wide in every frame.
+
+#Motion beats:
+
+1. 0.0-0.6s: The raised back foot gently comes down so BOTH FEET stand flat on the ground side by side.
+
+2. 0.6-3.4s: BOTH FEET STAY FLAT ON THE GROUND THE WHOLE TIME. Neither foot lifts, no hopping, no kicking. With feet planted, BANGSIL claps its front paws together in front of its chest - clap, clap, a short pause, clap, clap - paws meeting palm to palm, the palms facing each other and never facing the camera. With each clap the body gives a small happy bob down and up from the knees and the ears flick.
+
+3. 3.4-4.4s: The paws come back together under the chin, and BANGSIL sways its round body once to the left and once to the right with a cute little head tilt, the fluffy tail swinging with the sway. Feet still flat on the ground.
+
+4. 4.4-5.0s: Only now the back foot lifts a little to return to exactly the same pose as the first frame, so the video loops seamlessly.
+
+#Identity: BANGSIL stays EXACTLY the same character as in the first frame - same big round head, same chubby short round body, same short stubby arms and legs, same soft smooth matte 3D toy material. One continuous shot of one character.
+
+#Face: NO whiskers of any kind. Two small soft fur tufts on each side of the face grow out of the lower cheek outline, the upper tuft larger. Soft pink blush on both cheeks. Eyes, nose and mouth line pure black.
+
+#ColourRule: The body is one solid white cream colour from head to feet - absolutely NO brown anywhere. The only pink #FFCBD1 areas are the inner ears, the cheek blush and the centred circular belly patch.
+
+#Tail: The tail keeps ONE continuous padded cream shape in every frame - a fat upright crescent with a large rounded dome at the top and two smaller, flatter swells below it along its OUTER edge only, and ONE smooth unbroken curve on its INNER edge, joined to the hip by a thick base. It may sway but NEVER changes shape, never flattens, never becomes a row of beads, never splits into puffs. The tail silhouette stays clearly readable against the background.
+
+#Paws: The feet stay flat and parallel to the ground with the toes pointing forward and down, so the bottoms of the feet are never shown to the camera. During the claps the palms face each other, never the camera.
+
+#Negative: curved eyes, crescent eyes, arc eyes, closed eyes, squinting eyes, narrowed eyes, smiling eyes, happy eyes, blinking, wink, eyelids, eyelashes, eyebrows, teeth, fangs, laughing, screaming, lifting a foot while clapping, hopping, jumping, kicking, standing on one leg, showing the soles of the feet, foot pads facing the camera, palm pads facing the camera, motion lines, speed lines, sparkles, stars, hearts, impact marks, symbols, text, zoom, push in, dolly, camera movement, pan, tilt, orbit, reframing, cropping, cut off by the frame, losing the side margins, close-up, walking away, long arms, stretched arm, lengthened limb, tall body, slim body, character morphing, changing proportions, a different cat, MONGSIL, whiskers, missing cheek tufts, brown marking, brown ear, brown tail, any brown on the body, #FFCDB4, #B79571, elongated oval belly patch, squat tail, flat tail, paddle tail, beaded tail, snowman tail, tail changing shape, separated fingers, claws, nails, background pattern, background texture, watermark
+```
