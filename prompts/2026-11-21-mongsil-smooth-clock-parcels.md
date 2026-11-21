@@ -120,7 +120,7 @@ clothes, hat, parcel boxes, extra props, black background
 
 ## STEP 2 — 앉은 자세 & 택배상자 3개
 
-- 상태: 미확인
+- 상태: 승인 (2026-11-21 사용자 "승인" — 16:9 정중앙 후처리본 기준)
 - 모델 & 품질 & 해상도 & 비율: GPT Image 2 & low & 1K & 1:1
 - Element: 몽실_3D_매끈, 자명종 (f5855127-…), 택배상자 (b8237ed4-2c67-4a1a-9eb5-f28025e375d3, petf `Parcel_Box`)
 - medias: STEP 1 승인 job 74ccf4ad-78ba-4615-b339-d31666531083, `characters/mongsil/references/3d_smooth/Sit.png` (media c4ffaa84-4914-47b7-82c9-38bbd4dc1b5f)
