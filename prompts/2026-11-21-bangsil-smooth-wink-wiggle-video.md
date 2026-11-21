@@ -104,3 +104,11 @@
 
 #Negative: curved eyes, crescent eyes, arc eyes, closed eyes, squinting eyes, narrowed eyes, smiling eyes, happy eyes, blinking, wink, eyelids, eyelashes, eyebrows, teeth, fangs, laughing, screaming, lifting a foot while clapping, hopping, jumping, kicking, standing on one leg, showing the soles of the feet, foot pads facing the camera, palm pads facing the camera, motion lines, speed lines, sparkles, stars, hearts, impact marks, symbols, text, zoom, push in, dolly, camera movement, pan, tilt, orbit, reframing, cropping, cut off by the frame, losing the side margins, close-up, walking away, long arms, stretched arm, lengthened limb, tall body, slim body, character morphing, changing proportions, a different cat, MONGSIL, whiskers, missing cheek tufts, brown marking, brown ear, brown tail, any brown on the body, #FFCDB4, #B79571, elongated oval belly patch, squat tail, flat tail, paddle tail, beaded tail, snowman tail, tail changing shape, separated fingers, claws, nails, background pattern, background texture, watermark
 ```
+
+### 5차 업스케일 (2026-11-21)
+
+- 사용자 반응: "너무 좋은데 해상도가 떨어져서 1080으로" (승인 여부는 아직 명시 안 함)
+- 방법: 다시 생성하지 않고 5차 결과를 업스케일. Seedance 2.0 1080p는 std 모드라 Plus 플랜 필요
+- 도구: upscale_video & bytedance & preset aigc & 1080p & 24fps. job f4b1d14b-fed6-4aeb-a947-6dfed6a88de9 → 1880×1080
+- 후처리: 좌우 20px를 가장자리 색으로 늘려 1920×1080(16:9)로 맞춤 (ffmpeg pad + fillborders smear)
+- 크레딧: 약 1.01 사용 (710.97 → 709.96)
