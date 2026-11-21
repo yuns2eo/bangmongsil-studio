@@ -13,15 +13,16 @@
 ```
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
-A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
-Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+A completely flat face with no raised muzzle bumps. A small rounded black triangle nose sitting high, directly on the smooth face, its top level with the bottom of the eyes, and directly below it a drawn wide black W-shaped smile line.
+NO whiskers of any kind. Instead, two small soft fur tufts on each side of the face, four in total, growing out of the lower cheek outline below the blush in the body colour: the upper tuft larger, the lower tuft smaller, both soft rounded points sweeping outward and slightly down, part of the head silhouette.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
 A tail in the body colour growing from the hip on BANGSIL's own left (screen right in front view): ONE continuous padded upright crescent like a fat comma, taller than wide. Its outer edge is a single curve gently scalloped by two SHALLOW dimples, and the swells they separate are unequal — a large rounded dome at the top, then progressively smaller and flatter swells settling back into the curve. Its inner edge is one smooth unbroken curve. The tail is one mass, never a stack of separate balls.
-Eyes, whiskers, nose and mouth line #000000. The body is one solid white cream colour from head to feet — absolutely no brown anywhere, no head patch, no ear patch, no arm marking, no brown tail.
+Eyes, nose and mouth line pure black #000000. The body is one solid white cream colour from head to feet — absolutely no brown anywhere, no head patch, no ear patch, no arm marking, no brown tail, no brown on the face.
 Expression: {표정}.
 ```
 
+- **방실 Element(`방실_3D` & `방실_3D_매끈`)는 옛 얼굴(수염 & 갈색 이목구비)로 등록돼 있다.** 재등록 전까지는 정면 컷이라도 해당 재질의 현재 `references/`(정면은 `Front.png`)를 `medias`로 함께 첨부하고, 결과에 수염이 붙었는지 반드시 본다 (`BANGSIL_Character_Lock.md` 0번 & 9-9번).
 - `{표정}` 만 바꾼다. 나머지 문장은 줄이지 않는다. 특히 마지막 줄의 갈색 금지 문장을 빼면 몽실이의 갈색이 돌아온다.
 - 입을 벌리는 장면이면 마지막 줄을 `Expression: open-mouth smile, the W mouth opening into a rounded smile, no teeth and no fangs.`로 바꾼다.
 
@@ -38,8 +39,8 @@ Expression: {표정}.
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. There are NO whiskers anywhere on the face. Exactly two soft fur tufts per side grow out of the lower cheek outline, the upper one larger.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 {10~. 이번 장면 고유 조건}
@@ -76,13 +77,13 @@ extra characters, two cats, duplicated BANGSIL, MONGSIL, calico cat, brown patch
 brown marking, brown ear, brown head patch, brown tail, heart on the arm, any brown on the body,
 #FFCDB4, #B79571, peach inner ears,
 raised muzzle bumps, puffy white muzzle, missing mouth line, no smile line,
-human body, long limbs, visible neck, separated fingers, knuckles, claws, nails, human hands,
+human body, long limbs, visible neck, separated fingers, pointing finger, knuckles, claws, nails, human hands,
 triangular face, pointed chin, narrow lower face, perfectly spherical head, vertically long head,
 small head, folded ears, mismatched ears, teeth, fangs,
 elongated oval belly patch, off-centre belly patch, raised button belly, missing belly patch,
-whiskers printed on face, engraved whiskers, thick rigid whiskers, three whiskers per side,
+whiskers, whisker rods, whisker lines, cat whiskers, printed whiskers, missing cheek tufts, long cheek hair, mane, spiky cheek fur,
 small eyes, close-set eyes, tiny eyes,
-neutral gray whiskers, gray nose,
+brown eyes, brown nose, brown mouth line,
 squat tail, bumps on the inner edge of the tail, tail as a row of equal beads, tapered tail,
 snowman tail, tail as stacked spheres, three separate balls, deep notches in the tail, equal tail lobes,
 fox ears, tall upright ears, pointed ear tips, sharp ear tips, narrow ears, ears taller than their base width,

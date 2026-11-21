@@ -12,7 +12,7 @@ Use that character's own `references/3d_smooth/` folder, not `references/3d/`.
 |---|---|---|
 | `references/3d_smooth/` | Front / Left_3Q / Left_Profile / Back / Run / Sit / Tongue / Face | Front / Left_3Q / Left_Profile / Back / Run / Sit / Smile / Face |
 
-`Face.png` is a head-only close-up (added by the user 2026-11-21). Use it for face-detail and head-only shots.
+`Face.png` is a head-only close-up (added by the user 2026-11-21). Use it for face-detail and head-only shots. It is rendered **glossy**, which section 2 does not allow — use it for face shape and proportions only, never as a material reference.
 
 Felt and smooth references must not be mixed in one prompt. If a pose exists only in felt (for example MONGSIL `Paw_Front` & `Paw_Hind`), attach the felt image only as a shape reference and state that the material must stay smooth.
 
@@ -22,7 +22,7 @@ Felt and smooth references must not be mixed in one prompt. If a pose exists onl
 - No felt pile, no embossed grain, no fur, no fuzz, no fibres.
 - Very soft satin response to light: broad gentle highlights only. No mirror gloss, no wet look, no glass, no metal.
 - Coloured markings and patches are integrated surface colour with clean edges, not stickers.
-- Raised relief is the same as in felt: paw pads, nose, MONGSIL's two muzzle bumps, and whiskers as raised rods.
+- Raised relief is the same as in felt: paw pads, nose, MONGSIL's two muzzle bumps, and MONGSIL's whiskers as raised rods. BANGSIL has no whiskers, only soft cheek tufts in the body material.
 - Paw tips keep the three lobes with two **shallow** grooves. Smooth material makes them easy to lose — the paw must not become a plain club, and the grooves must not be cut deep either. BANGSIL `Sit.png` & `Run.png` in `3d_smooth/` are the depth standard for both characters.
 
 ## 3. How the smooth references were made (2026-11-19)

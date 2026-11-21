@@ -89,7 +89,7 @@ Everything is expressed against **HW = the head's maximum width in that frame**,
 | Whiskers | `#443D3C` – `#534642`, R−B **+8 to +19** | `#000000` — render is a neutral dark gray, not pure black |
 | Nose | `#151110` | `#000000` ✓ close |
 
-MONGSIL's whiskers read as a **neutral dark gray**: red and blue are within about 20 of each other. BANGSIL's sampled at R−B **+48 to +54** — a warm brown. If MONGSIL's whiskers come out warm brown, that is BANGSIL's value leaking in. Keep the spec `#000000`; the render's gray is the known small mismatch, the brown is not.
+MONGSIL's whiskers read as a **neutral dark gray**: red and blue are within about 20 of each other. Keep the spec `#000000`; the render's gray is the known small mismatch. Warm brown whiskers are wrong. *(This paragraph used to compare against BANGSIL's warm-brown whiskers; BANGSIL has had no whiskers since 2026-11-20 — see section 10.)*
 
 ### Profile rotation
 
@@ -313,16 +313,15 @@ The two characters share a body and contradict each other on the face. Loading b
 |---|---|---|
 | Point colour | `#FFCDB4` | `#FFCBD1` |
 | Brown `#B79571` | head & ear wave, arm heart, tail | none |
-| Eyes | **0.037 HW wide, 0.157 HW apart** | **0.054 HW wide, 0.206 HW apart** — about 1.5 × larger |
-| Whiskers in the renders | neutral dark gray, R−B +8 to +19 | warm brown, R−B +48 to +54 |
-| Ears | low broad rounded triangles, free height 0.08 × head width | same shape, free height 0.11 × head width |
+| Eyes | **0.037 HW wide, 0.157 HW apart** | **about 0.06 HW wide, 0.21 – 0.22 HW apart** — about 1.6 × larger |
+| Ears | low broad rounded triangles, free height 0.08 × head width | same shape, free height about 0.12 × head width |
 | Muzzle | two raised white bumps | flat face |
 | Closed mouth | no mouth line at all | W-shaped mouth line |
 | Tail | brown | body colour |
-| Whiskers | 2 per side | 2 per side |
+| Whiskers | 2 raised rods per side | **none** — two soft cheek fur tufts per side instead (since 2026-11-20) |
 | Belly patch | circle, point colour | circle, point colour |
 
-> **Eyes are the strongest separator.** Eye width and spacing differ by about 1.5 × and held across all five views of each character (section 2). Check the eyes first.
+> **Eyes and whiskers are the strongest separators.** Eye width and spacing differ by about 1.6 × and 1.4 ×. Cheek fur tufts or missing whiskers on MONGSIL mean BANGSIL's face leaked in. Check the eyes and whiskers first.
 >
 > **Ears are a weak separator.** Both characters have the same low broad round-tipped ear shape; BANGSIL's simply stand about 1.4 × higher. Do not rely on ear shape to tell a mixed render apart — use the muzzle, the mouth line, brown, and the point colour (실측 2026-11-09).
 

@@ -16,7 +16,7 @@ Use the nearest reference view for the requested angle from **that character's o
 - No long fur, individual hairs, yarn, fabric seams, stitching, hard plastic, glossy vinyl, clay sheen, glass, or metal surface.
 - Coloured markings and patches are integrated surface colour, not stickers, pockets, or raised buttons.
 - The only parts that read as raised relief are the paw pads, the nose, and — on MONGSIL only — the two muzzle bumps. Everything else is flush with the surface.
-- Whiskers are the exception: thin raised 3D rods with a soft shadow under them, never engraved or printed flat.
+- Whiskers are the exception (MONGSIL only — BANGSIL has no whiskers since 2026-11-20, only soft cheek tufts in the body material): thin raised 3D rods with a soft shadow under them, never engraved or printed flat.
 
 ## 3. Form
 
@@ -50,6 +50,6 @@ Confirm before delivery, in addition to the character's own section 9 checklist:
 1. The surface reads as short dense matte felt with the fine embossed grain — no long fur, no plastic or vinyl sheen, no visible seams or stitching.
 2. The profile has a broad, rounded lower face — not a triangle.
 3. The head fills roughly the top half of the figure.
-4. Whiskers are raised rods with a shadow, not engraved lines.
+4. MONGSIL's whiskers are raised rods with a shadow, not engraved lines. BANGSIL has no whiskers at all — only its two soft cheek tufts per side.
 5. The silhouette, including the tail, is readable against the background.
 6. Known HEX codes remain literal, and no colour from the other character appears anywhere.
