@@ -107,10 +107,9 @@ MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원�
 | 캐릭터 | 재질 | 파일 | 힉스필드 media ID |
 |---|---|---|---|
 | 몽실 | 펠트 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Felt.png` | `cc936e98-ac16-442d-83a7-3475ec46670e` |
+| 몽실 | 매끈 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Smooth.png` | `b248495e-c7b3-4bdc-8c83-153f47d4b826` |
 | 방실 | 펠트 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Felt.png` | `31c542bb-04cb-4bc3-807d-3827a1e352ee` |
 | 방실 | 매끈 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Smooth.png` | `7e5ff077-b256-47b8-9047-595b3f01ed70` |
-
-몽실 매끈 시트는 아직 없다. 몽실 매끈 장면은 시트 없이 `references/3d_smooth/`만 첨부하고, 시트가 없다는 걸 알린다.
 
 - **힉스필드 이미지 (경로 A):** 캐릭터 Element `<<<ID>>>`는 그대로 쓰고, 위 media ID를 `medias`(role `image`)에 추가한다. 다시 올릴 필요 없다.
 - **영상 (클링 & 씨댄스):** 시트를 레퍼런스 이미지로 넣는다. 시작 프레임이 필요한 모델(Kling 3.0)은 시작 프레임을 따로 넣고, 시트는 레퍼런스 슬롯에 넣는다. 모델별로 레퍼런스를 몇 장 받는지는 `models_explore`(action `get`)로 확인한다.

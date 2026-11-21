@@ -43,7 +43,7 @@ characters/
                                  Paw_Front / Paw_Hind / Tongue / Sit / Run   (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
                                  Run / Sit / Tongue / Face                   (8장)
-    references/sheet/            캐릭터 시트: MONGSIL_Sheet_Felt (이미지 & 영상 공통 첨부)
+    references/sheet/            캐릭터 시트: MONGSIL_Sheet_Felt & MONGSIL_Sheet_Smooth
   bangsil/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
     scene-blocks.md              방실이 Subject & Critical conditions & Negative
@@ -100,7 +100,7 @@ Claude Code에서는 `CLAUDE.md`가 Element 선택, 생성 설정, 기록 방법
 | 발바닥이 보이는 장면 | `Paw_Hind.png` 추가 | `Paw_Hind.png` 추가 |
 | 손바닥이 보이는 장면 | `Paw_Front.png` 추가 | `Paw_Front.png` 추가 |
 
-- **캐릭터 시트는 이미지 & 영상 모두 항상 첨부합니다.** 몽실 `references/sheet/MONGSIL_Sheet_Felt.png`, 방실 `references/sheet/BANGSIL_Sheet_Felt.png` & `BANGSIL_Sheet_Smooth.png`. 재질이 맞는 것을 고르고, 시트는 정체성 기준으로만 쓰고 레이아웃 & 글자를 따라 그리지 않게 합니다 (문장은 `CLAUDE.md` "캐릭터 시트").
+- **캐릭터 시트는 이미지 & 영상 모두 항상 첨부합니다.** 몽실 `references/sheet/MONGSIL_Sheet_Felt.png` & `MONGSIL_Sheet_Smooth.png`, 방실 `references/sheet/BANGSIL_Sheet_Felt.png` & `BANGSIL_Sheet_Smooth.png`. 재질이 맞는 것을 고르고, 시트는 정체성 기준으로만 쓰고 레이아웃 & 글자를 따라 그리지 않게 합니다 (문장은 `CLAUDE.md` "캐릭터 시트").
 - 앵글이 명시되지 않았으면 `Front.png` + `Left_3Q.png` 두 장을 첨부합니다.
 - 표정 & 포즈 레퍼런스는 비슷한 것을 요청할 때만 추가합니다.
 - 레퍼런스는 몽실이 9장이 2026-11-09, 방실이 8장이 같은 날 등록된 세트입니다. 수치 기준은 모두 각 락 파일에 측정값으로 들어가 있습니다.
