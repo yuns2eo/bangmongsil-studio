@@ -41,14 +41,14 @@ characters/
     references/3d/               Front / Left_3Q / Left_Profile / Back
                                  Paw_Front / Paw_Hind / Tongue / Sit / Run   (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
-                                 Run / Sit / Tongue                          (7장)
+                                 Run / Sit / Tongue / Face                   (8장)
   bangsil/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
     scene-blocks.md              방실이 Subject & Critical conditions & Negative
     references/3d/               Front / Left_3Q / Left_Profile / Back
                                  Smile / Sit / Run                           (7장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
-                                 Run / Sit / Smile                           (7장)
+                                 Run / Sit / Smile / Face                    (8장)
 assets/
   props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
                                  studio / detail / petf-{common,cat,dog}
