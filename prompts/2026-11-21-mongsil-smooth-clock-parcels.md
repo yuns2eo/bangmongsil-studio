@@ -412,7 +412,8 @@ open mouth, tongue, standing pose, more than three boxes, boxes floating, boxes 
 ## 모션용 끝 프레임 v1 — 입만 웃는 얼굴로
 
 - 요청(한국어): 끝 프레임부터 (7차 실패 후 시작 & 끝 프레임 고정 방식)
-- 상태: 미확인
+- 상태: 승인 (사용자 "승인, 영상 생성")
+- 힉스필드 media ID (1280×720 맞춤본): 6b0995cf-a27a-4054-be0c-d4256284a479
 - 모델: GPT Image 2 & low & 1K & 16:9
 - job: 2f5ffa3d-c547-4cf9-bfa0-8e23b5418abe
 - 크레딧: 견적 1 (정확 0.5) / 잔액은 결과 보고에 표기
