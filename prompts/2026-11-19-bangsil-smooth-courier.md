@@ -1,5 +1,7 @@
 # 방실 매끈 택배 배달부 — 의상 & 소품 + 투명 누끼
 
+> 2026-11-21 정리: 방실 옛 얼굴 기준 수치는 지웠다. 현재 기준은 `characters/bangsil/BANGSIL_Character_Lock.md` 2번 & 5번. 원래 전송본은 git 기록(`c4c288e` 이전)에 있다.
+
 - 날짜: 2026-11-19
 - 캐릭터: 방실
 - 요청(한국어): 택배 배달부 콘셉트 (참고 이미지: 다른 회사 마스코트가 주황 볼캡 & 택배상자를 든 도시 장면 — 의상 & 소품 참고용, 생성에는 첨부 안 함). 주황 볼캡 + 앞면 흰 택배 아이콘, 두 앞발로 가슴 앞 크라프트 택배상자, 상자 앞면 흰 택배 아이콘 & '바로구매', 모자만 착용, 정면 전신, 매끈 무광 소프트 비닐, 배경 없는 투명 PNG, 바닥 & 그림자 없음, 1:1
@@ -25,7 +27,7 @@
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -69,8 +71,8 @@ BANGSIL itself is a smooth, clean, soft matte vinyl / soft-touch clay 3D mascot:
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The orange cap sits between the ears; both ears stay fully visible. The cap front is plain, with no icon or text.
@@ -116,7 +118,7 @@ open mouth, tongue, teeth, exaggerated pose, long arms, long legs
 | 갈색 & 머즐 | 통과. 갈색 없음, 납작한 얼굴 |
 | W 입선 | 통과 |
 | 귀 & 모자 | 통과. 볼캡이 귀 사이, 두 귀 모두 보임 |
-| 얼굴 실측 | 주의. 눈폭 0.062 HW, 간격 0.237 HW (기준 0.054 & 0.206) — 방실 방향으로 크고 넓음, 섞임 아님 |
+| 얼굴 실측 | 주의. 눈폭 0.062 HW, 간격 0.237 HW — 방실 방향으로 크고 넓음, 섞임 아님 |
 | 수염 | 통과. 한쪽 2가닥 |
 | 배 패치 | 통과. 상자 아래로 반원 |
 | 앞발 & 뒷발 | 통과. 세 마디 & 홈 보임, 앞발이 얼굴에서 떨어짐 |

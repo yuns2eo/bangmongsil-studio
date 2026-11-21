@@ -1,6 +1,6 @@
 # BANGSIL — CHARACTER IDENTITY LOCK
 
-Rewritten 2026-11-21 against the **new face** delivered 2026-11-20 (`0129d8a` — 3d & 3d_smooth 레퍼런스 7장씩 교체). The earlier version of this file (2026-11-09) described the old face with whisker rods and brown features; that face is retired.
+Written 2026-11-21 against the current reference sets (`references/3d/` & `references/3d_smooth/`).
 Every proportion stated below was measured on the current images, not recalled. Where a number appears, the view it was measured on is named.
 
 **This file covers BANGSIL only.** MONGSIL has its own lock at `characters/mongsil/MONGSIL_Character_Lock.md`. The two characters share a body but contradict each other on face, markings, and point colour. Load **one** lock per prompt. For a two-shot, see section 10.
@@ -24,7 +24,7 @@ The approved reference sets, all 1254 × 1254:
 
 Felt and smooth sets show the same face; they differ only in material. Rotate one coherent character between views; never redesign per view.
 
-**Higgsfield Elements are out of date.** `방실_3D` (`1173218c-…`) and `방실_3D_매끈` (`cdfcf687-…`) were registered on 2026-11-09 and 2026-11-19 from the **old** face — whisker rods, brown features, wider head. Until they are re-registered from the current images, attach the matching current reference as a media input in **every** BANGSIL generation, front view included, and expect the Element to pull whiskers back in (section 9, item 9).
+**Higgsfield Elements do not match the current references.** `방실_3D` (`1173218c-…`) and `방실_3D_매끈` (`cdfcf687-…`) were registered from earlier images that carry whisker rods and brown features. Until they are re-registered from the current images, attach the matching current reference as a media input in **every** BANGSIL generation, front view included, and check every result for whiskers (section 9, item 9).
 
 When sources disagree, apply this order:
 
@@ -33,15 +33,13 @@ When sources disagree, apply this order:
 3. `styles/3D_Felt.md` or `styles/3D_Smooth.md`
 4. The scene prompt
 
-There is no exception to this order at present. The old "pending" item (brown whiskers and nose in the renders) was resolved by the 2026-11-20 renders: the features are now black.
-
-Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the images show, keep the visible structure intact and say the detail is unverified rather than inventing it. There is **no front-palm reference** (`Wave.png` was removed 2026-11-20); a visible palm is unverified — follow the hind-sole layout in `Sit.png`. See section 4-1.
+Do not replace a visible reference detail with a guessed measurement, a named shape, or an inferred colour. If a requested view exposes something none of the images show, keep the visible structure intact and say the detail is unverified rather than inventing it. There is **no front-palm reference**; a visible palm is unverified — follow the hind-sole layout in `Sit.png`. See section 4-1.
 
 ## 1. Non-negotiable identity and proportion
 
 - BANGSIL is a compact, soft, upright cat mascot: a dominant head, a short rounded torso, short stubby limbs, and no visible neck.
 - **The head is the biggest thing about the character.** Measured on `3d/Front.png`: the standing figure from ear tip to sole is **1136 px**, the chin sits at the **52 % mark** of that height, and the head is about **705 px wide** across the cheeks (the cheek tufts of section 5 excluded; with the upper tufts the silhouette reaches about 752 px). So the head fills the top half of the figure and its width is about **0.62 × the total height**.
-- The head is a broad, softly rounded oval, clearly wider than the lower face is deep. Not a sphere, not a vertical oval, not a wedge, not a triangle. *(It is about 4–5 % narrower than the retired 2026-11-09 head; the eyes did not move, so they now read slightly larger against the head — section 2.)*
+- The head is a broad, softly rounded oval, clearly wider than the lower face is deep. Not a sphere, not a vertical oval, not a wedge, not a triangle.
 - Keep the padded, chubby silhouette in every scene, including under clothing. The body never becomes slim, tall, or long-waisted.
 - Arms and legs stay as short and stubby as in the references. A raised, reaching, waving, or hugging arm keeps exactly the same short length. A pose never lengthens a limb. BANGSIL's arms hang slightly further out from the torso than MONGSIL's — follow `Front.png`.
 - When both arms are raised, they open outward in a V **away from the face**, with clear space between each arm and the head.
@@ -58,7 +56,7 @@ BANGSIL's arms are too short to reach many props. When a pose needs more reach, 
 
 ### Ears — an identity feature
 
-BANGSIL's ears are **low, broad, soft triangles with rounded tips**, sitting on the upper outer corners of the head dome and leaning slightly outward. They are not tall, not upright, and not pointed. The ear sculpt did not change on 2026-11-20 — an overlay of the old and new `Front.png` top silhouettes gives the same ear rising about 85–88 px above the dome. Measured 2026-11-09, re-checked 2026-11-21:
+BANGSIL's ears are **low, broad, soft triangles with rounded tips**, sitting on the upper outer corners of the head dome and leaning slightly outward. They are not tall, not upright, and not pointed. Measured on `3d/Front.png`:
 
 | | Measured |
 |---|---|
@@ -99,7 +97,7 @@ Everything is expressed against **HW = the head's width across the cheeks, cheek
 | Upper cheek tuft tip, below the eye centre line | +0.09 HW, standing about 0.04 HW clear of the cheek | — |
 | Lower cheek tuft tip, below the eye centre line | +0.17 HW, standing about 0.025 HW clear of the cheek | — |
 
-In pixels on `3d/Front.png`: eyes 43 × 63 px, centres 154 px apart, identical to the retired face. The eyes did not change; the head narrowed, which is why the ratios rose from the old 0.054 & 0.206.
+In pixels on `3d/Front.png`: eyes 43 × 63 px, centres 154 px apart, head 705 px.
 
 **BANGSIL's eyes are large.** At about 0.06 HW they are roughly **1.6 × MONGSIL's** (0.036 – 0.039 HW) and sit **noticeably wider apart** (0.21 – 0.22 vs 0.157 HW in front view). Small, close-set eyes on BANGSIL mean MONGSIL's face leaked in.
 
@@ -111,7 +109,7 @@ In pixels on `3d/Front.png`: eyes 43 × 63 px, centres 154 px apart, identical t
 | Nose | `#151514` | `#000000` ✓ |
 | W mouth line | `#151313` | `#000000` ✓ |
 
-All three are neutral black. **Brown or reddish-brown eyes, nose or mouth line are now an error** — they come from the retired face, most likely through the out-of-date Element (section 0).
+All three are neutral black. **Brown or reddish-brown eyes, nose or mouth line are an error** — most likely pulled in by the out-of-date Element (section 0).
 
 ### Profile rotation
 
@@ -134,10 +132,10 @@ All directions use BANGSIL's anatomical left/right. In the front view, BANGSIL's
 
 ### BANGSIL HAS NO BROWN. ANYWHERE.
 
-- There is **no brown head patch, no brown ear, no brown arm marking, no brown tail — and, since 2026-11-20, no brown on the face either.** Eyes, nose and mouth are black.
+- There is **no brown head patch, no brown ear, no brown arm marking, no brown tail, and no brown on the face.** Eyes, nose and mouth are black.
 - BANGSIL is one solid body colour from head to feet, broken only by the point-colour elements in section 6 and the black facial features.
 - `Back.png` is the proof image: a completely clean white back, clean arms, clean legs, clean tail.
-- **Any brown on BANGSIL means MONGSIL's lock or the retired face leaked into the prompt.** Reject it and never retouch it — a mixed result is fixed by generating again from a clean prompt, which the user asks for.
+- **Any brown on BANGSIL means MONGSIL's lock or the out-of-date Element leaked into the prompt.** Reject it and never retouch it — a mixed result is fixed by generating again from a clean prompt, which the user asks for.
 
 ### The only non-body colours on BANGSIL
 
@@ -149,14 +147,14 @@ Apart from the belly patch, the body has **no markings at all**: no spots on the
 
 ## 3-1. Tail — shape lock
 
-The tail sculpt did not change on 2026-11-20. It is the **same sculpt as MONGSIL's, in the body colour instead of brown.** Colour is the only difference; the geometry rules below are identical and are not optional.
+The tail is the **same sculpt as MONGSIL's, in the body colour instead of brown.** Colour is the only difference; the geometry rules below are identical and are not optional.
 
 ### Geometry
 
 - **ONE continuous padded mass** in the body colour, growing from the hip on BANGSIL's anatomical left (screen right in the front view).
 - Standing, it rises and curls **outward and upward, away from the body**, and is **taller than it is wide — about 1.3–1.5 : 1.** Never squat, never as wide as tall.
 - The whole tail is **ONE padded crescent — a fat comma.** The silhouette is continuous from base to tip and never pinches in to less than about **85 % of the local width** anywhere along it.
-- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches of unequal depth**. Measured on the 2026-11-09 `Front.png` against a 144 px tail: the **upper notch 10 px (≈ 7 %)**, the **lower notch 3 px (≈ 2 %)**. Quote them separately — one blanket figure makes the lower notch three times too deep. They are soft dimples in a continuous edge, not divisions.
+- Its **outer edge** (facing away from the body) is that same single curve, **gently scalloped** by **TWO shallow notches of unequal depth**. Measured against a 144 px tail: the **upper notch 10 px (≈ 7 %)**, the **lower notch 3 px (≈ 2 %)**. Quote them separately — one blanket figure makes the lower notch three times too deep. They are soft dimples in a continuous edge, not divisions.
 - The three swells that the notches separate are **not equal and not round.** The top dome is the largest and most rounded; the two below it are progressively **smaller and flatter**, settling back into the curve toward the base.
 - Its **inner edge** (facing the body) is **ONE long smooth unbroken curve** with no bumps and no notches. The asymmetry between the two edges is the signature of the shape.
 - The **base** is a thick stalk merging smoothly into the hip. The tail never tapers to a point, never narrows to a stem, never detaches.
@@ -234,7 +232,7 @@ Crop each visible paw, enlarge it, and confirm two things separately: the outer 
 
 ## 5. Cheek tufts — BANGSIL has no whiskers
 
-Since 2026-11-20 BANGSIL has **no whiskers at all.** The old two-per-side whisker rods are retired. In their place:
+BANGSIL has **no whiskers at all.** Instead:
 
 - **Two soft fur tufts on each side of the face**, four in total, growing out of the lower cheek outline. They are part of the head silhouette, in the body colour and the body material — not separate objects, not lines, not rods.
 - Each tuft is a small soft point sweeping outward and slightly down. The **upper tuft is the larger** (tip about 0.09 HW below the eye centre line, standing about 0.04 HW clear of the cheek); the **lower tuft is smaller** (tip about 0.17 HW below the eye line, about 0.025 HW clear).
@@ -242,7 +240,7 @@ Since 2026-11-20 BANGSIL has **no whiskers at all.** The old two-per-side whiske
 - In three-quarter and profile views the near-side pair breaks the jaw line as two small points (`Left_3Q.png`, `Left_Profile.png`); in `Back.png` they still show at the head's outline.
 - They are soft and rounded at the tips, never spiky, never long hair strands, never a mane.
 
-**Any whisker on BANGSIL — a rod, a drawn line, a printed or engraved stroke — is a failure.** Whisker rods belong to MONGSIL and to BANGSIL's retired face.
+**Any whisker on BANGSIL — a rod, a drawn line, a printed or engraved stroke — is a failure.** Whisker rods belong to MONGSIL.
 
 ## 6. Palette lock
 
@@ -287,11 +285,11 @@ Before delivery, compare against the closest reference view and reject a result 
 6. **Triangular profile:** lower face crushed, narrowed, or pointed when rotated.
 7. **Wrong head silhouette or size:** a sphere, a vertical oval, a narrow face, or a head that no longer fills the top half of the figure.
 8. **Wrong belly patch:** an elongated oval, off-centre, a button, or not following the body surface, instead of a centred circle.
-9. **Whiskers present, or cheek tufts wrong:** any whisker rod or line on the face — the retired face or MONGSIL leaking in, most often through the out-of-date Element; or the cheek tufts missing, more or fewer than two per side, or turned into long hair. Check this on **every** result until the Elements are re-registered.
+9. **Whiskers present, or cheek tufts wrong:** any whisker rod or line on the face — MONGSIL or the out-of-date Element leaking in; or the cheek tufts missing, more or fewer than two per side, or turned into long hair. Check this on **every** result until the Elements are re-registered.
 10. **Teeth:** any tooth, fang, or tooth row, in a still or in any video frame.
 11. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed.
 12. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the references; an arm stretched to reach a prop.
-12-1. **Raised arm fused to the head:** a raised paw touching or overlapping the face so the silhouette reads as one shape there. Background must stay visible between the paw and the cheek at every height — but it can be a **thin sliver** (measured on the retired `Wave.png`: about 10–14 px against a 145 px paw, ≈ 7 %). The failure is 0 px — one fused shape.
+12-1. **Raised arm fused to the head:** a raised paw touching or overlapping the face so the silhouette reads as one shape there. Background must stay visible between the paw and the cheek at every height — but it can be a **thin sliver**, about 7 % of the paw's width. The failure is 0 px — one fused shape.
 13. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
 13-1. **Missing or miscounted pads:** a sole **or a palm** faces the viewer without its pads, or shows four toe pads instead of three.
 13-2. **Pointing finger:** a single digit extends from a paw (section 4-1).
@@ -329,4 +327,4 @@ When both appear in one image, load both locks and state the separation explicit
 
 > **MONGSIL's total height is 0.88 – 0.90 × BANGSIL's.** BANGSIL's ear tips sit clearly higher than MONGSIL's. Both stand on the same ground line.
 
-Measured 2026-11-09 on a 두 캐릭터 비교 render **that is not stored in this repository**, against BANGSIL's retired, slightly wider head: BANGSIL 1166 px tall, MONGSIL 1021 px (**0.876**); head widths 724 px and 652 px (**0.901**). The height ratio still holds; the head-width ratio has not been re-measured against the narrower 2026-11-20 head and is likely a little higher now. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.
+Height ratio measured on a 두 캐릭터 비교 render **that is not stored in this repository**: BANGSIL 1166 px tall, MONGSIL 1021 px (**0.876**). The head-width ratio has not been measured against the current BANGSIL head. In solo frames each character fills its own canvas, so size only carries meaning when they share a frame.

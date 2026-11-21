@@ -1,5 +1,7 @@
 # 방실 매끈 산타 — STEP 1 의상 & 소품
 
+> 2026-11-21 정리: 방실 옛 얼굴 기준 수치는 지웠다. 현재 기준은 `characters/bangsil/BANGSIL_Character_Lock.md` 2번 & 5번. 원래 전송본은 git 기록(`c4c288e` 이전)에 있다.
+
 - 날짜: 2026-11-19
 - 캐릭터: 방실
 - 요청(한국어): 산타 방실이. 바지는 안 입혀도 됨, 손으로 선물보따리를 들고, 산타모자 & 산타의상, 흰 콧수염이 귀엽게 (사람 산타 일러스트 첨부 — 참고용, 생성에는 첨부 안 함). 재질은 매끈 (사용자 선택)
@@ -25,7 +27,7 @@
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -73,8 +75,8 @@ Smooth, clean, soft matte vinyl / soft-touch clay 3D mascot figure. No felt pile
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The Santa hat sits between the ears; both ears stay fully visible.
@@ -117,7 +119,7 @@ gift box, petf gift box, sack covering the face, sack covering the tail, floatin
 | 납작한 얼굴 & 머즐 | **주의.** 콧수염이 코 아래 흰 볼록 두 덩이로 나와, 전체 크기에서는 몽실이 머즐 볼록처럼 읽힐 수 있음 (섞임 신호 2번과 비슷). 확대하면 끝이 말린 콧수염 모양 |
 | W 입선 | 통과. 콧수염 아래로 W 입선이 또렷함 |
 | 귀 | 통과. 낮고 넓은 둥근 귀, 모자가 귀 사이에 앉음 |
-| 얼굴 실측 | 통과. 눈폭 0.055 HW (기준 0.054), 간격 0.194 HW (기준 0.206) |
+| 얼굴 실측 | 통과. 눈폭 0.055 HW, 간격 0.194 HW |
 | 수염 | 통과. 한쪽 2가닥, 갈색 톤은 락 11-1 기지 사항 |
 | 배 패치 | 통과. 재킷 아래로 아래쪽 반원 보임 |
 | **든 팔 & 얼굴 틈** | **실패 (락 12-1).** 보따리를 쥔 앞발 윗부분이 아래 볼에 붙어 사이에 배경이 안 보임 (뒤는 보따리) |
@@ -155,7 +157,7 @@ Keep EVERYTHING identical to it — the face, eyes, nose, W smile line, whiskers
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -203,8 +205,8 @@ Smooth, clean, soft matte vinyl / soft-touch clay 3D mascot figure. No felt pile
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The Santa hat sits between the ears; both ears stay fully visible.
@@ -246,7 +248,7 @@ gift box, petf gift box, sack covering the face, sack covering the tail, floatin
 | 산타 수염 | 통과. 크게 말린 콧수염 + 둥근 턱수염, 회색 음영으로 얼굴과 구분됨 |
 | 갈색 & 섞임 | 통과. 갈색 없음, 머즐 볼록 없음 (콧수염이 그 자리) |
 | **입** | **실패 의심 (락 9-3 & 9-10).** W 입선 대신 콧수염과 턱수염 사이로 벌어진 어두운 입이 보이고, 입 안에 작은 흰 삼각형이 있어 이빨처럼 보임 |
-| 얼굴 실측 | 통과. 눈폭 0.057 HW, 간격 0.192 HW (기준 0.054 & 0.206) |
+| 얼굴 실측 | 통과. 눈폭 0.057 HW, 간격 0.192 HW |
 | 수염(whisker) | 통과. 한쪽 2가닥, 볼에서 수염 위로 |
 | 귀 & 모자 | 통과 |
 | 배 패치 | 통과. 재킷 아래 반원 |
@@ -281,7 +283,7 @@ gift box, petf gift box, sack covering the face, sack covering the tail, floatin
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -327,8 +329,8 @@ Smooth, clean, soft matte vinyl / soft-touch clay 3D mascot figure. No felt pile
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The Santa hat sits between the ears; both ears stay fully visible.
@@ -374,7 +376,7 @@ gift sack, gift box, petf gift box, tree covering the face, tree covering the be
 | 앞발 | 통과. 두 앞발이 가슴 높이에서 화분을 감쌈, 얼굴과 떨어짐, 세 마디 보임 |
 | 트리 | 통과. 얼굴 안 가림, 별이 수염 옆 |
 | 갈색 & 섞임 | 통과. 갈색 없음, 머즐 볼록 없음 |
-| 얼굴 실측 | 주의. 눈폭 약 0.061 HW, 간격 약 0.217 HW (기준 0.054 & 0.206) — 조금 크고 넓지만 방실 방향이라 섞임 아님 |
+| 얼굴 실측 | 주의. 눈폭 약 0.061 HW, 간격 약 0.217 HW — 조금 크고 넓지만 방실 방향이라 섞임 아님 |
 | 귀 & 모자 | 통과. 모자가 귀 사이, 귀 모양은 매끈 레퍼런스와 비슷 |
 | 배 패치 | 통과. 재킷 아래 반원 |
 | 매끈 재질 | 주의. 몸은 매끈 유지, 모자 & 재킷 테두리는 털 질감으로 바뀜 (수염 털 지시가 의상 테두리로 번짐) |
@@ -407,7 +409,7 @@ The attached image is the previous result of this exact BANGSIL. Keep the charac
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface. BANGSIL's W-shaped smile line would sit below it, but in this costume it is completely hidden under the Santa mustache.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -453,8 +455,8 @@ BANGSIL itself is a smooth, clean, soft matte vinyl / soft-touch clay 3D mascot:
 6. The head stays a broad oval and fills the top half of the figure.
 7. The belly patch is a centred circle following the body surface — not an elongated oval, not a button.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The Santa hat sits between the ears; both ears stay fully visible.
@@ -540,7 +542,7 @@ The attached image is the previous result of this exact BANGSIL. Keep EVERYTHING
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface. BANGSIL's W-shaped smile line would sit below it, but in this costume it is completely hidden under the Santa mustache.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -585,8 +587,8 @@ BANGSIL itself is a smooth, clean, soft matte vinyl / soft-touch clay 3D mascot:
 5. In any turned or side view, the lower face stays broad and rounded — never a triangle or a pointed chin.
 6. The head stays a broad oval and fills the top half of the figure.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The Santa hat sits between the ears; both ears stay fully visible.

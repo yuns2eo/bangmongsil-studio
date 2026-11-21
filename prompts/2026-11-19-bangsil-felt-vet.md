@@ -1,5 +1,7 @@
 # 방실 펠트 수의사 — 신장 초음파 설명
 
+> 2026-11-21 정리: 방실 옛 얼굴 기준 수치는 지웠다. 현재 기준은 `characters/bangsil/BANGSIL_Character_Lock.md` 2번 & 5번. 원래 전송본은 git 기록(`c4c288e` 이전)에 있다.
+
 - 날짜: 2026-11-19
 - 캐릭터: 방실
 - 요청(한국어): 수의사 콘셉트. 흰 의사 가운 + 연민트 스크럽, 목에 작은 청진기, 옆에 의료용 모니터(반려동물 양쪽 신장이 보이는 단순한 흑백 초음파), 한쪽 앞발로 모니터를 가리키며 설명, 친근하게 웃는 표정, 정면에 가까운 45도 전신, 누끼용 연회색 단색. 실제 장기 모형 & 징그러운 해부 이미지 & 추가 소품 금지
@@ -21,7 +23,7 @@ The attached image is BANGSIL's own three-quarter reference: match how the head,
 ## Subject
 BANGSIL, the exact character in the reference: a compact, soft, upright 3D cat mascot with a dominant broad head that fills the top half of the figure, full cheeks, a soft rounded lower face, a short rounded torso, short stubby limbs, and no visible neck.
 Two low, broad, soft triangular ears with clearly ROUNDED tips, sitting on the upper outer corners of the head and leaning slightly outward. Each ear is far wider at its base than it is tall — the base is about 2.8 times the height that stands clear of the head, and that free height is only about an eighth of the head's width. The outer surface of both ears is the body colour; the inner ears are #FFCBD1.
-Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.054 of the head's maximum width, and the gap between their centres is about 0.206 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
+Two glossy black vertical-oval eyes, taller than wide, set clearly wide apart: each eye is about 0.06 of the head's width across the cheeks, and the gap between their centres is about 0.22 of that width. They are noticeably larger and wider-set than MONGSIL's. No highlight dot, no eyelashes, no eyebrows.
 A completely flat face with no raised muzzle bumps. A small rounded dark triangle nose sitting directly on the smooth cheek surface, and below it a drawn wide W-shaped smile line in the same dark colour as the whiskers.
 Exactly two whiskers per side, four in total: thin softly curved raised 3D rods attached at the cheek just outside the blush, never printed or engraved into the face.
 Soft blush #FFCBD1 on both cheeks. A centred circular belly patch #FFCBD1 on the lower torso, about a third of the head's width.
@@ -67,8 +69,8 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 5. In any turned or side view, the lower face stays broad and rounded — never a triangle or a pointed chin.
 6. The head stays a broad oval and fills the top half of the figure.
 7-1. Every visible paw tip is divided into three rounded toe lobes by two visible grooves — never a smooth undivided club.
-8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face. Each whisker is about 0.26 of the head's maximum width long.
-8-1. The eyes stay LARGE and wide-set: each about 0.054 of the head's maximum width, centres about 0.206 of that width apart. Small, close-set eyes are MONGSIL's face.
+8. Exactly two raised whisker rods per side, growing from the cheeks — not printed, engraved, or pressed into the face.
+8-1. The eyes stay LARGE and wide-set: each about 0.06 of the head's width across the cheeks, centres about 0.22 of that width apart. Small, close-set eyes are MONGSIL's face.
 9. Colours stay literal: inner ears, blush and belly patch #FFCBD1, features #000000. #FFCDB4 and #B79571 never appear.
 9-1. The tail silhouette is ONE continuous crescent. The notches on its outer edge are shallow dimples and the swells are unequal — never three equal balls stacked like a snowman.
 10. The raised paw points at the monitor screen with a visible gap from the cheek; the arm stays as short as the reference.
@@ -109,7 +111,7 @@ long coat to the floor, coat covering the tail
 | 갈색 & 머즐 | 통과 |
 | W 입선 | 통과 |
 | 귀 | 통과. 레퍼런스와 같은 모양 |
-| 얼굴 실측 | 통과 수준. 눈폭 약 0.058 HW, 간격 약 0.222 HW (기준 0.054 & 0.206) |
+| 얼굴 실측 | 통과 수준. 눈폭 약 0.058 HW, 간격 약 0.222 HW |
 | 수염 | 통과. 한쪽 2가닥 |
 | 배 패치 | 스크럽에 가려짐 (사용자 승인) |
 | **가리키는 앞발** | **실패 (락 Negative: separated fingers).** 앞발 끝에서 손가락 하나가 길게 뻗은 사람 손가락 모양. 세 마디 둥근 발끝이 아님 |

@@ -22,7 +22,7 @@ Eyes, nose and mouth line pure black #000000. The body is one solid white cream 
 Expression: {표정}.
 ```
 
-- **방실 Element(`방실_3D` & `방실_3D_매끈`)는 옛 얼굴(수염 & 갈색 이목구비)로 등록돼 있다.** 재등록 전까지는 정면 컷이라도 해당 재질의 현재 `references/`(정면은 `Front.png`)를 `medias`로 함께 첨부하고, 결과에 수염이 붙었는지 반드시 본다 (`BANGSIL_Character_Lock.md` 0번 & 9-9번).
+- **방실 Element(`방실_3D` & `방실_3D_매끈`)는 현재 레퍼런스와 다른 이미지(수염 & 갈색 이목구비)로 등록돼 있다.** 재등록 전까지는 정면 컷이라도 해당 재질의 현재 `references/`(정면은 `Front.png`)를 `medias`로 함께 첨부하고, 결과에 수염이 붙었는지 반드시 본다 (`BANGSIL_Character_Lock.md` 0번 & 9-9번).
 - `{표정}` 만 바꾼다. 나머지 문장은 줄이지 않는다. 특히 마지막 줄의 갈색 금지 문장을 빼면 몽실이의 갈색이 돌아온다.
 - 입을 벌리는 장면이면 마지막 줄을 `Expression: open-mouth smile, the W mouth opening into a rounded smile, no teeth and no fangs.`로 바꾼다.
 
@@ -47,7 +47,7 @@ Expression: {표정}.
 ```
 
 - 발이 보이면 위 `## Paws` 블록을 반드시 함께 넣는다. 발바닥 안쪽이 보이면 패드 문장까지 더한다.
-- 방실이 앞발 손바닥 레퍼런스는 없다(2026-11-20 `Wave.png` 삭제). 손바닥이 보이는 장면이면 `references/3d/Sit.png`를 첨부하고 미검증이라고 알린다. 패드는 중앙 큰 패드 1개 + 발가락 패드 3개 구성과 코랄 패드색(`#FCA39C`~`#FCADAC`)을 함께 쓴다 (`BANGSIL_Character_Lock.md` 4-1번).
+- 방실이 앞발 손바닥 레퍼런스는 없다. 손바닥이 보이는 장면이면 `references/3d/Sit.png`를 첨부하고 미검증이라고 알린다. 패드는 중앙 큰 패드 1개 + 발가락 패드 3개 구성과 코랄 패드색(`#FCA39C`~`#FCADAC`)을 함께 쓴다 (`BANGSIL_Character_Lock.md` 4-1번).
 - 흰 꼬리는 배경에 묻히기 쉽다. 밝은 배경이면 `the tail silhouette stays clearly readable against the background`를 넣는다.
 
 

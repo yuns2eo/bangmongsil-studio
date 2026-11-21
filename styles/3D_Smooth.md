@@ -28,7 +28,7 @@ Felt and smooth references must not be mixed in one prompt. If a pose exists onl
 ## 3. How the smooth references were made (2026-11-19)
 
 - 정면 & 45도 & 측면 & 후면: Figma 매끈 라인업(몽실 `9550:23212`, 방실 `9550:23222`)을 한 장씩 쪼개 정방형 중앙 배치.
-- 포즈(Run & Sit & Tongue & Smile & Wave): 펠트 원본 `references/3d/`를 ChatGPT에 주고 **재질만** 바꿔 달라고 했다. 몽실 Sit는 발 마디 문제로 여러 번 실패했고, 펠트 원본 + 매끈 정면을 같이 주고 재질만 바꾼 버전이 채택됐다. 발을 따로 합성하는 방법은 사용자가 반려했다.
+- 포즈(Run & Sit & Tongue & Smile): 펠트 원본 `references/3d/`를 ChatGPT에 주고 **재질만** 바꿔 달라고 했다. 몽실 Sit는 발 마디 문제로 여러 번 실패했고, 펠트 원본 + 매끈 정면을 같이 주고 재질만 바꾼 버전이 채택됐다. 발을 따로 합성하는 방법은 사용자가 반려했다.
 
 ## 4. 3D delivery check (smooth)
 
