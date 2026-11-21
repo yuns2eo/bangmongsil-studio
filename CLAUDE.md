@@ -100,6 +100,24 @@
 
 MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원하고 **이름 변경과 삭제가 없다.** 앞으로도 Element 정리는 웹에서 직접 해야 한다.
 
+### 캐릭터 시트 (모든 이미지 & 영상에 첨부)
+
+**방몽실이 이미지든 영상이든 생성할 때는 해당 캐릭터의 시트를 항상 첨부한다** (2026-11-21 사용자 지시). 시트에는 회전 뷰 4장, 액션 포즈, 표정, 손바닥 & 발바닥, 부위별 설명, 색상표, 핵심 규칙이 한 장에 들어 있다. 재질이 맞는 시트를 고르고, 펠트와 매끈 시트를 섞지 않는다.
+
+| 캐릭터 | 재질 | 파일 | 힉스필드 media ID |
+|---|---|---|---|
+| 몽실 | 펠트 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Felt.png` | `cc936e98-ac16-442d-83a7-3475ec46670e` |
+| 방실 | 펠트 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Felt.png` | `31c542bb-04cb-4bc3-807d-3827a1e352ee` |
+| 방실 | 매끈 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Smooth.png` | `7e5ff077-b256-47b8-9047-595b3f01ed70` |
+
+몽실 매끈 시트는 아직 없다. 몽실 매끈 장면은 시트 없이 `references/3d_smooth/`만 첨부하고, 시트가 없다는 걸 알린다.
+
+- **힉스필드 이미지 (경로 A):** 캐릭터 Element `<<<ID>>>`는 그대로 쓰고, 위 media ID를 `medias`(role `image`)에 추가한다. 다시 올릴 필요 없다.
+- **영상 (클링 & 씨댄스):** 시트를 레퍼런스 이미지로 넣는다. 시작 프레임이 필요한 모델(Kling 3.0)은 시작 프레임을 따로 넣고, 시트는 레퍼런스 슬롯에 넣는다. 모델별로 레퍼런스를 몇 장 받는지는 `models_explore`(action `get`)로 확인한다.
+- **ChatGPT (경로 B):** 위 PNG를 첨부한다.
+- 프롬프트에 다음 문장을 넣는다: `The attached character sheet is an identity reference only: match the character's shape, proportions, face, markings and colours exactly, but do not reproduce the sheet layout, grid background, labels, text, leader lines or multiple views.`
+- 시트를 새로 만들거나 고치면 PNG를 바꾸고, 힉스필드에 다시 올려 이 표의 media ID를 바꾼다.
+
 ### 디테일 (소품 Element로 추가)
 
 | 이름 | ID | 쓰는 경우 |
@@ -222,7 +240,7 @@ MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원�
 
 ### 3. 레퍼런스 & Element 선택
 
-레퍼런스는 `README.md` 3번 표에서 **해당 캐릭터 폴더의 것만** 고른다. Element는 위 표대로 고른다.
+레퍼런스는 `README.md` 3번 표에서 **해당 캐릭터 폴더의 것만** 고른다. Element는 위 표대로 고른다. **캐릭터 시트는 이미지 & 영상 모두 항상 첨부한다** (위 "캐릭터 시트" 표).
 
 ### 4. 프롬프트 작성
 

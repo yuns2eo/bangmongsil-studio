@@ -118,6 +118,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 
 ## 6. 레퍼런스 & Element 조합
 
+- 캐릭터 시트(`references/sheet/`)는 이미지 & 영상 모두 항상 함께 넣는다. 시트는 정체성 기준이라 레이아웃 & 글자 & 여러 뷰를 따라 그리지 말라는 문장을 꼭 같이 넣는다 (`CLAUDE.md` "캐릭터 시트").
 - 캐릭터 Element는 **1개만** 쓴다. 같은 캐릭터 Element를 여러 개 넣으면 여러 마리로 나온다.
 - 캐릭터 1개 + 소품 Element 추가는 다중 캐릭터 문제를 만들지 않았다 (실측 2회).
 - `몽실_3D` & `방실_3D`는 4장(정면 & 45도 & 측면 & 후면)으로 등록돼 있지만 **생성 때 몇 장이 주입되는지는 아직 측정 전이다.** 정면이 아닌 구도는 안전하게 해당 캐릭터 폴더의 `references/3d/`에서 그 각도 이미지를 `medias`로 함께 넣는다.
