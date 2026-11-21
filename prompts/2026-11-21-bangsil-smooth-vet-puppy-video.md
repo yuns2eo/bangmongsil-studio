@@ -48,3 +48,15 @@
 
 #Negative: curved eyes, crescent eyes, arc eyes, closed eyes, squinting eyes, smiling eyes, blinking, wink, eyelids, eyelashes, eyebrows, teeth, fangs, laughing, hearts, sparkles, stars, motion lines, symbols, text, zoom, push in, dolly, camera movement, pan, tilt, orbit, reframing, cropping, character morphing, changing proportions, long arms, stretched arm, slim body, a different cat, MONGSIL, whiskers, brown on BANGSIL, extra characters, extra puppies, glasses disappearing, stethoscope changing colour, separated fingers, claws, puppy changing breed, room changing, objects appearing or disappearing, watermark
 ```
+
+## 2차 (2026-11-22)
+
+- 요청: 1차에서 쓰다듬는 앞발 끝에 돌기 4개(손가락 4개)가 생김. 추천안(쓰다듬기 빼기)으로
+- 수정: 쓰다듬기 삭제 → 앞발은 청진기 쥔 채 매트 위에 고정, 방실이가 고개를 기울여 강아지와 이마 & 볼을 맞대는 교감으로 변경. #Paws에 "발끝 돌기 3개 & 홈 2개, 절대 들지 않음" 추가, 네거티브에 four toes & patting & raised paw 추가. #Expression에 이마 맞댈 때도 눈 뜸 명시
+- 상태: 미확인
+- job: e0b68e04-a08d-44ec-afc5-6372f728a26f
+- 결과: https://d8j0ntlcm91z4.cloudfront.net/user_3EWRwwFkTW4zqBlyAMkG4zr0B0i/hf_20261121_150311_e0b68e04-a08d-44ec-afc5-6372f728a26f.mp4
+- 크레딧: 5 사용
+- 검수: 앞발 끝까지 아래에 있고 손가락 생기지 않음. 볼 맞대기 교감 나옴. 수염 없음 & 안경 유지
+- 남은 문제: 0.7초 & 3.0초쯤 방실이 눈웃음(^ ^). 강아지는 볼 비빌 때 눈을 감음(프롬프트와 다르지만 표정은 자연스러움)
+- 확인된 패턴(2회): 씨댄스도 "따뜻한 교감 & 기쁨" 장면에서는 EyeLock이 있어도 방실이 눈웃음이 1~2번 나옴. 단순 동작(박수 5차)에서는 0회
