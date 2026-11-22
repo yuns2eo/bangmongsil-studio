@@ -93,6 +93,7 @@
 #Negative: 쉼표로 나열
 ```
 
+- **동작이 규칙적 & 기계적으로 보이면 초 단위 구간(`#Motion beats` 1. 0.0-0.6s …)을 빼고 흐름으로 쓴다.** `#Feel`에 "overlapping actions, natural uneven timing, never the same move twice in a row, body never frozen (sway & weight shift & ears & tail), anticipation & follow-through"를 넣고, `#Story`에는 순서만 적는다 ("읽다가 멈칫 → 갑자기 오잇!"처럼 완급). 네거티브에 `robotic motion, mechanical timing, steady metronome rhythm, evenly spaced actions`. 근거: 방실 음악 그루브 2차 & 방실 책장 넘기기 3차 (둘 다 사용자가 자연스럽다고 함, `prompts/2026-11-22-bangsil-smooth-street-groove-video.md`, `prompts/2026-11-22-bangsil-smooth-glasses-push-video.md`)
 - **눈을 감는 연출이 필요하면** `#EyeLock`을 빼고 `#Expression`에 "eyes softly closed in enjoyment"처럼 쓴다 (그루브 영상에서 확인)
 - 음악 & 리듬 동작은 `#Groove` 블록을 따로 두고 "about two beats per second", "never the same move twice in a row"처럼 박자와 변화를 적는다
 
@@ -121,5 +122,6 @@
 
 **1회 관찰 (주의)**
 - 앞발로 쓰다듬는 동작은 발끝 돌기가 4개로 늘었다 (강아지 진찰 1차). 앞발은 낮게 두고 이마 & 볼 맞대기처럼 앞발 없이 교감하는 동작으로 바꾸면 해결됐다
+- **웃음을 요청하면 방실은 시트의 검정 W 입선이 돌아온다** (책 읽기 영상). 입선 없이 웃게 하려면 웃음을 볼 & 동그란 눈 & 귀로만 쓰고 입은 'o' 유지로 적는다 (1회 관찰)
 - **시작 프레임만 표준 얼굴과 다르게 고쳐 두면 레퍼런스가 표준 얼굴로 되돌린다.** 방실 안경 1차: 시작 프레임은 검정 입선 없는 'o' 입이었는데, 정면 뷰(W 입선 & 웃는 눈)를 레퍼런스로 넣자 W 입선 & 눈웃음 & 일자 눈이 나왔다. 표준과 다른 얼굴을 유지해야 하면 그 얼굴이 아닌 뷰는 넣지 않는다
 - 한 발로 깡충 뛰면 들린 발의 발바닥 패드가 카메라를 향했다 (윙크 4차). 발바닥을 숨겨야 하면 두 발 점프 & 박수처럼 발을 들지 않는 동작을 쓴다
