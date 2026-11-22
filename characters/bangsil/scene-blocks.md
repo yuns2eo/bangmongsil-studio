@@ -47,7 +47,9 @@ Expression: {표정}.
 ```
 
 - 발이 보이면 위 `## Paws` 블록을 반드시 함께 넣는다. 발바닥 안쪽이 보이면 패드 문장까지 더한다.
-- 방실이 앞발 손바닥 레퍼런스는 없다. 손바닥이 보이는 장면이면 `references/3d/Sit.png`를 첨부하고 미검증이라고 알린다. 패드는 중앙 큰 패드 1개 + 발가락 패드 3개 구성과 코랄 패드색(`#FCA39C`~`#FCADAC`)을 함께 쓴다 (`BANGSIL_Character_Lock.md` 4-1번).
+
+- **패드는 손바닥 표면에 붙은 무늬다.** 모양 & 크기 & 배치는 패드 레퍼런스와 똑같이 두고, 방향만 손바닥 & 팔이 기운 각도 그대로 같이 기울고 돌아가고 원근으로 눌린다. 패드 Element(레퍼런스)는 똑바로 선 정면 사진이라 AI가 그 방향을 그대로 붙이기 쉽다. 모양 & 개수 참고용이지 방향 참고용이 아니다 (2026-11-22 사용자 지적: 몽실 만세 컷에서 손은 바깥으로 꺾였는데 패드는 수직으로 선 채 나옴).
+- 방실이 손바닥 & 발바닥은 `references/3d/Paw_Front.png` & `Paw_Hind.png`와 패드 Element(`CLAUDE.md` 디테일 표)를 쓴다. 패드는 중앙 큰 패드 1개 + 발가락 패드 3개 구성과 코랄 패드색(`#FCA39C`~`#FCADAC`)을 함께 쓴다 (`BANGSIL_Character_Lock.md` 4-1번).
 - 흰 꼬리는 배경에 묻히기 쉽다. 밝은 배경이면 `the tail silhouette stays clearly readable against the background`를 넣는다.
 
 
@@ -62,7 +64,7 @@ Every paw tip is scalloped into THREE rounded toe lobes divided by TWO soft visi
 손바닥이나 발바닥 안쪽이 카메라를 향하면 **한 문장 더** 넣는다. 패드와 마디는 별개 사실이라 둘 다 써야 한다.
 
 ```
-The {palm / sole} facing the viewer shows one large central pad and exactly THREE small round toe pads in an arc above it, and the outer edge of that paw still reads as three rounded lobes.
+The {palm / sole} facing the viewer shows one large central pad and exactly THREE small round toe pads in an arc between the central pad and the paw tip, and the outer edge of that paw still reads as three rounded lobes. The pads are part of the {palm / sole} surface: they keep exactly the same shape, size and layout as the paw pad reference, but they tilt, rotate and foreshorten together with the paw and arm, following the exact angle of the paw — the toe pads always point toward the paw tip, never straight up the screen when the paw is tilted.
 ```
 
 - `## Subject`와 `## Pose & Paws`에 `no fingers`, `fingerless`, `rounded nub`, `mitten` 같은 말을 절대 쓰지 않는다. 발 설명 옆에 붙은 부정어가 마디를 없애는 가장 흔한 원인이다.
@@ -73,6 +75,7 @@ The {palm / sole} facing the viewer shows one large central pad and exactly THRE
 ```
 smooth club paw, blank mitten paw, undivided paw tip, missing toe grooves,
 fused toes, two toe lobes, four toe lobes, four toe pads,
+pads pasted upright like a flat sticker, pad pattern not following the paw angle, toe pads pointing straight up on a tilted paw, distorted pad shapes,
 extra characters, two cats, duplicated BANGSIL, MONGSIL, calico cat, brown patched cat, realistic cat,
 brown marking, brown ear, brown head patch, brown tail, heart on the arm, any brown on the body,
 #FFCDB4, #B79571, peach inner ears,

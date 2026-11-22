@@ -104,7 +104,9 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 
 - 소품은 반드시 앞발에 **닿아 있게** 쓴다. 떠 있거나 몸에 붙어 있으면 안 된다.
 - 소품이 배 패치를 다 가리면 배 패치 검증을 할 수 없다. 가려도 되는 장면이 아니면 "held low enough that part of the belly patch stays visible"을 넣는다.
-- 손바닥이 카메라를 향하는 자세(손 흔들기, 하이파이브, 만세)는 **사용자가 따로 말하지 않아도** 손바닥 패드 문장을 넣는다: `the palm facing the viewer has soft pink paw pads: one large central pad and exactly three small round toe pads above it`. 이 문장을 빼먹어 패드 없이 나온 사례가 있다 (`prompts/2026-10-22-staged-scenes.md`, 택배기사).
+- 손바닥이 카메라를 향하는 자세(손 흔들기, 하이파이브, 만세)는 **사용자가 따로 말하지 않아도** 손바닥 패드 문장을 넣는다: `the palm facing the viewer has soft pink paw pads: one large central pad and exactly three small round toe pads between it and the paw tip; the pads tilt, rotate and foreshorten together with the paw, keeping their shape`. 이 문장을 빼먹어 패드 없이 나온 사례가 있다 (`prompts/2026-10-22-staged-scenes.md`, 택배기사).
+- **패드는 손바닥 & 발바닥 방향을 따라간다.** 모양 & 크기 & 배치는 패드 레퍼런스 그대로, 방향은 손바닥과 팔이 기운 각도 그대로 같이 기울고 돌아가고 원근으로 눌린다. 발가락 패드는 화면 위쪽이 아니라 **발끝 쪽**에 둔다. 패드 Element는 똑바로 선 정면 사진이라 방향까지 베끼기 쉬우니 "모양 & 개수 참고용, 방향은 실제 손 각도를 따른다"를 프롬프트에 쓰고, 해당 캐릭터 `scene-blocks.md` 패드 문장 & Negative를 그대로 쓴다 (2026-11-22 사용자 지적, 몽실 만세 컷).
+- **만세 & 손 흔들기 & 팔 벌리기는 다른 자세다.** 만세: 양팔을 머리 위로 높이 들어 V자, 손바닥은 정면, 팔 길이는 레퍼런스 그대로 짧게, 팔과 얼굴 사이 틈 유지. 손 흔들기: 한 팔만 어깨 위로 들어 손바닥을 정면으로. 팔 벌리기: 양팔을 옆으로. 손바닥을 보이게 하려고 만세를 팔 벌리기로 바꾸지 않는다 (2026-11-22 사용자 지적).
 - **발가락 패드는 3개다.** 이전 템플릿에 4개로 적혀 있었다 (2026-11-09 레퍼런스 실측으로 정정).
 - **손바닥이나 발바닥이 보이면 사용자가 말하지 않아도 패드 Element를 소품 Element로 추가해 그 이미지를 참고하게 한다.** 펠트: 손바닥 몽실 `mongsil_3d_paw_front_v2` & 방실 `bangsil_3d_paw_front_v1`, 발바닥 `mongsil_3d_paw_hind_v2` & `bangsil_3d_paw_hind_v1` (2026-11-21 교체). 매끈: 같은 이름 뒤에 `_smooth_v1` (`mongsil_3d_paw_front_smooth_v1` 등, 2026-11-22 추가). ID는 `CLAUDE.md` 디테일 표. 재질이 다른 패드를 섞지 않는다. 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
 - 방실이 손바닥 & 발바닥은 2026-11-21부터 `references/3d/Paw_Front.png` & `Paw_Hind.png`가 있다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)로 렌더된다.
