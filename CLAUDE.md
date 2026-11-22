@@ -114,7 +114,7 @@ MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원�
 | 방실 | 매끈 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Smooth.png` | `7e5ff077-b256-47b8-9047-595b3f01ed70` |
 
 - **힉스필드 이미지 (경로 A):** 캐릭터 Element `<<<ID>>>`는 그대로 쓰고, 위 media ID를 `medias`(role `image`)에 추가한다. 다시 올릴 필요 없다.
-- **영상:** 씨댄스 2.0은 시트를 `image_references`로 넣는다. **Kling 3.0은 레퍼런스 슬롯이 없어(`start_image` & `end_image`만) 시트를 넣을 수 없다.** 시트가 필요한 영상은 씨댄스를 쓴다. 모델 선택과 설정은 `templates/video.md`를 따른다.
+- **영상:** 시트를 `image_references`로 넣는다. 씨댄스 2.0 & Kling 4.0 & Kling 4.0 Flash & Kling 3.0 Omni는 받는다. **Kling 3.0(`kling3_0`)과 Kling 3.0 Turbo는 레퍼런스 슬롯이 없어 시트를 넣을 수 없다.** 모델별 차이는 `templates/video.md` 3번을 따른다.
 - **ChatGPT (경로 B):** 위 PNG를 첨부한다.
 - 프롬프트에 다음 문장을 넣는다: `The attached character sheet is an identity reference only: match the character's shape, proportions, face, markings and colours exactly, but do not reproduce the sheet layout, grid background, labels, text, leader lines or multiple views.`
 - 시트를 새로 만들거나 고치면 PNG를 바꾸고, 힉스필드에 다시 올려 이 표의 media ID를 바꾼다.
