@@ -14,7 +14,7 @@ Use that character's own `references/3d_smooth/` folder, not `references/3d/`.
 
 `Face.png` is a head-only close-up (added by the user 2026-11-21). Use it for face-detail and head-only shots. It is rendered **glossy**, which section 2 does not allow — use it for face shape and proportions only, never as a material reference.
 
-Felt and smooth references must not be mixed in one prompt. If a pose exists only in felt (for example MONGSIL `Paw_Front` & `Paw_Hind`), attach the felt image only as a shape reference and state that the material must stay smooth.
+Felt and smooth references must not be mixed in one prompt. For visible palms and soles, use the smooth paw Elements (`mongsil_3d_paw_front_smooth_v1` & `mongsil_3d_paw_hind_smooth_v1` & `bangsil_3d_paw_front_smooth_v1` & `bangsil_3d_paw_hind_smooth_v1`, added 2026-11-22, IDs in `CLAUDE.md`), not the felt `Paw_Front` & `Paw_Hind` images. If another pose exists only in felt, attach the felt image only as a shape reference and state that the material must stay smooth.
 
 ## 2. Material
 
