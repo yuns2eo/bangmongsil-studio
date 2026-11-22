@@ -97,8 +97,8 @@ Claude Code에서는 `CLAUDE.md`가 Element 선택, 생성 설정, 기록 방법
 | 걷기 & 달리기 | `Run.png` | `Run.png` |
 | 앉기 | `Sit.png` | `Sit.png` |
 | 입 벌린 표정 | `Tongue.png` | `Smile.png` |
-| 발바닥이 보이는 장면 | `Paw_Hind.png` 추가 | `Paw_Hind.png` 추가 |
-| 손바닥이 보이는 장면 | `Paw_Front.png` 추가 | `Paw_Front.png` 추가 |
+| 발바닥이 보이는 장면 | `Paw_Hind.png` 추가 + 발바닥 패드 Element (매끈은 `_smooth_v1`) | `Paw_Hind.png` 추가 + 발바닥 패드 Element (매끈은 `_smooth_v1`) |
+| 손바닥이 보이는 장면 | `Paw_Front.png` 추가 + 손바닥 패드 Element (매끈은 `_smooth_v1`) | `Paw_Front.png` 추가 + 손바닥 패드 Element (매끈은 `_smooth_v1`) |
 
 - **캐릭터 시트는 이미지 & 영상 모두 항상 첨부합니다.** 몽실 `references/sheet/MONGSIL_Sheet_Felt.png` & `MONGSIL_Sheet_Smooth.png`, 방실 `references/sheet/BANGSIL_Sheet_Felt.png` & `BANGSIL_Sheet_Smooth.png`. 재질이 맞는 것을 고르고, 시트는 정체성 기준으로만 쓰고 레이아웃 & 글자를 따라 그리지 않게 합니다 (문장은 `CLAUDE.md` "캐릭터 시트").
 - 앵글이 명시되지 않았으면 `Front.png` + `Left_3Q.png` 두 장을 첨부합니다.

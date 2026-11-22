@@ -106,7 +106,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - 소품이 배 패치를 다 가리면 배 패치 검증을 할 수 없다. 가려도 되는 장면이 아니면 "held low enough that part of the belly patch stays visible"을 넣는다.
 - 손바닥이 카메라를 향하는 자세(손 흔들기, 하이파이브, 만세)는 **사용자가 따로 말하지 않아도** 손바닥 패드 문장을 넣는다: `the palm facing the viewer has soft pink paw pads: one large central pad and exactly three small round toe pads above it`. 이 문장을 빼먹어 패드 없이 나온 사례가 있다 (`prompts/2026-10-22-staged-scenes.md`, 택배기사).
 - **발가락 패드는 3개다.** 이전 템플릿에 4개로 적혀 있었다 (2026-11-09 레퍼런스 실측으로 정정).
-- 손바닥 젤리가 보여야 하면 몽실은 `mongsil_3d_paw_front_v2`, 방실은 `bangsil_3d_paw_front_v1`을, 발바닥이면 `mongsil_3d_paw_hind_v2` & `bangsil_3d_paw_hind_v1`을 소품 Element로 추가한다 (2026-11-21 교체, ID는 `CLAUDE.md` 디테일 표). 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
+- **손바닥이나 발바닥이 보이면 사용자가 말하지 않아도 패드 Element를 소품 Element로 추가해 그 이미지를 참고하게 한다.** 펠트: 손바닥 몽실 `mongsil_3d_paw_front_v2` & 방실 `bangsil_3d_paw_front_v1`, 발바닥 `mongsil_3d_paw_hind_v2` & `bangsil_3d_paw_hind_v1` (2026-11-21 교체). 매끈: 같은 이름 뒤에 `_smooth_v1` (`mongsil_3d_paw_front_smooth_v1` 등, 2026-11-22 추가). ID는 `CLAUDE.md` 디테일 표. 재질이 다른 패드를 섞지 않는다. 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
 - 방실이 손바닥 & 발바닥은 2026-11-21부터 `references/3d/Paw_Front.png` & `Paw_Hind.png`가 있다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)로 렌더된다.
 
 ## 5. 소품 형태 & 방향 유지
