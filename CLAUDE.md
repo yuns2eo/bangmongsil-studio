@@ -108,16 +108,17 @@ MCP 도구(`manage_reference_elements`)는 `list` & `get` & `create`만 지원�
 
 | 캐릭터 | 재질 | 파일 | 힉스필드 media ID |
 |---|---|---|---|
-| 몽실 | 펠트 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Felt.png` | `cc936e98-ac16-442d-83a7-3475ec46670e` |
-| 몽실 | 매끈 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Smooth.png` | `b248495e-c7b3-4bdc-8c83-153f47d4b826` |
-| 방실 | 펠트 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Felt.png` | `31c542bb-04cb-4bc3-807d-3827a1e352ee` |
-| 방실 | 매끈 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Smooth.png` | `7e5ff077-b256-47b8-9047-595b3f01ed70` |
+| 몽실 | 펠트 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Felt.png` | `de955006-6e93-45fa-9608-7cf085db0339` |
+| 몽실 | 매끈 | `characters/mongsil/references/sheet/MONGSIL_Sheet_Smooth.png` | `5417ffd4-cc13-42d6-b628-03aa9a3ade30` |
+| 방실 | 펠트 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Felt.png` | `743b126a-df1b-4471-b4c0-27b5e1d2187e` |
+| 방실 | 매끈 | `characters/bangsil/references/sheet/BANGSIL_Sheet_Smooth.png` | `e092f79d-2b66-448d-a37f-d883730b36d7` |
 
 - **힉스필드 이미지 (경로 A):** 캐릭터 Element `<<<ID>>>`는 그대로 쓰고, 위 media ID를 `medias`(role `image`)에 추가한다. 다시 올릴 필요 없다.
 - **영상:** 시트를 `image_references`로 넣는다. 씨댄스 2.0 & Kling 4.0 & Kling 4.0 Flash & Kling 3.0 Omni는 받는다. **Kling 3.0(`kling3_0`)과 Kling 3.0 Turbo는 레퍼런스 슬롯이 없어 시트를 넣을 수 없다.** 모델별 차이는 `templates/video.md` 3번을 따른다.
 - **ChatGPT (경로 B):** 위 PNG를 첨부한다.
 - 프롬프트에 다음 문장을 넣는다: `The attached character sheet is an identity reference only: match the character's shape, proportions, face, markings and colours exactly, but do not reproduce the sheet layout, grid background, labels, text, leader lines or multiple views.`
 - 시트를 새로 만들거나 고치면 PNG를 바꾸고, 힉스필드에 다시 올려 이 표의 media ID를 바꾼다.
+- 2026-11-22 저장소 이미지(`references/3d` & `3d_smooth` & `assets/props/detail` 패드)만으로 4장을 다시 만들었다. 만드는 코드는 `tools/sheet/`(`python3 build.py`로 HTML을 만들고 `node shot.js`로 3840×2160 PNG를 찍는다). 레퍼런스 이미지가 바뀌면 이걸 다시 돌린다
 
 ### 디테일 (소품 Element로 추가)
 
