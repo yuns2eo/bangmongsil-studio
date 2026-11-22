@@ -24,6 +24,7 @@ Expression: {표정}.
 ```
 
 - `{표정}` 만 바꾼다. 나머지 문장은 줄이지 않는다. 줄이면 몸의 갈색 점과 입선이 돌아온다.
+- **소매 있는 옷을 입히면 팔 하트 문장을 지우고 `## Outfit`에 "the brown heart marking is fur on the inner upper arm, so it is completely hidden under the sleeve: no heart or brown spot on the clothes"를 넣는다.** 하트는 몸에 붙은 무늬라 옷 위에 보일 수 없다. 2026-11-22 운동복 정면컷에서 하트가 후드 소매 위에 프린트처럼 나와 사용자가 지적 (`prompts/2026-11-22-mongsil-sporty-hoodie.md`)
 - 입을 벌리는 장면이면 마지막 줄을 `Expression: open-mouth smile with a soft pink tongue, no teeth and no fangs.`로 바꾼다.
 
 ## `## Critical conditions`
