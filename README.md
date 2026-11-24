@@ -43,6 +43,7 @@ characters/
                                  Paw_Front / Paw_Hind / Tongue / Sit / Run   (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
                                  Run / Sit / Tongue / Face                   (8장)
+    references/3d_smooth/expressions/  매끈 표정: 웃음 6단계 & 긍정 감정 6종 (시트 2장 + 칸별 12장)
     references/sheet/            캐릭터 시트: MONGSIL_Sheet_Felt & MONGSIL_Sheet_Smooth
   bangsil/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
@@ -51,6 +52,7 @@ characters/
                                  Paw_Front / Paw_Hind / Smile / Sit / Run    (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
                                  Run / Sit / Smile / Face                    (8장)
+    references/3d_smooth/expressions/  매끈 표정: 웃음 6단계 & 긍정 감정 6종 (시트 2장 + 칸별 12장 + EyeSmile_Target)
     references/sheet/            캐릭터 시트: BANGSIL_Sheet_Felt & BANGSIL_Sheet_Smooth
 assets/
   props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
@@ -97,12 +99,15 @@ Claude Code에서는 `CLAUDE.md`가 Element 선택, 생성 설정, 기록 방법
 | 걷기 & 달리기 | `Run.png` | `Run.png` |
 | 앉기 | `Sit.png` | `Sit.png` |
 | 입 벌린 표정 | `Tongue.png` | `Smile.png` |
+| 웃음 단계 (매끈) | `expressions/Smile_1~6_*.png` | `expressions/Smile_1~6_*.png` |
+| 긍정 감정 (매끈) | `expressions/Feel_1~6_*.png` | `expressions/Feel_1~6_*.png` |
 | 발바닥이 보이는 장면 | `Paw_Hind.png` 추가 + 발바닥 패드 Element (매끈은 `_smooth_v1`) | `Paw_Hind.png` 추가 + 발바닥 패드 Element (매끈은 `_smooth_v1`) |
 | 손바닥이 보이는 장면 | `Paw_Front.png` 추가 + 손바닥 패드 Element (매끈은 `_smooth_v1`) | `Paw_Front.png` 추가 + 손바닥 패드 Element (매끈은 `_smooth_v1`) |
 
 - **캐릭터 시트는 이미지 & 영상 모두 항상 첨부합니다.** 몽실 `references/sheet/MONGSIL_Sheet_Felt.png` & `MONGSIL_Sheet_Smooth.png`, 방실 `references/sheet/BANGSIL_Sheet_Felt.png` & `BANGSIL_Sheet_Smooth.png`. 재질이 맞는 것을 고르고, 시트는 정체성 기준으로만 쓰고 레이아웃 & 글자를 따라 그리지 않게 합니다 (문장은 `CLAUDE.md` "캐릭터 시트").
 - 앵글이 명시되지 않았으면 `Front.png` + `Left_3Q.png` 두 장을 첨부합니다.
 - 표정 & 포즈 레퍼런스는 비슷한 것을 요청할 때만 추가합니다.
+- **표정은 `references/3d_smooth/expressions/`를 기준으로 합니다** (2026-11-24 사용자 지시). 웃음은 ① 다문 미소 → ② 윙크 → ③ 눈웃음 → ④ 입 살짝 벌림 → ⑤ 혀 보이게 웃음 → ⑥ 크게 웃음, 감정은 ① 감동 → ② 수줍음 → ③ 깜짝 → ④ 뿌듯 → ⑤ 기대 → ⑥ 냠냠. 원하는 표정의 칸별 PNG를 첨부하고, 같은 캐릭터 폴더 것만 씁니다. 표정 규칙은 `templates/scene.md` 8번.
 - 레퍼런스는 몽실이 9장이 2026-11-09, 방실이 8장이 같은 날 등록된 세트입니다. 수치 기준은 모두 각 락 파일에 측정값으로 들어가 있습니다.
 
 ### 4. 씬 요소 작성
