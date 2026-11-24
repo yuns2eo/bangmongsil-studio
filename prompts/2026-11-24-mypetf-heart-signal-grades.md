@@ -27,6 +27,20 @@
    - 몽실: 시트 + ② 결과 + `Sit` + `Left_3Q` + `Tongue` (사용자 확인 "응"), 처음부터 흰 배경 & 자연 그림자로 생성
 3. 몽실 결과의 팔 하트가 바깥 팔에 찍혀 나와(락 기준은 꼬리 쪽 위팔 안쪽 가장자리) 사용자가 Figma에서 직접 수정
 
+## 몽실 팔 하트 — 45도로 돌아 팔을 앞으로 감쌀 때 보이는 모양 (사용자 직접 수정, 승인)
+
+생성 결과는 하트가 카메라 쪽 팔 바깥면 가운데에 똑바로 선 모양으로 찍혀 나왔다. 사용자가 Figma에서 아래처럼 고쳤다.
+
+- 위치: 하트를 감싸며 앞으로 뻗은 카메라 쪽 팔의 **윗면 가장자리**. 팔 길이로 보면 손 쪽에서 약 1/3 지점
+- 방향: 하트가 **옆으로 누워 있다**. 뾰족한 끝이 손 쪽(화면 왼쪽 아래), 둥근 혹 두 개가 어깨 쪽(화면 오른쪽 위)
+- 걸침: 하트 윗부분이 팔 윤곽 너머로 넘어가 **일부만 보인다**. 팔 안쪽 면에 있던 무늬가 팔이 돌아가면서 윗가장자리로 살짝 드러난 모양이다
+- 크기: 아주 작다. 앞발 폭의 약 1/3, 배 패치 지름의 약 1/4
+- 색: #B79571, 납작하게 칠한 무늬 (도드라지지 않음)
+- 프롬프트 문장 (다음에 같은 자세에서 쓸 것): `On the near arm wrapped forward around the heart, the small brown #B79571 heart marking sits on the TOP EDGE of the arm about a third of the way from the paw, lying sideways with its point toward the paw and its two round lobes toward the shoulder; its upper part wraps over the arm's contour so only part of it shows. Never an upright heart stamped in the middle of the outer arm.`
+- Negative 추가: `upright heart in the middle of the outer arm, arm heart stamped facing the camera, large arm heart`
+- [ ] 1회 확인. 같은 자세에서 한 번 더 맞으면 `characters/mongsil/scene-blocks.md`에 넣는다
+- [ ] 락 반영 제안: 락의 "꼬리 쪽 위팔 안쪽 가장자리, 어깨 가까이"는 팔을 내린 자세 기준이다. 팔을 앞으로 감싸면 무늬가 팔 윗가장자리로 옮겨 보인다는 내용을 4번 마킹 항목에 덧붙일지 사용자 승인 필요
+
 ## 최종 프롬프트 — 몽실 콩닥콩닥 ③ (승인)
 
 ```
