@@ -297,7 +297,7 @@ Before delivery, compare against the closest reference view and reject a result 
 8. **Palette drift / data loss:** a locked HEX removed, renamed without the code, or changed. In particular, BANGSIL's `#FFCBD1` used on the ears, blush, or belly instead of `#FFCDB4`.
 9. **Unverified specificity:** a count, ratio, contour, colour, or anatomical detail stated or generated as certain despite not being visible in the relevant reference.
 10. **Wrong body or limbs:** slim body, long waist, or arms and legs longer than the turnaround; raised arms pressed against the face; an arm stretched to reach a prop instead of the body leaning or rising on tiptoe.
-11. **Wrong markings:** the arm mark rendered as a cloud, dot, or solid oval instead of a heart; placed on the outer arm, forearm, armpit, or wrong arm (except the forward-wrapped hug pose in 4번 Arm marking, where it rolls onto the top edge of the arm); relocated to keep it visible; or any extra brown spot on the body.
+11. **Wrong markings:** the arm mark rendered as a cloud, dot, or solid oval instead of a heart; placed on the outer arm, forearm, armpit, or wrong arm (except the forward-wrapped hug pose in section 3 Arm marking, where it rolls onto the top edge of the arm); relocated to keep it visible; or any extra brown spot on the body.
 12. **Club paw:** any visible paw tip has lost its three rounded lobes and two grooves and reads as one smooth undivided club or mitten. This is the most frequent failure — check every paw in every frame.
 12-1. **Missing or miscounted pads:** a palm or sole faces the viewer without its pink pads, or shows four toe pads instead of three.
 13. **Hidden belly patch:** clothing or a prop covers the whole belly patch without the user accepting it.
