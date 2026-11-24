@@ -109,6 +109,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - **만세 & 손 흔들기 & 팔 벌리기는 다른 자세다.** 만세: 양팔을 머리 위로 높이 들어 V자, 손바닥은 정면, 팔 길이는 레퍼런스 그대로 짧게, 팔과 얼굴 사이 틈 유지. 손 흔들기: 한 팔만 어깨 위로 들어 손바닥을 정면으로. 팔 벌리기: 양팔을 옆으로. 손바닥을 보이게 하려고 만세를 팔 벌리기로 바꾸지 않는다 (2026-11-22 사용자 지적).
 - **발가락 패드는 3개다.** 이전 템플릿에 4개로 적혀 있었다 (2026-11-09 레퍼런스 실측으로 정정).
 - **손바닥이나 발바닥이 보이면 사용자가 말하지 않아도 패드 Element를 소품 Element로 추가해 그 이미지를 참고하게 한다.** 펠트: 손바닥 몽실 `mongsil_3d_paw_front_v2` & 방실 `bangsil_3d_paw_front_v1`, 발바닥 `mongsil_3d_paw_hind_v2` & `bangsil_3d_paw_hind_v1` (2026-11-21 교체). 매끈: 같은 이름 뒤에 `_smooth_v1` (`mongsil_3d_paw_front_smooth_v1` 등, 2026-11-22 추가). ID는 `CLAUDE.md` 디테일 표. 재질이 다른 패드를 섞지 않는다. 단, 앞발 젤리 개수는 Element & 숫자 지정 & Negative로도 보장되지 않았다 (실측 3회). 젤리가 중요한 컷이면 생성 전에 이 한계를 사용자에게 알린다.
+- **소품을 끌어안는데 앞발을 하나만 보이게 하려면** 몸을 소품 쪽으로 45도 돌리고 먼 팔을 소품 뒤로 숨긴다: `the far arm goes around the back of the {prop} and is completely hidden. Only ONE front paw is visible`. 정면에서 두 팔로 안으면 먼 발이 가까운 발 밑에 하나 더 붙어 나온다. Negative에 `second front paw, two paws stacked, far paw visible` (`prompts/2026-11-24-mypetf-heart-signal-grades.md`, 방실 & 몽실 2회).
 - 방실이 손바닥 & 발바닥은 2026-11-21부터 `references/3d/Paw_Front.png` & `Paw_Hind.png`가 있다. 패드색은 몸 포인트 컬러보다 진한 코랄(`#FCA39C`~`#FCADAC`)로 렌더된다.
 
 ## 5. 소품 형태 & 방향 유지
@@ -127,6 +128,8 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 - 다른 캐릭터의 레퍼런스를 첨부하지 않는다. 몽실 장면에 방실 이미지를 넣는 순간 얼굴이 섞인다.
 - 기존 결과를 고칠 때 그 결과를 편집 기준 이미지로 넣는 건 **1회까지만** 한다. 1회 편집은 정체성 & 배경 & 질감이 잘 유지됐다 (실측 4회).
 - 같은 결과를 2회 이상 이어서 편집하면 화질이 깨지고 형태가 틀어진다. 두 번째 수정부터는 원본 레퍼런스로 **새로 생성**하고, 작은 경계 & 이음새 정리는 생성하지 말고 Figma에서 처리한다 (`prompts/2026-10-22-staged-scenes.md`, 만세 & 수의사 장면 2건).
+
+- 새로 생성할 때 직전 결과의 구도를 살리려면 그 결과를 **구도 타겟으로만** 넣는다: `POSE TARGET — keep exactly this pose, framing and background`. 얼굴과 표정은 시트 & 정면 & 표정 레퍼런스(`Smile.png` & `Tongue.png`)에서 가져오게 쓴다. 이어서 편집하면 얼굴이 틀어졌고, 이 방식으로 새로 만들면 유지됐다 (`prompts/2026-11-24-mypetf-heart-signal-grades.md`, 2회).
 
 ### 경로 B 변환 (ChatGPT로 돌릴 때)
 
