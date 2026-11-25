@@ -38,7 +38,7 @@
 - 색: #B79571, 납작하게 칠한 무늬 (도드라지지 않음)
 - 프롬프트 문장 (다음에 같은 자세에서 쓸 것): `On the near arm wrapped forward around the heart, the small brown #B79571 heart marking sits on the TOP EDGE of the arm about a third of the way from the paw, lying sideways with its point toward the paw and its two round lobes toward the shoulder; its upper part wraps over the arm's contour so only part of it shows. Never an upright heart stamped in the middle of the outer arm.`
 - Negative 추가: `upright heart in the middle of the outer arm, arm heart stamped facing the camera, large arm heart`
-- [ ] 1회 확인. 같은 자세에서 한 번 더 맞으면 `characters/mongsil/scene-blocks.md`에 넣는다
+- [x] 2회 확인 (2026-11-25 심쿵주의 ③도 똑바로 선 하트로 나와 같은 모양으로 픽셀 이식) → `characters/mongsil/scene-blocks.md`에 반영
 - [x] 락 반영 (사용자 승인 "응", 2026-11-24): `MONGSIL_Character_Lock.md` Arm marking & 9번 11항. 원래 메모: 락의 "꼬리 쪽 위팔 안쪽 가장자리, 어깨 가까이"는 팔을 내린 자세 기준이다. 팔을 앞으로 감싸면 무늬가 팔 윗가장자리로 옮겨 보인다는 내용을 4번 마킹 항목에 덧붙일지 사용자 승인 필요
 
 ## 최종 프롬프트 — 몽실 콩닥콩닥 ③ (승인)

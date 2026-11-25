@@ -25,6 +25,9 @@ Expression: {표정}.
 
 - `{표정}` 만 바꾼다. 나머지 문장은 줄이지 않는다. 줄이면 몸의 갈색 점과 입선이 돌아온다.
 - **소매 있는 옷을 입히면 팔 하트 문장을 지우고 `## Outfit`에 "the brown heart marking is fur on the inner upper arm, so it is completely hidden under the sleeve: no heart or brown spot on the clothes"를 넣는다.** 하트는 몸에 붙은 무늬라 옷 위에 보일 수 없다. 2026-11-22 운동복 정면컷에서 하트가 후드 소매 위에 프린트처럼 나와 사용자가 지적 (`prompts/2026-11-22-mongsil-sporty-hoodie.md`)
+- **하트를 앞으로 감싸 안는 45도 자세(팔 하나가 앞으로 뻗음)면 위 팔 하트 문장 뒤에 아래 문장과 Negative를 그대로 넣는다.** 생성은 이 문장을 넣어도 하트를 팔 바깥면 가운데에 똑바로 찍는 경우가 많다. 그러면 재생성하지 말고 윤서가 고친 모양(`MONGSIL_grade_kongdak_v2_armfix`)을 픽셀로 옮겨 붙인다: 기존 하트 inpaint → 그 하트 모양을 팔 각도만큼 돌려 손목 바로 위 윗가장자리에 얹기. 2026-11-24 콩닥콩닥(윤서 Figma 수정) & 2026-11-25 심쿵주의(같은 방식으로 옮김) 2회 (`prompts/2026-11-24-mypetf-heart-signal-grades.md`)
+  - 문장: `On the near arm wrapped forward around the heart, the small brown #B79571 heart marking sits on the TOP EDGE of the arm about a third of the way from the paw, lying sideways with its point toward the paw and its two round lobes toward the shoulder; its upper part wraps over the arm's contour so only part of it shows. Never an upright heart stamped in the middle of the outer arm.`
+  - Negative: `upright heart in the middle of the outer arm, arm heart stamped facing the camera, large arm heart`
 - 입을 벌리는 장면이면 마지막 줄을 `Expression: open-mouth smile with a soft pink tongue, no teeth and no fangs.`로 바꾼다.
 
 ## `## Critical conditions`
