@@ -43,7 +43,7 @@ characters/
                                  Paw_Front / Paw_Hind / Tongue / Sit / Run   (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
                                  Run / Sit / Tongue / Face                   (8장)
-    references/3d_smooth/expressions/  매끈 표정: 웃음 6단계 & 긍정 감정 6종 (시트 2장 + 칸별 12장)
+    references/3d_smooth/expressions/  매끈 표정: 12칸 시트 1장(윗줄 웃음 6단계 & 아랫줄 긍정 감정 6종) + 칸별 12장
     references/sheet/            캐릭터 시트: MONGSIL_Sheet_Felt & MONGSIL_Sheet_Smooth
   bangsil/
     BANGSIL_Character_Lock.md    방실이 정체성 락 (방실 요청에 항상 적용)
@@ -52,7 +52,7 @@ characters/
                                  Paw_Front / Paw_Hind / Smile / Sit / Run    (9장)
     references/3d_smooth/        매끈 재질: Front / Left_3Q / Left_Profile / Back
                                  Run / Sit / Smile / Face                    (8장)
-    references/3d_smooth/expressions/  매끈 표정: 웃음 6단계 & 긍정 감정 6종 (시트 2장 + 칸별 12장 + EyeSmile_Target)
+    references/3d_smooth/expressions/  매끈 표정: 12칸 시트 1장(윗줄 웃음 6단계 매끈 표정: 웃음 6단계 & 긍정 감정 6종 (시트 2장 + 칸별 12장 + EyeSmile_Target) 아랫줄 긍정 감정 6종) + 칸별 12장 + EyeSmile_Target
     references/sheet/            캐릭터 시트: BANGSIL_Sheet_Felt & BANGSIL_Sheet_Smooth
 assets/
   props/                         소품 이미지 로컬 사본 (ChatGPT 경로 첨부용, 59장)
