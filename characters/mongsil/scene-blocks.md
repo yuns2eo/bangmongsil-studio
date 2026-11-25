@@ -30,6 +30,8 @@ Expression: {표정}.
   - Negative: `upright heart in the middle of the outer arm, arm heart stamped facing the camera, large arm heart`
 - 입을 벌리는 장면이면 마지막 줄을 `Expression: open-mouth smile with a soft pink tongue, no teeth and no fangs.`로 바꾼다.
 
+- **투샷에서 몽실은 화면 오른쪽 자리 & `Left_3Q.png` 각도로 둔다** (2026-11-25, 2회 확인). 몽실을 화면 오른쪽으로 돌리라고 글로만 쓰면 꼬리 & 팔 하트가 화면 왼쪽으로 뒤집힌다. `Left_3Q`를 그대로 쓰면 귀 & 머리 무늬 & 팔 하트 & 꼬리가 모두 화면 오른쪽에 오고, 상대(화면 왼쪽) 쪽 팔은 무늬 없이 흰색이다. 프롬프트에 `MONGSIL's screen-left arm is plain white with NO heart`를 넣는다. 근거: `prompts/2026-11-25-duo-smooth-talk-twoshot.md`
+
 ## `## Critical conditions`
 
 장면 고유 조건 앞에 항상 이 9개를 그대로 넣는다.
