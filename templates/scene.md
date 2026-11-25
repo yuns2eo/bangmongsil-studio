@@ -157,7 +157,7 @@ Soft flocked felt 3D mascot figure with a very short, dense, even matte pile. So
 | 단계 | 하는 일 | 배경 |
 |---|---|---|
 | 0. 분리 | 고정할 것(몽실 정체성, 레이아웃, 브랜드 컬러)과 바뀌는 것(의상, 소품, 자세, 장소)을 먼저 나눈다 | |
-| STEP 1 의상 & 소품 | 의상과 소품만 입힌 캐릭터를 만들어 캐릭터 규칙부터 확인한다. 생성 전에 표정을 추천하고 묻는다 (8번 표정 & `CLAUDE.md` 작업 순서 4번) | 단색 `#E4DFE3` |
+| STEP 1 의상 & 소품 | 의상과 소품만 입힌 캐릭터를 만들어 캐릭터 규칙부터 확인한다. 12칸 표정 시트를 항상 첨부하고, 생성 전에 표정 방향을 추천하고 묻는다 (8번 표정 & `CLAUDE.md` 작업 순서 4번) | 단색 `#E4DFE3` |
 | STEP 2 장면 & 행동 | STEP 1 결과를 `medias` 참조로 넣고 행동과 앞쪽 물체를 더한다 | 누끼용 단색, 또는 장면 배경 |
 | STEP 3 분리 & 합성 | 캐릭터 누끼와 배경을 따로 만들어 Figma에서 규격별로 배치한다 | |
 | (선택) 모션 | 확정된 장면 이미지를 시작 프레임으로 짧은 모션을 만든다 | |
@@ -221,7 +221,7 @@ into one silhouette; the outline shows two separate shapes there, not one.
 
 ## 8. 표정 (매끈, 2026-11-24 승인 기준)
 
-기준 이미지: `characters/{캐릭터}/references/3d_smooth/expressions/` (웃음 `Smile_1~6`, 감정 `Feel_1~6`, 방실 눈웃음 타겟 `EyeSmile_Target.png`). 표정이 필요한 컷은 해당 칸 PNG를 첨부하고 "copy ONLY the expression"이라고 쓴다. 다른 캐릭터의 표정 이미지는 넣지 않는다.
+기준 이미지: `characters/{캐릭터}/references/3d_smooth/expressions/` (12칸 시트 `{CHAR}_Expression_Sheet.png`, 칸별 웃음 `Smile_1~6` & 감정 `Feel_1~6`, 방실 눈웃음 타겟 `EyeSmile_Target.png`). 정면컷(STEP 1)에는 12칸 시트를 항상 첨부하고 `Use the attached expression sheet as the expression reference only — do not reproduce its grid or multiple faces.`를 넣는다. 표정이 필요한 컷은 해당 칸 PNG를 첨부하고 "copy ONLY the expression"이라고 쓴다. 다른 캐릭터의 표정 이미지는 넣지 않는다.
 
 - **눈 & 입은 3D로 조형한다.** 그려 붙인 2D 선이나 스티커처럼 보이면 실패 ("합성한 것 같고 성의 없다")
 - **감은 눈**: 둥근 ∩ 반달, 끝은 뭉툭, 양쪽 높이 같게, 두께는 입선보다 살짝 얇게(입선 15px일 때 약 13px). 두꺼운 검은 막대("미친 애 같다")와 바늘처럼 가늘고 뾰족한 실눈("날카롭다")은 실패
