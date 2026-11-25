@@ -70,7 +70,7 @@ The {palm / sole} facing the viewer shows one large central pad and exactly THRE
 - `## Subject`와 `## Pose & Paws`에 `no fingers`, `fingerless`, `rounded nub`, `mitten` 같은 말을 절대 쓰지 않는다. 발 설명 옆에 붙은 부정어가 마디를 없애는 가장 흔한 원인이다.
 - 손가락을 막아야 하면 `separated fingers, knuckles, claws, nails, human hand`를 **Negative 블록에만** 넣는다.
 
-- **손바닥을 내밀거나 든 자세에서 발가락 패드가 4개로 나오기 쉽다** (2026-11-25, 3회 확인). 프롬프트 & Negative & 패드 PNG로도 막히지 않았다. 생성 후 손바닥을 확대해 개수를 세고, 4개면 그 결과에서 패드만 "그 부위만 바꾸고 나머지 그대로" 편집 1회로 고친다. 근거: `prompts/2026-11-25-duo-smooth-talk-twoshot.md`
+- **손바닥을 내밀거나 든 자세에서 발가락 패드가 4개로 나오기 쉽다** (2026-11-25, 3회 확인). 프롬프트 & Negative & 패드 PNG로도 막히지 않았다. **패드 4개는 발끝 마디도 4개라서 생긴다.** 패드만 지우는 편집은 틀린 해결이다 — 마디 4개에 패드 3개가 되어 패드와 마디가 어긋난다 (2026-11-25 사용자 지적). 생성 후 손바닥을 확대해 마디와 패드를 함께 세고, 틀리면 직전 결과를 POSE TARGET으로 넣어 새로 생성하면서 "발끝 마디 3개, 마디마다 패드 1개(3과 3)"를 명시한다. 근거: `prompts/2026-11-25-duo-smooth-talk-twoshot.md`
 
 ## `## Negative`
 
