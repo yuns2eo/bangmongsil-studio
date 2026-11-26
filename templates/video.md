@@ -120,7 +120,11 @@
 
 - **씨댄스는 캐릭터가 카메라 쪽으로 돌거나 다가오는 동작이 있으면 `#FramingLock`을 넣어도 화면을 크게 확대한다.** 몽실 자명종 1차(약 1.5배) & 몽실 의자 졸기 & 방실 안경 올리기 1차(전신이 상반신 클로즈업으로)에서 확인. 넉넉한 여백이 중요한 컷은 카메라 쪽으로 도는 동작을 빼고, 각도를 시작 프레임 그대로 둔 채 앞발 & 고개 갸웃 & 귀 & 꼬리로만 움직인다. 각도 변화가 꼭 필요하면 Kling 3.0 Frames를 먼저 검토한다 (근거: `prompts/2026-11-21-mongsil-smooth-clock-parcels.md`, `prompts/2026-11-22-bangsil-smooth-glasses-push-video.md`)
 
+- **씨댄스는 카메라 쪽으로 돌지 않는 장면이면 강한 `#FramingLock`으로 확대를 막을 수 있다.** "framing, character size and empty margins stay exactly as in the start frame in every frame; nobody turns toward the camera"를 넣은 방실 수의사 & 강아지 볼 비비기 1차 & 2차, 몽실 택배 와리가리에서 확대 없음 (근거: `prompts/2026-11-26-bangsil-felt-vet-puppy-cuddle-video.md`, `prompts/2026-11-25-mongsil-smooth-courier-parcels.md`)
+
 **1회 관찰 (주의)**
+- **배너처럼 작게 쓰는 영상은 "small, slow"로 쓰면 움직임이 안 보인다.** 처음부터 몸 전체 흔들림 & 각도(약 10도) & squash and stretch & "clearly readable motion even at small size"를 넣는다 (방실 볼 비비기 1차 → 2차)
+- **당황 & 휘청 같은 큰 감정 동작에서는 "small o mouth"를 써도 몽실 입이 크게 벌어졌다** (몽실 택배 와리가리). 입을 작게 지켜야 하면 감정을 몸 & 귀 & 땀방울로만 쓰고 동작 크기를 줄인다
 - 앞발로 쓰다듬는 동작은 발끝 돌기가 4개로 늘었다 (강아지 진찰 1차). 앞발은 낮게 두고 이마 & 볼 맞대기처럼 앞발 없이 교감하는 동작으로 바꾸면 해결됐다
 - **웃음을 요청하면 방실은 시트의 검정 W 입선이 돌아온다** (책 읽기 영상). 입선 없이 웃게 하려면 웃음을 볼 & 동그란 눈 & 귀로만 쓰고 입은 'o' 유지로 적는다 (1회 관찰)
 - **시작 프레임만 표준 얼굴과 다르게 고쳐 두면 레퍼런스가 표준 얼굴로 되돌린다.** 방실 안경 1차: 시작 프레임은 검정 입선 없는 'o' 입이었는데, 정면 뷰(W 입선 & 웃는 눈)를 레퍼런스로 넣자 W 입선 & 눈웃음 & 일자 눈이 나왔다. 표준과 다른 얼굴을 유지해야 하면 그 얼굴이 아닌 뷰는 넣지 않는다
